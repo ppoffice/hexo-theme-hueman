@@ -1,0 +1,45 @@
+<%- partial('_partial/head') %>
+<body>
+  <div id="wrap">
+    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+    <div class="container">
+      <div class="main-body container-inner">
+        <div class="main-body-inner">
+          <section id="main">
+            <div class="main-body-header">
+<% var title = page.title;
+if (is_archive()){
+  title = 'Archives';
+  if (is_month()){
+    title += ': ' + page.year + '/' + page.month;
+  } else if (is_year()){
+    title += ': ' + page.year;
+  }
+} else if (is_category()){
+  title = '<i class="icon" id="icon-category"></i>Category: <em class="page-title-link">' + page.category + '</em>';
+} else if (is_tag()){
+  title = '<i class="icon" id="icon-tag"></i>Tag: <em>' + page.tag + '</em>';
+} else if (is_post()) {
+  title = list_categories(page.categories, {show_count: false, style: 'none', class: 'page-title', separator: '<i class="icon" id="icon-angle-right"></i>'});
+} else if (is_home()) {
+  title = '<em class="page-title-link">Home</em>';
+} else if (page.title) {
+  title = '<em class="page-title-link" data-url="' + url_for(page.path) + '">' + page.title + '</em>';
+} else {
+  title = config.title;
+} %>
+              <h1 class="header"><% if (title){ %><%- title %><% } %></h1>
+            </div>
+            <div class="main-body-content">
+              <%- body %>
+            </div>
+          </section>
+          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+        </div>
+      </div>
+    </div>
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+    <%- partial('_partial/after-footer') %>
+  </div>
+</body>
+</html>

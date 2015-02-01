@@ -1,0 +1,123 @@
+/* ------------------------------------------------------------------------- *
+ *  Toggle Sidebar s1 : 960px > 480px
+/* ------------------------------------------------------------------------- */
+@media only screen and (min-width: 480px) and (max-width: 960px)
+  #header
+    padding-bottom: sidebar-toggle-width
+  .main-body
+    margin-top: - sidebar-toggle-width
+  .main-body-inner
+    padding-left: sidebar-toggle-width
+    background-position: -290px 0 !important
+    #sidebar
+      clearfix()
+      width: sidebar-toggle-width
+      height: sidebar-toggle-width
+      margin-left: - sidebar-toggle-width
+      .sidebar-top
+        padding: 13px 13px 12px
+        box-sizing: border-box
+        height: sidebar-toggle-width
+        .toggle
+          display: block
+        .sidebar-top-inner
+          display: none
+      #article-nav, .widget-wrap
+        display: none
+      &:hover
+        position: absolute
+        width: sidebar-width
+        height: 100%
+        overflow-y: scroll
+        z-index: 2
+        background: url(images/s-left.png) repeat-y left 0
+        #article-nav, .widget-wrap
+          display: block
+        .sidebar-top
+          padding: 10px 30px
+          .toggle
+            display: none
+          .sidebar-top-inner
+            display: block
+
+  #main
+    .main-body-header
+      padding: 12px 15px
+
+/* ------------------------------------------------------------------------- *
+ *  Mobile (Low Res) : 479px > 0 (320px)
+/* ------------------------------------------------------------------------- */
+@media only screen and (max-width: 479px)
+  .container
+    padding: 0px
+  #header
+    .logo-wrap
+      width: 100%
+      display: block
+      text-align: center
+      .logo
+        margin: 0 auto
+    .subtitle-wrap
+      display: none
+    .nav-container
+      padding: 0px
+      .nav-container-inner
+        display: none
+      #main-nav-toggle
+        display: block
+        border-bottom: 1px solid rgba(255,255,255,0.06)
+      #main-nav
+        display: block
+        float: none
+        .main-nav-link,
+        .main-nav-list,
+        .main-nav-list-item,
+        .main-nav-list-link
+          clearfix()
+          display: block
+          float: none
+          box-shadow: none
+          box-sizing: border-box
+          font-size: font-size
+        .main-nav-list
+          clearfix()
+          li.top-level-menu
+            & > a
+              position: relative
+              &:after
+                position: absolute
+                right: 15px
+                top: 50%
+                margin-top: - 8px
+                z-index: 2
+          .main-nav-list-child
+            display: block
+            position: relative
+            width: 100%
+            padding: 0px
+            .main-nav-list-link
+              padding-left: 30px
+        a
+          border-bottom: 1px solid rgba(255,255,255,0.06)
+      #sub-nav
+        float: none
+        .search-form-input
+          width: 90%
+  .main-body-inner
+    padding: 0px
+    background: none
+  #sidebar
+    display: none
+  #main
+    .main-body-header
+      padding: 13px 15px 12px;
+    .main-body-content
+      padding-left: 15px
+      .article-single
+        padding: 15px 15px 15px 0px
+  .article-summary
+    width: 100%
+  #footer
+    margin-top: 0px
+    #back-to-top
+      box-shadow: 0 1px 1px rgba(0,0,0,0.1), inset 0 1px 0 rgba(0,0,0,0.05);

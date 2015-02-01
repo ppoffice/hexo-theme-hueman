@@ -1,0 +1,69 @@
+<% if(index) { %>
+  <article class="article article-summary">
+    <div class="article-summary-inner">
+      <% var img=/\<img\s.*?\s?src\s*=\s*['|"]?([^\s'"]+).*?\>/ig;
+        var result = post.content.match(img);
+        var s = "";
+        result = img.exec(post.content);
+        if(result != null) {
+          for(var i = result.length -1; i; --i){
+              s += result[i]+"\n";
+          }
+        } %>
+      <a href="<%- url_for((post.link?post.link:post.path)) %>" class="thumbnail">
+        <% if(s.length > 0){ %>
+          <img src="<%= s %>" alt="<%= post.title %>" class="thumbnail-image" />
+        <% } else { %>
+          <span class="thumbnail-image thumbnail-none"></span>
+        <% } %>
+      </a>
+      <div class="article-meta">
+        <p class="category"><%- list_categories(post.categories, {show_count: false, depth:2, class: 'article-category', style: 'none', separator: '<i class="icon" id="icon-angle-right"></i>'}) %></p>
+        <p class="date"><time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time></p>
+      </div>
+      <h2 class="article-title">
+        <a href="<%- url_for((post.link?post.link:post.path)) %>" class="title"><%= post.title %></a>
+      </h2>
+      <p class="article-excerpt">
+        <% var excerpt;
+          if(post.excerpt)
+            excerpt = post.excerpt.replace(/\<[^\>]+\>/g, "");
+          else{
+            excerpt = post.content.replace(/\<[^\>]+\>/g, "").substring(0,200);
+          } %>
+        <%= excerpt %>
+      </p>
+    </div>
+  </article>
+<% } else { %>
+  <article id="<%= post.layout %>-<%= post.slug %>" class="article article-single article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+    <div class="article-inner">
+      <!-- <%- partial('post/gallery') %> -->
+      <% if (post.link || post.title){ %>
+        <header class="article-header">
+          <%- partial('post/title', {class_name: 'article-title'}) %>
+        </header>
+      <% } %>
+      <p class="article-byline">
+        <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+      </p>
+      <div class="article-entry" itemprop="articleBody">
+        <%- post.content %>
+      </div>
+      <footer class="article-footer">
+        <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
+        <% if (post.comments && config.disqus_shortname){ %>
+          <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
+        <% } %>
+        <%- partial('post/tag') %>
+      </footer>
+    </div>
+  </article>
+  <% if (post.comments && config.disqus_shortname){ %>
+    <section id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    </section>
+  <% } %>
+<% } %>

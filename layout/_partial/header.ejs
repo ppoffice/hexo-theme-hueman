@@ -1,0 +1,36 @@
+<header id="header">
+  <div id="header-outer" class="outer">
+    <div class="container">
+      <div class="container-inner">
+        <div id="header-title">
+          <h1 class="logo-wrap">
+            <a href="<%- url_for() %>" class="logo"></a>
+          </h1>
+          <% if (theme.subtitle){ %>
+            <h2 class="subtitle-wrap">
+              <p class="subtitle"><%= theme.subtitle %></p>
+            </h2>
+          <% } %>
+        </div>
+        <div id="header-inner" class="nav-container">
+          <a id="main-nav-toggle" class="nav-icon"></a>
+          <div class="nav-container-inner">
+            <nav id="main-nav">
+              <% for (var i in theme.menu){
+                  if(i == 'Categories'){ %>
+                    <%- list_categories({show_count: false, depth: 2, class: 'main-nav', style: 'list'}) %>
+                  <% } else { %>
+                <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+              <% }} %>
+            </nav>
+            <nav id="sub-nav">
+              <div id="search-form-wrap">
+                <%- search_form({button: '&#xF002;'}) %>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

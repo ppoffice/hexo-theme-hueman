@@ -1,0 +1,27 @@
+# Header
+menu:
+  Home: /
+  Categories:
+  About: /about/index.html
+
+# Content
+fancybox: true
+
+# Sidebar
+social_links:
+  twitter: http://www.baidu.com
+  facebook: http://www.baidu.com
+  google_plus: http://www.baidu.com
+  weibo: http://www.baidu.com
+  rss: /atom.xml
+widgets:
+- archive
+- recent_posts
+- tag
+- tagcloud
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
+fb_admins:
+fb_app_id:
