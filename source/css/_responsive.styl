@@ -1,9 +1,18 @@
 /* ------------------------------------------------------------------------- *
- *  Toggle Sidebar s1 : 960px > 480px
+ *  Style Fix : > 960px 
 /* ------------------------------------------------------------------------- */
-@media only screen and (min-width: 480px) and (max-width: 960px)
+@media only screen and (min-width: 960px)
+  .nav-container-inner
+    display: block !important
+
+/* ------------------------------------------------------------------------- *
+ *  Toggle Sidebar s1 : 959px > 480px
+/* ------------------------------------------------------------------------- */
+@media only screen and (min-width: 480px) and (max-width: 959px)
   #header
     padding-bottom: sidebar-toggle-width
+    .nav-container-inner
+      display: block !important
   .main-body
     margin-top: - sidebar-toggle-width
   .main-body-inner
@@ -22,6 +31,11 @@
           display: block
         .sidebar-top-inner
           display: none
+        .social-links
+          .social-tooltip
+            &:after,
+            &:before
+              display: none
       #article-nav, .widget-wrap
         display: none
       &:hover
@@ -117,6 +131,8 @@
         padding: 15px 15px 15px 0px
   .article-summary
     width: 100%
+    .article-summary-inner
+      margin: 15px 15px 0 0
   #footer
     margin-top: 0px
     #back-to-top

@@ -38,13 +38,16 @@
   });
 
   //Set thumbnail height
-  function setThumbnailHeight(){    
+  function setThumbnailHeight(){
     var width = $('.article-summary .thumbnail').width();
     var height = 245 * width / 520;
     $('.article-summary .thumbnail').height(height);
+
   }
   setThumbnailHeight();
-  $(window).on('resize', setThumbnailHeight());
+  $(window).resize(function() {
+    setThumbnailHeight();
+  });
 
   //Image scroll loading
   $('.main-body-content img').each(function() {
@@ -65,5 +68,13 @@
         }
     });
   }
-  setScrollLoading();
+  setTimeout(setScrollLoading, 1000);
+  //Article summary height fix
+  for(var i = 0; i <= $('.article-summary').length / 2; i++){
+    if($('.article-summary').eq(i*2).height() > $('.article-summary').eq(i*2+1).height()){
+      $('.article-summary').eq(i*2+1).height($('.article-summary').eq(i*2).height());
+    } else {
+      $('.article-summary').eq(i*2).height($('.article-summary').eq(i*2+1).height());
+    }
+  }
 })(jQuery);
