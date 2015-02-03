@@ -2,7 +2,7 @@
 ### Probably the most beautiful theme for Hexo. [Preview](http://ppoffice.github.io/hexo-theme-hueman/)
 ![](http://ppoffice.github.io/hexo-theme-hueman/gallery/preview.jpg "")
 
-* ##### Special thanks to [AlxMedia](https://github.com/AlxMedia), who designed the original theme [Hueman](https://github.com/AlxMedia/hueman) for wordpress.
+##### Special thanks to [AlxMedia](https://github.com/AlxMedia), who designed the original theme [Hueman](https://github.com/AlxMedia/hueman) for wordpress.
 
 ## Installation
 
