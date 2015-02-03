@@ -1,0 +1,20 @@
+index:
+  home: 'home'
+  archive: 'archive'
+  category: 'category : '
+  tag: 'tag : '
+nav:
+  current_page:
+    other: 'Page %d '
+  total_page:
+    other: 'of %d'
+sidebar:
+  follow: 'follow'
+  newer: 'newer'
+  older: 'older'
+  recents: 'recents'
+  archives: 'archives'
+  categories: 'categories'
+  links: 'links'
+  tags: 'tags'
+  tag_cloud: 'tag cloud'

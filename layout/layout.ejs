@@ -9,20 +9,20 @@
             <div class="main-body-header">
 <% var title = page.title;
 if (is_archive()){
-  title = 'Archives';
+  title = __('index.archive');
   if (is_month()){
     title += ': ' + page.year + '/' + page.month;
   } else if (is_year()){
     title += ': ' + page.year;
   }
 } else if (is_category()){
-  title = '<i class="icon" id="icon-category"></i>Category: <em class="page-title-link">' + page.category + '</em>';
+  title = '<i class="icon" id="icon-category"></i>' + __('index.category') + '<em class="page-title-link">' + page.category + '</em>';
 } else if (is_tag()){
-  title = '<i class="icon" id="icon-tag"></i>Tag: <em>' + page.tag + '</em>';
+  title = '<i class="icon" id="icon-tag"></i>' + __('index.tag') + '<em>' + page.tag + '</em>';
 } else if (is_post()) {
   title = list_categories(page.categories, {show_count: false, style: 'none', class: 'page-title', separator: '<i class="icon" id="icon-angle-right"></i>'});
 } else if (is_home()) {
-  title = '<em class="page-title-link">Home</em>';
+  title = '<em class="page-title-link" data-url="home">' + __('index.home') + '</em>';
 } else if (page.title) {
   title = '<em class="page-title-link" data-url="' + url_for(page.path) + '">' + page.title + '</em>';
 } else {

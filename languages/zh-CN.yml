@@ -1,0 +1,20 @@
+index:
+  home: '主页'
+  archive: '归档'
+  category: '分类：'
+  tag: '标签：'
+nav:
+  current_page:
+    other: '第 %d 页，'
+  total_page:
+    other: '共 %d 页'
+sidebar:
+  follow: '关注我 '
+  newer: '下一篇'
+  older: '上一篇'
+  recents: '最新文章'
+  archives: '归档'
+  categories: '分类'
+  links: '链接'
+  tags: '标签'
+  tag_cloud: '标签云'

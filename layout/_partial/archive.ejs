@@ -12,7 +12,7 @@
   <% }) %>
   <% if (page.total > 1){ %>
     <nav id="page-nav">
-      <span class="pages">Page <%= page.current %> of <%= page.total %></span>
+      <span class="pages"><%= _p('nav.current_page', page.current) %><%= _p('nav.total_page', page.total) %></span>
       <%- paginator({prev_text: '&laquo;', next_text: '&raquo;'}) %>
     </nav>
   <% } %>

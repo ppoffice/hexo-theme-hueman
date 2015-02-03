@@ -1,7 +1,7 @@
 <aside id="sidebar">
   <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
   <div class="sidebar-top">
-    <p>Follow:</p>
+    <p><%= __('sidebar.follow') %>:</p>
     <ul class="social-links">
       <% for (var i in theme.social_links){ %>
         <li><a class="social-tooltip" title="<%= i %>" href="<%- url_for(theme.social_links[i]) %>"><i id="icon-<%= i %>" class="icon"></i></a></li>
