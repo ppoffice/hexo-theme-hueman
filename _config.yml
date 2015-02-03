@@ -1,7 +1,8 @@
 # Header
 menu:
   Home: /
-  Categories:
+  # Delete this row if you don't want categories in your header nav bar
+  Categories: 
   About: /about/index.html
 
 # Content
@@ -9,14 +10,14 @@ fancybox: true
 
 # Sidebar
 social_links:
-  twitter: http://www.baidu.com
-  facebook: http://www.baidu.com
-  google_plus: http://www.baidu.com
-  weibo: http://www.baidu.com
-  rss: /atom.xml
+  twitter: 
+  facebook: 
+  google_plus: 
+  weibo: 
+  rss: 
 widgets:
-- archive
 - recent_posts
+- archive
 - tag
 - tagcloud
 

@@ -15,14 +15,14 @@
         <div id="header-inner" class="nav-container">
           <a id="main-nav-toggle" class="nav-icon"></a>
           <div class="nav-container-inner">
-            <nav id="main-nav">
+            <ul id="main-nav">
               <% for (var i in theme.menu){
                   if(i == 'Categories'){ %>
                     <%- list_categories({show_count: false, depth: 2, class: 'main-nav', style: 'list'}) %>
                   <% } else { %>
-                <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
               <% }} %>
-            </nav>
+            </ul>
             <nav id="sub-nav">
               <div id="search-form-wrap">
                 <%- search_form({button: '&#xF002;'}) %>

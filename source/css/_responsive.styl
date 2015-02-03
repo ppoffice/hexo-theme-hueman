@@ -13,6 +13,14 @@
     padding-bottom: sidebar-toggle-width
     .nav-container-inner
       display: block !important
+      #main-nav
+        .main-nav-more > ul
+          .main-nav-list-child
+            position: relative
+            padding: 0px
+      .search-form-input
+        &:focus
+          width: 100px
   .main-body
     margin-top: - sidebar-toggle-width
   .main-body-inner
@@ -20,39 +28,54 @@
     background-position: -290px 0 !important
     #sidebar
       clearfix()
+      height: 100%
+      position: absolute
+      overflow: hidden
       width: sidebar-toggle-width
-      height: sidebar-toggle-width
       margin-left: - sidebar-toggle-width
-      .sidebar-top
-        padding: 13px 13px 12px
-        box-sizing: border-box
+      background: url(images/s-left.png) repeat-y left 0
+      transition: width 0.2s ease-in 0.2s
+      .sidebar-toggle
+        display: block
+        padding: 6px
+        color: rgba(255,255,255,0.7)
+        text-align: center
         height: sidebar-toggle-width
+        background: color-sidebar-top-background
+        box-sizing: border-box
         .toggle
-          display: block
-        .sidebar-top-inner
-          display: none
-        .social-links
-          .social-tooltip
-            &:after,
-            &:before
-              display: none
-      #article-nav, .widget-wrap
-        display: none
-      &:hover
-        position: absolute
+          line-height: 38px
+          font-size: 38px
+          width: 38px
+          &:before
+            content: '\f101'
+      .sidebar-top
+        padding: 10px 30px
+        background: none
+        border-bottom: 1px solid color-border
+        p, a, i
+          color: #666
+      #article-nav, .widgets-container, .sidebar-top
+        opacity: 0
+        transition: opacity 0.2s ease-in
+      &.expend
         width: sidebar-width
-        height: 100%
-        overflow-y: scroll
+        overflow-y: auto
         z-index: 2
-        background: url(images/s-left.png) repeat-y left 0
-        #article-nav, .widget-wrap
-          display: block
+        transition: width 0.2s ease-in
+        .toggle
+          &:before
+            content: '\f100'
+        #article-nav, .widgets-container, .sidebar-top
+          opacity: 1
+          transition: opacity 0.2s ease-in 0.2s
         .sidebar-top
-          padding: 10px 30px
-          .toggle
-            display: none
-          .sidebar-top-inner
-            display: block
+          display: block
+          .social-links
+            .social-tooltip
+              &:after,
+              &:before
+                display: none
 
   #main
     .main-body-header
@@ -75,16 +98,13 @@
       display: none
     .nav-container
       padding: 0px
-      .nav-container-inner
-        display: none
       #main-nav-toggle
         display: block
-        border-bottom: 1px solid rgba(255,255,255,0.06)
+      .nav-container-inner
+        display: none
       #main-nav
         display: block
         float: none
-        .main-nav-link,
-        .main-nav-list,
         .main-nav-list-item,
         .main-nav-list-link
           clearfix()
@@ -93,22 +113,24 @@
           box-shadow: none
           box-sizing: border-box
           font-size: font-size
-        .main-nav-list
-          clearfix()
-          li.top-level-menu
+        .main-nav-list-item
+          &.top-level-menu
             & > a
               position: relative
               &:after
-                position: absolute
-                right: 15px
-                top: 50%
-                margin-top: - 8px
-                z-index: 2
+                display: none
+            &:hover > a
+              background: none
+              color: color-nav-foreground
+            & > a:hover
+              color: #fff
+              background: color-nav-hover-background
           .main-nav-list-child
-            display: block
+            display: block !important
             position: relative
             width: 100%
             padding: 0px
+            background: none
             .main-nav-list-link
               padding-left: 30px
         a
@@ -132,7 +154,7 @@
   .article-summary
     width: 100%
     .article-summary-inner
-      margin: 15px 15px 0 0
+      margin: 15px 15px 15px 0
   #footer
     margin-top: 0px
     #back-to-top

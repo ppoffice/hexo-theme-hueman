@@ -2,10 +2,32 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
-      <ul>
+      <ul id="recent-post">
         <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
           <li>
-            <a href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
+            <div class="item-thumbnail">
+              <% var img=/\<img\s.*?\s?src\s*=\s*['|"]?([^\s'"]+).*?\>/ig;
+                var result = post.content.match(img);
+                var s = "";
+                result = img.exec(post.content);
+                if(result != null) {
+                  for(var i = result.length -1; i; --i){
+                      s += result[i]+"\n";
+                  }
+                } %>
+              <a href="<%- url_for((post.link?post.link:post.path)) %>" class="thumbnail">
+                <% if(s.length > 0){ %>
+                  <img src="<%= s %>" alt="<%= post.title %>" class="thumbnail-image" />
+                <% } else { %>
+                  <span class="thumbnail-image thumbnail-none"></span>
+                <% } %>
+              </a>
+            </div>
+            <div class="item-inner">
+              <p class="item-category"><%- list_categories(post.categories, {show_count: false, depth:2, class: 'article-category', style: 'none', separator: '<i class="icon" id="icon-angle-right"></i>'}) %></p>
+              <p class="item-title"><a href="<%- url_for((post.link?post.link:post.path)) %>" class="title"><%= post.title %></a></p>
+              <p class="item-date"><time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time></p>
+            </div>
           </li>
         <% }) %>
       </ul>
