@@ -8,7 +8,9 @@
       <% } %>
     </ul>
   </div>
-  <%- partial('post/nav', {post: page}) %>
+  <% if(is_post()) { %>
+    <%- partial('post/nav', {post: page}) %>
+  <% } %>
   <div class="widgets-container">
     <% theme.widgets.forEach(function(widget){ %>
       <%- partial('_widget/' + widget) %>

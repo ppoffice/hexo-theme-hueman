@@ -1,13 +1,19 @@
-<% if (pagination == 2){ %>
-  <% page.posts.each(function(post){ %>
-    <%- partial('article', {post: post, index: true}) %>
+<% if (pagination == 2){ 
+  var postCount = 0;
+  page.posts.each(function(post){
+    postCount++;
+    if(postCount % 2 == 1) { %>
+      <div class="article-row">
+    <% } %>
+        <%- partial('article', {post: post, index: true}) %>
+    <% if(postCount == page.posts.length || postCount % 2 == 0) { %>
+      </div>
+    <% } %>
   <% }) %>
   <% if (page.total > 1){ %>
     <nav id="page-nav">
-      <%- paginator({
-        prev_text: '&laquo; Prev',
-        next_text: 'Next &raquo;'
-      }) %>
+      <span class="pages">Page <%= page.current %> of <%= page.total %></span>
+      <%- paginator({prev_text: '&laquo;', next_text: '&raquo;'}) %>
     </nav>
   <% } %>
 <% } else { %>

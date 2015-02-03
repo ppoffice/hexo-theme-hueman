@@ -113,17 +113,17 @@
   setScrollLoading();
 
   // Article summary height fix
-  function articleHeightFix(){
-    if($(window).width() < 480) return;
-    for(var i = 0; i <= $('.article-summary').length / 2; i++){
-      if($('.article-summary').eq(i*2).height() > $('.article-summary').eq(i*2+1).height()){
-        $('.article-summary').eq(i*2+1).height($('.article-summary').eq(i*2).height());
-      } else {
-        $('.article-summary').eq(i*2).height($('.article-summary').eq(i*2+1).height());
-      }
-    }
-  }
-  articleHeightFix();
+  // function articleHeightFix(){
+  //   if($(window).width() < 480) return;
+  //   for(var i = 0; i <= $('.article-summary').length / 2; i++){
+  //     if($('.article-summary').eq(i*2).height() > $('.article-summary').eq(i*2+1).height()){
+  //       $('.article-summary').eq(i*2+1).height($('.article-summary').eq(i*2).height());
+  //     } else {
+  //       $('.article-summary').eq(i*2).height($('.article-summary').eq(i*2+1).height());
+  //     }
+  //   }
+  // }
+  // setTimeout(articleHeightFix, 100);
 
   // Fix sidebar thumbnail image size
   for(var i = 0; i < $('#recent-post .thumbnail-image').length; i++){
@@ -139,7 +139,7 @@
   $(window).resize(function() {
     setThumbnailHeight();
     autoHideMenus();
-    articleHeightFix();
+    // articleHeightFix();
   });
 
 })(jQuery);

@@ -46,34 +46,41 @@
 
 #page-nav
   clearfix()
-  margin: block-margin auto
-  background: #fff
-  box-shadow: 1px 2px 3px #ddd
-  border: 1px solid color-border
-  border-radius: 3px
+  float: left
+  width: 100%
+  display: block
+  margin: 30px 0px 45px 0px
   text-align: center
   color: color-grey
-  overflow: hidden
-  a, span
-    padding: 10px 20px
-    line-height: 1
-    height: 2ex
-  a
-    color: color-grey
+  .pages
+    display: block
+    font-size: 17px
+    font-weight: 300
+    margin-bottom: 1em!important
+    border: none!important
+    &:before
+      content: "\f15c"
+      font-family: FontAwesome
+      margin-right: 6px
+  .page-number,
+  .extend
+    color: color-link
+    position: relative
+    overflow: hidden
+    font-size: 16px
+    padding: 7px 8px
+    display: inline
+    margin: 0 2px
     text-decoration: none
-    &:hover
-      background: color-grey
-      color: #fff
-  .prev
-    float: left
-  .next
-    float: right
-  .page-number
-    display: inline-block
-    @media mq-mobile
-      display: none
-  .current
-    color: color-default
-    font-weight: bold
+    border-bottom: 3px solid color-border
+    border-top: 1px solid #f1f1f1
+    font-weight: 600
+    transition: 0.2s ease-in
+    &:hover,
+    &:active,
+    &.current
+      color: #444
+      border-bottom: 3px solid color-link
+      border-top: 1px solid #f1f1f1
   .space
     color: color-border

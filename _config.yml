@@ -8,6 +8,9 @@ menu:
 # Content
 fancybox: true
 
+# Thumbnail
+thumbnail: true
+
 # Sidebar
 social_links:
   twitter: 
@@ -17,9 +20,15 @@ social_links:
   rss: 
 widgets:
 - recent_posts
+- category
 - archive
 - tag
 - tagcloud
+- links
+
+# Links
+links:
+  Hexo: http://hexo.io
 
 # Miscellaneous
 google_analytics:
