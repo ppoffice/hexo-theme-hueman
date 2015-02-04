@@ -1,0 +1,36 @@
+.scrollLoading-wrap{
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  min-width: 48px;
+  min-height: 48px;
+}
+.scrollLoading-wrap:before{
+  content:'';
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  margin-left: -24px;
+  margin-top: -24px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background: url(images/preloader.gif) center center no-repeat, rgba(0,0,0,0.9);
+  -webkit-background-size: 24px 24px;
+  -moz-background-size: 24px 24px;
+  background-size: 24px 24px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .scrollLoading-wrap:before {
+    background: url("images/preloader@2x.gif") center center no-repeat, rgba(0,0,0,0.9);
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+}

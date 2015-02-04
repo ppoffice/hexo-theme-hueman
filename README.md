@@ -3,7 +3,9 @@
 
 # Hueman
 ### Probably the most beautiful theme for Hexo. [Preview](http://ppoffice.github.io/hexo-theme-hueman/)
-![](http://ppoffice.github.io/hexo-theme-hueman/gallery/preview.jpg "")
+![](/hexo-theme-hueman/gallery/preview.jpg "")
+
+* ##### Special thanks to [AlxMedia](https://github.com/AlxMedia), who designed the original theme [Hueman](https://github.com/AlxMedia/hueman) for wordpress.
 
 ## Installation
 
@@ -40,6 +42,9 @@ fancybox: true
 
 # Thumbnail
 thumbnail: true
+
+# Scroll Loading
+scrollLoading: true
 
 # Sidebar
 social_links:
@@ -88,48 +93,23 @@ language: zh-CN
 
 Hueman knows on what screen size you are browsering the website, and reorganize the layout to fit your device.
 
-![](http://ppoffice.github.io/hexo-theme-hueman/gallery/responsive.jpg "")
+![](/hexo-theme-hueman/gallery/responsive.jpg "")
 
 ### Categories inside Main Menu
 
 Hueman inserts your blog categories into main menu in the header section. You can enable/disable this feature in `menu` setting.
 
-![](http://ppoffice.github.io/hexo-theme-hueman/gallery/main-menu.jpg "")
+![](/hexo-theme-hueman/gallery/main-menu.jpg "")
 
 ### Thumbnail
 
 Hueman finds the first image in every post as the thumbnail for the post. If the post does not contain a image link, Hueman uses the default thumbnail image. You can enable/disable this feature in `thumbnail` setting.
 
-![](http://ppoffice.github.io/hexo-theme-hueman/gallery/thumbnail.jpg "")
+![](/hexo-theme-hueman/gallery/thumbnail.jpg "")
 
 ### Scroll Loading
 
-Scroll loading means you don't have to load all the images the second you opened the blog. When you scroll down, the plugin make images inside your vision loaded automatically.
-
-You can disable this by commenting out following lines in `\source\js\html-patch.js`
-
-``` javascript
-  // Image scroll loading
-  $('.main-body-content img').each(function() {
-    $(this).attr('data-url', $(this).attr('src'));
-    $(this).removeAttr('src');
-    $(this).addClass('scrollLoading');
-    $(this).wrap('<div class="img-wrap"></div>');
-  });
-  function setScrollLoading(){
-    $('.scrollLoading').scrollLoading();
-    for(var i = 0; i < $('.scrollLoading').length; i++){
-      if($('.scrollLoading')[i].complete){
-        $('.scrollLoading').eq(i).unwrap();
-      } else {
-        $('.scrollLoading').eq(i).load(function(){
-          $(this).unwrap();
-        })
-      }
-    }
-  }
-  setScrollLoading();
-```
+Scroll loading means you don't have to load all the images the second you opened the blog. When you scroll down, the plugin make images inside your vision loaded automatically. You can enable/disable this feature in `scrollLoading` setting.
 
 ### Fancybox
 

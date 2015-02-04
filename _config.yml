@@ -11,6 +11,9 @@ fancybox: true
 # Thumbnail
 thumbnail: true
 
+# Scroll Loading
+scrollLoading: true
+
 # Sidebar
 social_links:
   twitter: 

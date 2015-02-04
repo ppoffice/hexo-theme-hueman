@@ -91,40 +91,6 @@
     }
   });
 
-  // Image scroll loading
-  $('.main-body-content img').each(function() {
-    $(this).attr('data-url', $(this).attr('src'));
-    $(this).removeAttr('src');
-    $(this).addClass('scrollLoading');
-    $(this).wrap('<div class="img-wrap"></div>');
-  });
-  function setScrollLoading(){
-    $('.scrollLoading').scrollLoading();
-    for(var i = 0; i < $('.scrollLoading').length; i++){
-      if($('.scrollLoading')[i].complete){
-        $('.scrollLoading').eq(i).unwrap();
-      } else {
-        $('.scrollLoading').eq(i).load(function(){
-          $(this).unwrap();
-        })
-      }
-    }
-  }
-  setScrollLoading();
-
-  // Article summary height fix
-  // function articleHeightFix(){
-  //   if($(window).width() < 480) return;
-  //   for(var i = 0; i <= $('.article-summary').length / 2; i++){
-  //     if($('.article-summary').eq(i*2).height() > $('.article-summary').eq(i*2+1).height()){
-  //       $('.article-summary').eq(i*2+1).height($('.article-summary').eq(i*2).height());
-  //     } else {
-  //       $('.article-summary').eq(i*2).height($('.article-summary').eq(i*2+1).height());
-  //     }
-  //   }
-  // }
-  // setTimeout(articleHeightFix, 100);
-
   // Fix sidebar thumbnail image size
   for(var i = 0; i < $('#recent-post .thumbnail-image').length; i++){
     if($('#recent-post .thumbnail-image')[i].complete){

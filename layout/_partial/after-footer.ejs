@@ -16,13 +16,18 @@
 
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
 <script src="//libs.useso.com/js/jquery/2.0.3/jquery.min.js"></script>
+<%- js('js/jquery.VMiddleImg') %>
 
 <% if (theme.fancybox){ %>
   <%- css('fancybox/jquery.fancybox') %>
   <%- js('fancybox/jquery.fancybox.pack') %>
 <% } %>
 
-<%- js('js/jquery.scrollLoading') %>
-<%- js('js/jquery.VMiddleImg') %>
+<% if (theme.scrollLoading){ %>
+  <%- css('scrollLoading/style') %>
+  <%- js('scrollLoading/jquery.scrollLoading') %>
+  <%- js('scrollLoading/main') %>
+<% } %>
+
 <%- js('js/html-patch') %>
 <%- js('js/script') %>
