@@ -21,6 +21,9 @@ if (is_archive()){
   title = '<i class="icon" id="icon-tag"></i>' + __('index.tag') + '<em>' + page.tag + '</em>';
 } else if (is_post()) {
   title = list_categories(page.categories, {show_count: false, style: 'none', class: 'page-title', separator: '<i class="icon" id="icon-angle-right"></i>'});
+  if(title == ""){
+    title = __('index.uncategorized');
+  }
 } else if (is_home()) {
   title = '<em class="page-title-link" data-url="home">' + __('index.home') + '</em>';
 } else if (page.title) {

@@ -2,6 +2,7 @@ index:
   home: 'home'
   archive: 'archive'
   category: 'category : '
+  uncategorized: 'uncategorized'
   tag: 'tag : '
 nav:
   current_page:

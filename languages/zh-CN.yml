@@ -2,6 +2,7 @@ index:
   home: '主页'
   archive: '归档'
   category: '分类：'
+  uncategorized: '未分类'
   tag: '标签：'
 nav:
   current_page:
