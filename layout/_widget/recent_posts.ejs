@@ -6,26 +6,7 @@
         <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
           <li>
             <div class="item-thumbnail">
-              <a href="<%- url_for((post.link?post.link:post.path)) %>" class="thumbnail">
-                <% if(theme.thumbnail == true) {
-                  var img=/\<img\s.*?\s?src\s*=\s*['|"]?([^\s'"]+).*?\>/ig;
-                  var result = post.content.match(img);
-                  var s = "";
-                  result = img.exec(post.content);
-                  if(result != null) {
-                    for(var i = result.length -1; i; --i){
-                        s += result[i]+"\n";
-                    }
-                  } 
-                  if(s.length > 0){ %>
-                  <img src="<%= s %>" alt="<%= post.title %>" class="thumbnail-image" />
-                <% } else { %>
-                  <span class="thumbnail-image thumbnail-none"></span>
-                <% } %>
-              <% } else { %>
-                <span class="thumbnail-image thumbnail-none"></span>
-              <% } %>
-              </a>
+              <%- partial('../_partial/post/thumbnail.ejs', {post: post}) %>
             </div>
             <div class="item-inner">
               <p class="item-category"><%- list_categories(post.categories, {show_count: false, depth:2, class: 'article-category', style: 'none', separator: '<i class="icon" id="icon-angle-right"></i>'}) %></p>
