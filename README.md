@@ -3,9 +3,9 @@
 
 # Hueman
 ### Probably the most beautiful theme for Hexo. [Preview](http://ppoffice.github.io/hexo-theme-hueman/)
-![](/hexo-theme-hueman/gallery/preview.jpg "")
+![](http://ppoffice.github.io/hexo-theme-hueman/gallery/preview.jpg "")
 
-* ##### Special thanks to [AlxMedia](https://github.com/AlxMedia), who designed the original theme [Hueman](https://github.com/AlxMedia/hueman) for wordpress.
+##### Special thanks to [AlxMedia](https://github.com/AlxMedia), who designed the original theme [Hueman](https://github.com/AlxMedia/hueman) for wordpress.
 
 ## Installation
 
@@ -93,19 +93,19 @@ language: zh-CN
 
 Hueman knows on what screen size you are browsering the website, and reorganize the layout to fit your device.
 
-![](/hexo-theme-hueman/gallery/responsive.jpg "")
+![](http://ppoffice.github.io/hexo-theme-hueman/gallery/responsive.jpg "")
 
 ### Categories inside Main Menu
 
 Hueman inserts your blog categories into main menu in the header section. You can enable/disable this feature in `menu` setting.
 
-![](/hexo-theme-hueman/gallery/main-menu.jpg "")
+![](http://ppoffice.github.io/hexo-theme-hueman/gallery/main-menu.jpg "")
 
 ### Thumbnail
 
 Hueman finds the first image in every post as the thumbnail for the post. If the post does not contain a image link, Hueman uses the default thumbnail image. You can enable/disable this feature in `thumbnail` setting.
 
-![](/hexo-theme-hueman/gallery/thumbnail.jpg "")
+![](http://ppoffice.github.io/hexo-theme-hueman/gallery/thumbnail.jpg "")
 
 ### Scroll Loading
 
