@@ -9,7 +9,19 @@
           s += result[i]+"\n";
       }
     }
-    if(s.length > 0){ %>
+    if(s.length > 0){
+      if(config.post_asset_folder){
+        var pattern = /^[\\{0,1}\/{0,1}]([^\/^\\]+)/,
+            pattern_ = /([^\/^\\]+)/;
+        if((ret = pattern.exec(s)) != null) {
+          if(ret[0].length == s.length)
+            s = post.path + ret[1];
+        } else if ((ret = pattern_.exec(s)) != null) {
+          if(ret[0].length == s.length)
+            s = post.path + ret[1];
+        }
+      }
+     %>
     <img src="<%= s %>" alt="<%= post.title %>" class="thumbnail-image" />
   <% } else { %>
     <span class="thumbnail-image thumbnail-none"></span>
