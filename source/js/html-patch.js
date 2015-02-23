@@ -91,21 +91,9 @@
     }
   });
 
-  // Fix sidebar thumbnail image size
-  for(var i = 0; i < $('#recent-post .thumbnail-image').length; i++){
-    if($('#recent-post .thumbnail-image')[i].complete){
-      $('#recent-post .thumbnail-image').eq(i).VMiddleImg();
-    } else {
-      $('#recent-post .thumbnail-image').eq(i).load(function(){
-        $(this).VMiddleImg();
-      })
-    }
-  }
-
   $(window).resize(function() {
     setThumbnailHeight();
     autoHideMenus();
-    // articleHeightFix();
   });
 
 })(jQuery);

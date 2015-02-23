@@ -154,19 +154,22 @@
       transition: all 0.2s ease
       float: left
       .thumbnail
-        display: block
-        position: relative
         width: 80px
         height: 80px
-        overflow: hidden
-      .thumbnail-image
-        position: absolute
         display: block
-      .thumbnail-none
-        width: 100%
-        height: 100%
-        background-image: url(thumbnail-default-small)
-        background-size: 100% 100%
+        position: relative
+        overflow: hidden
+        span
+          width: 100%
+          height: 100%
+          display: block
+        .thumbnail-image
+          position: absolute
+          background-size: cover
+          background-position: center
+        .thumbnail-none
+          background-image: url(thumbnail-default-small)
+          background-size: 100% 100%
     .item-inner
       a
         text-decoration: none
