@@ -20,3 +20,6 @@ sidebar:
   links: 'links'
   tags: 'tags'
   tag_cloud: 'tag cloud'
+article:
+  comments: 'Comments'
+  share: 'Share'
