@@ -8,16 +8,17 @@
           <section id="main">
             <div class="main-body-header">
 <% var title = page.title;
-if (is_archive()){
+if (page.archive){
   title = __('index.archive');
-  if (is_month()){
+  if (page.month){
     title += ': ' + page.year + '/' + page.month;
-  } else if (is_year()){
+  } else if (page.year){
     title += ': ' + page.year;
   }
-} else if (is_category()){
+  title = '<i class="icon" id="icon-archive"></i>' + title;
+} else if (page.category){
   title = '<i class="icon" id="icon-category"></i>' + __('index.category') + '<em class="page-title-link">' + page.category + '</em>';
-} else if (is_tag()){
+} else if (page.tag){
   title = '<i class="icon" id="icon-tag"></i>' + __('index.tag') + '<em>' + page.tag + '</em>';
 } else if (is_post()) {
   title = list_categories(page.categories, {show_count: false, style: 'none', class: 'page-title', separator: '<i class="icon" id="icon-angle-right"></i>'});

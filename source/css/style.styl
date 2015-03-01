@@ -56,7 +56,7 @@ body
   height: logo-height
   background: url(logo-img) 0px 10px no-repeat
   background-size: logo-width logo-height
-    
+
 .main-body
   margin-top: - nav-height
   background-color: color-main-background
@@ -77,16 +77,19 @@ body
     background: #fff
     position: relative
     padding: 18px 30px 17px
-    border-bottom: 1px solid #eee
-    color: #666
+    border-bottom: 1px solid color-border-light
+    color: color-default + #111
     font-size: 16px
     font-weight: 600
     text-transform: uppercase
     line-height: 24px
     .page-title-link, i
       margin-right: 8px
+    i
+      font-weight: 400
     em, a
       @extend $block-caption
+      color: color-grey
   .main-body-content
     clearfix()
 

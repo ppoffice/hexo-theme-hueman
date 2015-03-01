@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------------- *
- *  Style Fix : > 960px 
+ *  Style Fix : > 960px
 /* ------------------------------------------------------------------------- */
 @media only screen and (min-width: 960px)
   .nav-container-inner
@@ -78,8 +78,9 @@
                 display: none
 
   #main
-    .main-body-header
-      padding: 12px 15px
+    .main-body-header,
+    .archive-year-wrap
+      padding: 12px 30px
 
 /* ------------------------------------------------------------------------- *
  *  Mobile (Low Res) : 479px > 0 (320px)
@@ -146,28 +147,40 @@
   .main-body-inner
     padding: 0px
     background: none
-  #sidebar
-    display: none
   #main
-    .main-body-header
+    float: none
+    .main-body-header,
+    .archive-year-wrap
       padding: 13px 15px 12px;
     .main-body-content
-      padding-left: 15px
-      .article-single
-        padding: 15px 15px 15px 0px
+      .article-single,
+      #comments
+        padding: 15px
       #page-nav
         padding-right: 15px
         box-sizing: border-box
   .article-row
-    padding: 0px
+    padding: 0 0 0 15px
     border: none
   .article-summary
     width: 100%
     .article-summary-inner
       margin: 15px 15px 15px 0
+  #sidebar
+    float: none
+    margin: 0px
+    width: 100%
+    background: color-sidebar-background
+    .sidebar-top,
+    .widget-wrap
+      padding: 15px
+    .widgets-container
+      padding-bottom: 15px
   #footer
     margin-top: 0px
     #back-to-top
       box-shadow: 0 1px 1px rgba(0,0,0,0.1), inset 0 1px 0 rgba(0,0,0,0.05);
-  #comments
-    padding: 15px 15px 15px 0px
+    .logo
+      margin: 0 auto
+    .credit
+      text-align: center

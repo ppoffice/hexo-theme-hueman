@@ -15,7 +15,8 @@
 $ git clone https://github.com/ppoffice/hexo-theme-hueman.git themes/hueman
 ```
 
-**Hueman requires Hexo 2.4 and above.**
+**Hueman requires Hexo 3.0.0-rc.4 and above.**
+**Old version of Hueman can be found in branch-2.x.**
 
 ### Enable
 
@@ -34,7 +35,7 @@ git pull
 # Header
 menu:
   Home: /
-  Categories: 
+  Categories:
   About: /about/index.html
 
 # Content
@@ -48,11 +49,11 @@ scrollLoading: true
 
 # Sidebar
 social_links:
-  twitter: 
-  facebook: 
-  google_plus: 
-  weibo: 
-  rss: 
+  twitter:
+  facebook:
+  google_plus:
+  weibo:
+  rss:
 widgets:
 - recent_posts
 - category
