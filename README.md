@@ -75,7 +75,7 @@ favicon: /favicon.png
 - **fancybox** - Enable [Fancybox].
 - **thumbnail** - Enable thumbnail images in index pages (Home, Category, Archive, Tag).
 - **social_links** - Your social network links, RSS link, etc.
-- **widgets** - Widgets displaying in sidebar.
+- **widgets** - Widgets displayed in sidebar.
 - **links** - Links displayed in the link widget.
 - **google_analytics** - Google Analytics ID.
 - **favicon** - Favicon path.
