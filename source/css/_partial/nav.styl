@@ -15,9 +15,9 @@ $nav-link
   padding: 0 15px
   background: color-nav-background
   z-index: 1
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), 
-              0 -1px 0 rgba(0,0,0,0.2), 
-              inset 1px 0 0 rgba(0,0,0,0.2), 
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05),
+              0 -1px 0 rgba(0,0,0,0.2),
+              inset 1px 0 0 rgba(0,0,0,0.2),
               inset -1px 0 0 rgba(0,0,0,0.2)
   .nav-icon
     @extend $nav-link
@@ -40,6 +40,8 @@ $nav-link
     clearfix()
     #main-nav
       float: left
+      .main-nav-list
+        float: left
       .main-nav-list-item
         position: relative
         float: left
