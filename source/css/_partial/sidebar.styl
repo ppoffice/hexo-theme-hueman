@@ -6,7 +6,7 @@
     display: none
   .sidebar-top
     clearfix()
-    background: color-sidebar-top-background
+    background: color-link
     padding: 15px 30px
     .sidebar-top-inner
       clearfix()
@@ -71,12 +71,12 @@
   position: relative
   margin-top: 0
   display: block
-  text-decoration: none
   color: color-grey
-  text-align: center
   padding: 16px 40px 24px
   border-bottom: 1px solid color-border
   transition: 0.2s ease-in
+  text-align: center
+  text-decoration: none
   .icon
     position: absolute
     color: #ccc
@@ -116,23 +116,21 @@
   margin-bottom: 6px
 
 .widget
-  color: color-sidebar-text
-  border-radius: 3px
-  a
-    color: color-link
-    text-decoration: none
-    &:hover
-      text-decoration: underline
-  ul, ol, dl
-    ul, ol, dl
-      margin-left: 15px
-      list-style: disc
-
-.widget
   @extend $base-style
   line-height: line-height
   word-wrap: break-word
   font-size: 0.9em
+  color: color-sidebar-text
+  border-radius: 3px
+  a
+    text-decoration: none
+    color: color-sidebar-text
+    &:hover
+      color: color-sidebar-text-dark
+  ul, ol, dl
+    ul, ol, dl
+      margin-left: 15px
+      list-style: disc
   ul, ol
     list-style: none
     margin: 0
@@ -143,11 +141,41 @@
     ol
       list-style: decimal
 
+.widget-list
+  ul, ol
+    list-style: none
+    li
+      padding: 10px 0
+      font-size: font-size + 1
+      border-bottom: 1px solid #E4E4E4
+      a
+        color: color-sidebar-text
+        &:before
+          color: #ccc
+          content: "\f0da"
+          font-size: 12px
+          margin-right: 6px
+          font-family: FontAwesome
+          transition: 0.2s ease
+        &:hover:before
+          color: color-sidebar-text-dark
+    ul, ol
+      list-style: none
+      li
+        border: none
+        &:last-child
+          padding-bottom: 0px
+
+.widget-float
+  a
+    font-size: font-size + 1
+
+
 #recent-post
   li
     clearfix()
     padding: 10px 0 10px 94px
-    border-bottom: 1px solid #e4e4e4
+    border-bottom: 1px solid color-border
     .item-thumbnail
       opacity: 1
       margin-left: -94px
@@ -172,21 +200,22 @@
           background-size: 100% 100%
     .item-inner
       a
-        text-decoration: none
       .item-category
         font-size: 13px
         text-transform: uppercase
-        a:hover
-          color: color-sidebar-text-dark
+        a
+          color: color-link
+          &:hover
+            color: color-sidebar-text-dark
       .item-title
         font-size: 15px
         a
           color: color-sidebar-text-dark
           transition: all 0.2s ease
       .item-date
-        text-transform: uppercase
         color: #aaa
         font-size: 13px
+        text-transform: uppercase
     &:hover
       .item-thumbnail
         opacity: 0.8
