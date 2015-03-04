@@ -2,7 +2,7 @@
 menu:
   Home: /
   # Delete this row if you don't want categories in your header nav bar
-  Categories: 
+  Categories:
   About: /about/index.html
 
 # Content
@@ -16,12 +16,12 @@ scrollLoading: true
 
 # Sidebar
 social_links:
-  twitter: 
-  facebook: 
-  google_plus: 
+  twitter:
+  facebook:
+  google_plus:
   github: https://github.com/ppoffice/hexo-theme-hueman
-  weibo: 
-  rss: 
+  weibo:
+  rss:
 widgets:
 - recent_posts
 - category
@@ -33,6 +33,9 @@ widgets:
 # Links
 links:
   Hexo: http://hexo.io
+
+# Don't Use Google APIs if you are in google-blocked areas
+use_google_apis: false
 
 # Miscellaneous
 google_analytics:

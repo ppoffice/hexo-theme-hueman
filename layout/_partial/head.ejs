@@ -28,17 +28,22 @@
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
-  <link href='//fonts.useso.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
-  <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  <%- css('css/style') %>
 
+  <%- css('css/style') %>
   <% if (theme.fancybox){ %>
     <%- css('fancybox/jquery.fancybox') %>
   <% } %>
-
   <% if (theme.scrollLoading){ %>
     <%- css('scrollLoading/style') %>
   <% } %>
-
   <%- partial('google-analytics') %>
+
+  <% if(theme.use_google_apis) { %>
+    <link href='//fonts.googleapis.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <% } else { %>
+    <link href='//fonts.useso.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
+    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <% } %>
+
 </head>
