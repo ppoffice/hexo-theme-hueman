@@ -1,3 +1,8 @@
+# Logo Url
+# Please make sure you enter the right relative path
+# or remove the following line with replacing logo-header.png with your own logo
+logo: css/images/logo-header.png
+
 # Header
 menu:
   Home: /

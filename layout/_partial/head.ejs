@@ -38,6 +38,12 @@
   <% } %>
   <%- partial('google-analytics') %>
 
+  <% if (theme.logo){ %>
+    <style type="text/css">
+      .logo { background-image:url(<%= theme.logo %>); }
+    </style>
+  <% } %>
+
   <% if(theme.use_google_apis) { %>
     <link href='//fonts.googleapis.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
