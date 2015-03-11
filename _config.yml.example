@@ -1,7 +1,7 @@
 # Logo Url
-# Please make sure you enter the right relative path
+# Please enter the absolute path to your logo file
 # or remove the following line with replacing logo-header.png with your own logo
-logo: css/images/logo-header.png
+logo: http://ppoffice.github.io/hexo-theme-hueman/css/images/logo-header.png
 
 # Header
 menu:
