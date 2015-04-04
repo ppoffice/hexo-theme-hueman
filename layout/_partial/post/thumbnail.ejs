@@ -1,5 +1,6 @@
+<% if(theme.thumbnail == true) { %>
 <a href="<%- url_for((post.link?post.link:post.path)) %>" class="thumbnail">
-  <% if(theme.thumbnail == true) {
+  <%
     var img=/\<img\s.*?\s?src\s*=\s*['|"]?([^\s'"]+).*?\>/ig;
     var result = post.content.match(img);
     var s = "";
@@ -26,7 +27,5 @@
   <% } else { %>
     <span class="thumbnail-image thumbnail-none"></span>
   <% } %>
-<% } else { %>
-  <span class="thumbnail-image thumbnail-none"></span>
-<% } %>
 </a>
+<% }%>
