@@ -1,4 +1,4 @@
-<% if (pagination == 2){
+<% if (page.total > 1){
   var postCount = 0;
   page.posts.each(function(post){
     postCount++;
@@ -10,12 +10,10 @@
       </div>
     <% } %>
   <% }) %>
-  <% if (page.total > 1){ %>
-    <nav id="page-nav">
-      <span class="pages"><%= _p('nav.current_page', page.current) %><%= _p('nav.total_page', page.total) %></span>
-      <%- paginator({prev_text: '&laquo;', next_text: '&raquo;'}) %>
-    </nav>
-  <% } %>
+  <nav id="page-nav">
+    <span class="pages"><%= _p('nav.current_page', page.current) %><%= _p('nav.total_page', page.total) %></span>
+    <%- paginator({prev_text: '&laquo;', next_text: '&raquo;'}) %>
+  </nav>
 <% } else { %>
   <% var last, postCount = 0; %>
   <% page.posts.each(function(post, i){ %>
