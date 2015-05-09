@@ -10,6 +10,9 @@ menu:
   Categories:
   About: /about/index.html
 
+# Article list grouped by year 
+groupByYear: true
+
 # Content
 fancybox: true
 
