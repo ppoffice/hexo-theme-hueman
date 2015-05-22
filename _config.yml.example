@@ -23,6 +23,7 @@ thumbnail: true
 scrollLoading: true
 
 # Sidebar
+sidebar: left // sidebar's position (left or right)
 social_links:
   twitter:
   facebook:

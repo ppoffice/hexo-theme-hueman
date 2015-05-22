@@ -24,16 +24,25 @@
   .main-body
     margin-top: - sidebar-toggle-width
   .main-body-inner
-    padding-left: sidebar-toggle-width
-    background-position: -290px 0 !important
+    if sidebar is right
+      padding-right: sidebar-toggle-width
+      background-position: -340px 0 !important
+    else
+      padding-left: sidebar-toggle-width
+      background-position: -290px 0 !important
     #sidebar
       clearfix()
+      if sidebar is right
+        right: 0
+        background: url(images/s-left.png) repeat-y right 0
+      else
+        left: 0
+        background: url(images/s-left.png) repeat-y left 0
+      margin: 0
       height: 100%
       position: absolute
       overflow: hidden
       width: sidebar-toggle-width
-      margin-left: - sidebar-toggle-width
-      background: url(images/s-left.png) repeat-y left 0
       transition: width 0.2s ease-in 0.2s
       .sidebar-toggle
         display: block
@@ -48,7 +57,10 @@
           font-size: 38px
           width: 38px
           &:before
-            content: '\f101'
+            if sidebar is right
+              content: '\f100'
+            else
+              content: '\f101'
       .sidebar-top
         padding: 10px 30px
         background: none

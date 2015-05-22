@@ -1,6 +1,10 @@
 #sidebar
-  float: left
-  margin-left: - sidebar-width
+  if sidebar is right
+    float: right
+    margin-right: - sidebar-width
+  else
+    float: left
+    margin-left: - sidebar-width
   width: sidebar-width
   .sidebar-toggle
     display: none
