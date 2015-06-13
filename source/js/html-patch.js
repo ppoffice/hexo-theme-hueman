@@ -21,14 +21,6 @@
       $('#sidebar').addClass('expend');
   });
 
-  // Set thumbnail height
-  function setThumbnailHeight(){
-    var width = $('.article-summary .thumbnail').width();
-    var height = 245 * width / 520;
-    $('.article-summary .thumbnail').height(height);
-  }
-  setThumbnailHeight();
-
   // Auto hide main nav menus
   function autoHideMenus(){
     var max_width = $('.nav-container-inner').width() - 10;
@@ -92,7 +84,6 @@
   });
 
   $(window).resize(function() {
-    setThumbnailHeight();
     autoHideMenus();
   });
 
