@@ -16,7 +16,7 @@
           else{
             excerpt = post.content.replace(/\<[^\>]+\>/g, "").substring(0,200);
           } %>
-        <%= excerpt %>
+        <%- excerpt %>
       </p>
     </div>
   </article>
