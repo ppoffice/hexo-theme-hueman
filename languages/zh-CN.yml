@@ -1,5 +1,6 @@
 index:
   home: '主页'
+  about: '关于'
   search: '搜索'
   archive: '归档'
   category: '分类：'
