@@ -1,7 +1,7 @@
 # Logo Url
-# Please enter the absolute path to your logo file
+# Please enter an absolute path to your logo file
 # or remove the following line with replacing logo-header.png with your own logo
-logo: http://ppoffice.github.io/hexo-theme-hueman/css/images/logo-header.png
+logo:
 
 # Header
 menu:
@@ -10,7 +10,7 @@ menu:
   Categories:
   About: /about/index.html
 
-# Article list grouped by year 
+# Article list grouped by year
 groupByYear: true
 
 # Content
@@ -23,11 +23,11 @@ thumbnail: true
 scrollLoading: true
 
 # Sidebar
-sidebar: left // sidebar's position (left or right)
+sidebar: left # sidebar's position (left or right)
 social_links:
   twitter:
   facebook:
-  google_plus:
+  google-plus:
   github: https://github.com/ppoffice/hexo-theme-hueman
   weibo:
   rss:

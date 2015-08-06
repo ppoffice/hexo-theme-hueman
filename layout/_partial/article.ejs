@@ -3,7 +3,7 @@
     <div class="article-summary-inner">
       <%- partial('post/thumbnail') %>
       <div class="article-meta">
-        <p class="category"><%- list_categories(post.categories, {show_count: false, depth:2, class: 'article-category', style: 'none', separator: '<i class="icon" id="icon-angle-right"></i>'}) %></p>
+        <p class="category"><%- list_categories(post.categories, {show_count: false, depth:2, class: 'article-category', style: 'none', separator: '<i class="icon fa fa-angle-right"></i>'}) %></p>
         <p class="date"><time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time></p>
       </div>
       <h2 class="article-title">
@@ -64,7 +64,7 @@
         ds.type = 'text/javascript';ds.async = true;
         ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
         ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0] 
+        (document.getElementsByTagName('head')[0]
          || document.getElementsByTagName('body')[0]).appendChild(ds);
       })();
       </script>

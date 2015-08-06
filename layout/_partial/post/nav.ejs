@@ -10,14 +10,14 @@
           (no title)
         <% } %>
       </p>
-      <i class="icon" id="icon-chevron-right"></i>
+      <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
   <% } %>
   <% if (post.next){ %>
     <a href="<%- url_for(post.next.path) %>" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><%= __('sidebar.older') %></strong>
       <p class="article-nav-title"><%= post.next.title %></p>
-      <i class="icon" id="icon-chevron-left"></i>
+      <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
     </a>
   <% } %>
 </nav>
