@@ -1,16 +1,17 @@
 # Logo Url
-# Please enter an absolute path to your logo file
+# Please enter the absolute path to your logo file
 # or remove the following line with replacing logo-header.png with your own logo
-logo:
+logo: css/images/logo-header.png 
 
 # Header
 menu:
   Home: /
   # Delete this row if you don't want categories in your header nav bar
-  Categories:
-  About: /about/index.html
+  # Categories:
 
-# Article list grouped by year
+  About: /about/
+
+# Article list grouped by year 
 groupByYear: true
 
 # Content
@@ -23,28 +24,33 @@ thumbnail: true
 scrollLoading: true
 
 # Sidebar
-sidebar: left # sidebar's position (left or right)
+sidebar: right
 social_links:
-  twitter:
-  facebook:
-  google-plus:
-  github: https://github.com/ppoffice/hexo-theme-hueman
-  weibo:
-  rss:
+  github: https://github.com/tim-hub/hexo-theme-hueman-folk
+  rss: atom.xml
+  #weibo: 
+  # twitter: 
+  # facebook:
+  # google_plus:
+ 
 widgets:
-- recent_posts
 - category
-- archive
-- tag
 - tagcloud
+- archive
+# - tag
 - links
+- recent_posts
 
-# Links
+
+# Links 
 links:
-  Hexo: http://hexo.io
+	Friendly Links: /friendly-links
 
 # Don't Use Google APIs if you are in google-blocked areas
 use_google_apis: false
+
+# use disqus comments
+# disqus_shortname: 
 
 # Miscellaneous
 google_analytics:
