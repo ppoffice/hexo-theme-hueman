@@ -24,6 +24,7 @@ It was not changed a lot. But there are some different advantages/features.
 - default sidebar is at right position. So you will not feel so much space on the right header
 - do not enable categories on header bav bar defaultly.
 - migrate [random verse plugin](https://github.com/tim-hub/random-verse)
+- input nav bar by hand to avoid a `index.xxx` bug
 
 
 
