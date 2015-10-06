@@ -6,6 +6,8 @@ index:
   category: 'category : '
   uncategorized: 'uncategorized'
   tag: 'tag : '
+  schedule: 'Schedule'
+  keyboardterm: 'Keyboard Term'
 nav:
   current_page:
     other: 'Page %d '
