@@ -44,12 +44,16 @@
     </style>
   <% } %>
 
-  <% if(theme.use_google_apis) { %>
-    <link href='//fonts.googleapis.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <% if(theme.use_local_apis) { %>
+    <%- css('css/font') %>
   <% } else { %>
-    <link href='//fonts.useso.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
-    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <% if(theme.use_google_apis) { %>
+      <link href='//fonts.googleapis.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
+      <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <% } else { %>
+      <link href='//fonts.useso.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
+      <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <% } %>
   <% } %>
   <%- css('font-awesome/css/font-awesome.min') %>
 </head>
