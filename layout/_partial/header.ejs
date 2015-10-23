@@ -25,7 +25,13 @@
             </ul>
             <nav id="sub-nav">
               <div id="search-form-wrap">
-                <%- search_form({text: __('index.search')}) %>
+                <% if (config.swiftype_install_key) { %>
+                  <div class="search-form">
+                    <input type="text" class="st-default-search-input search-form-input" placeholder="<%= __('index.search') %>">
+                  </div>
+                <% } else { %>
+                  <%- search_form({text: __('index.search')}) %>
+                <% } %>
               </div>
             </nav>
           </div>

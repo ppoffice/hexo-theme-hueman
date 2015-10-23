@@ -88,6 +88,20 @@ English and Simplified Chinese are the default languages of the theme. You can a
 language: zh-CN
 ```
 
+## Swiftype
+
+You can now enable **Swiftype** by editing blog's `_config.yml`.
+
+``` yml
+swiftype_install_key: XXX_XXXXXXXXXXXXXXXX
+```
+
+This `install key` can be found at your own engine's install page:
+
+![](http://ppoffice.github.io/hexo-theme-hueman/gallery/swiftype_install.jpg "")
+
+Finally, don't forget to save your swiftype configuration to complete the installation.
+
 ## Features
 
 ### Responsive Layout
