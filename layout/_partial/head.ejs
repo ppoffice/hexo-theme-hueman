@@ -39,9 +39,39 @@
   <%- partial('google-analytics') %>
 
   <% if (theme.logo){ %>
-    <style type="text/css">
-      .logo { background-image:url(<%= theme.logo %>); }
-    </style>
+    <% if (theme.logo){%>
+      <style type="text/css">
+          .logo { background-image:url(<%= theme.logo.url || theme.logo %>);
+          <% if (theme.logo.width){ %>
+            width: <%= theme.logo.width %>;
+          <% } %>
+          <% if (theme.logo.height){ %>
+            height: <%= theme.logo.height %>;
+          <% } %>
+          <% if (theme.logo.width && theme.logo.height){ %>
+            -webkit-background-size: <%= theme.logo.width %> <%= theme.logo.height %>;
+            -moz-background-size: <%= theme.logo.width %> <%= theme.logo.height %>;
+            background-size: <%= theme.logo.width %> <%= theme.logo.height %>;
+          <% } %>
+          }
+
+        <% if (theme.logo.width || theme.logo.height){ %>
+          #footer .logo {
+          <% if (theme.logo.width){ %>
+            width: <%= theme.logo.width %>;
+          <% } %>
+          <% if (theme.logo.height){ %>
+            height: <%= theme.logo.height %>;
+          <% } %>
+          <% if (theme.logo.width && theme.logo.height){ %>
+            -webkit-background-size: <%= theme.logo.width %> <%= theme.logo.height %>;
+            -moz-background-size: <%= theme.logo.width %> <%= theme.logo.height %>;
+            background-size: <%= theme.logo.width %> <%= theme.logo.height %>;
+          <% } %>
+          }
+        <% } %>
+      </style>
+    <% } %>
   <% } %>
 
   <% if(theme.use_google_apis) { %>

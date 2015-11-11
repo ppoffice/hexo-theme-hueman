@@ -80,6 +80,15 @@ favicon: /favicon.png
 - **google_analytics** - Google Analytics ID.
 - **favicon** - Favicon path.
 
+To change the logo icon in the header and footer, add the following to _config.yml:
+```yml
+# Logo url and optional width, height. Remove to use default.
+logo:
+  url: http://www.your-site.com/logo.gif
+  width: 300px
+  height: 50px
+```
+
 ## Languages
 
 English and Simplified Chinese are the default languages of the theme. You can add translations in the `languages` folder and change the default language in blog's `_config.yml`.
