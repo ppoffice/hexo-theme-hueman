@@ -27,6 +27,8 @@ if (page.archive){
   }
 } else if (is_home()) {
   title = '<em class="page-title-link" data-url="home">' + __('index.home') + '</em>';
+} else if (page.subtitle) {
+  title = '<em class="page-title-link" data-url="' + url_for(page.path) + '">' + page.subtitle + '</em>';
 } else if (page.title) {
   title = '<em class="page-title-link" data-url="' + url_for(page.path) + '">' + page.title + '</em>';
 } else {
