@@ -47,9 +47,6 @@
   <% if (post.comments && config.disqus_shortname){ %>
     <section id="comments">
       <div id="disqus_thread">
-        <% if (config.useDisqusId){ %>
-          <script>var disqus_identifier = '<%= post.disqusId || post.slug %>';</script>
-        <% } %>
         <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
       </div>
     </section>
