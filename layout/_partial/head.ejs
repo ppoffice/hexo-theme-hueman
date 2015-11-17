@@ -21,9 +21,18 @@
   %>
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <% if (page.tags){
+        var keywords = [];
+        for (var i in page.tags.data) {
+            keywords.push(page.tags.data[i].name);
+        }
+  %>
+  <meta name="keywords" content="<%= keywords.join(',') %>">
+  <% } %>
+
   <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
   <% if (theme.rss){ %>
-    <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
+    <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="<%= theme.rssType || "application/atom+xml" %>">
   <% } %>
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
