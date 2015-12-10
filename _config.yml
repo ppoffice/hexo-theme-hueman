@@ -1,0 +1,55 @@
+# Logo Url
+# Please enter an absolute path to your logo file
+# or remove the following line with replacing logo-header.png with your own logo
+logo:
+  url: /logo.png
+  height: 170px
+  width: 1000px
+
+# Header
+menu:
+  Home: /
+  Categories:
+  Newsletter: /newsletter-signup/index.html
+  About: /about/index.html
+
+
+
+# Article list grouped by year
+groupByYear: true
+
+# Content
+fancybox: true
+
+# Thumbnail
+thumbnail: true
+
+# Scroll Loading
+scrollLoading: true
+
+# Sidebar
+sidebar: left # sidebar's position (left or right)
+social_links:
+  stack-overflow: http://stackoverflow.com/users/502676/kennbrodhagen
+  twitter: https://twitter.com/kennbrodhagen
+  github: https://github.com/kennbrodhagen
+  linkedin-square: https://linkedin.com/in/kennbrodhagen
+widgets:
+- recent_posts
+- category
+- archive
+- tag
+- tagcloud
+- links
+
+# Links
+links:
+
+# Don't Use Google APIs if you are in google-blocked areas
+use_google_apis: true
+
+# Miscellaneous
+google_analytics: UA-67019431-1
+favicon: /favicon.png
+fb_admins:
+fb_app_id:
