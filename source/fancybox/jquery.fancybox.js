@@ -275,7 +275,7 @@
 					}
 				}
 
-				href  = opts.href  || obj.href || (isString(element) ? element : null);
+				href  = opts.href || obj.href || (isString(element) ? element : null) || element.find('img').data('url');
 				title = opts.title !== undefined ? opts.title : obj.title || '';
 
 				content = opts.content || obj.content;
