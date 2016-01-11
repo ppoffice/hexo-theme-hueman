@@ -1,26 +1,26 @@
 index:
-  home: 'Главная'
-  about: 'О сайте'
-  search: 'Поиск'
-  archive: 'архив'
-  category: 'категории : '
-  uncategorized: 'без категории'
-  tag: 'тэг : '
+    home: 'Главная'
+    about: 'О сайте'
+    search: 'Поиск'
+    archive: 'архив'
+    category: 'категории : '
+    uncategorized: 'без категории'
+    tag: 'тэг : '
 nav:
-  current_page:
-    other: 'Страница %d '
-  total_page:
-    other: 'из %d'
+    current_page:
+        other: 'Страница %d '
+    total_page:
+        other: 'из %d'
 sidebar:
-  follow: 'Подписаться'
-  newer: 'новые'
-  older: 'старые'
-  recents: 'недавние'
-  archives: 'архивы'
-  categories: 'Категории'
-  links: 'ссылки'
-  tags: 'Тэги'
-  tag_cloud: 'Облако тэгов'
+    follow: 'Подписаться'
+    newer: 'новые'
+    older: 'старые'
+    recents: 'недавние'
+    archives: 'архивы'
+    categories: 'Категории'
+    links: 'ссылки'
+    tags: 'Тэги'
+    tag_cloud: 'Облако тэгов'
 article:
-  comments: 'Комментарии'
-  share: 'Поделиться'
+    comments: 'Комментарии'
+    share: 'Поделиться'

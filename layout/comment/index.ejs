@@ -1,0 +1,11 @@
+<% if (post.comments) { %>
+<section id="comments">
+    <% if (theme.comment.disqus) { %>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+    <% } else if (theme.comment.duoshuo) { %>
+    <div class="ds-thread" data-thread-key="<%= post.layout %>-<%= post.slug %>" data-title="<%= post.title %>" data-url="<%= page.permalink %>"></div>
+    <% } %>
+</section>
+<% } %>

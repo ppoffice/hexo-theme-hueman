@@ -5,49 +5,56 @@ logo:
 
 # Header
 menu:
-  Home: /
-  # Delete this row if you don't want categories in your header nav bar
-  Categories:
-  About: /about/index.html
+    Home: /hexo-theme-hueman/
+    # Delete this row if you don't want categories in your header nav bar
+    Categories:
+    About: /hexo-theme-hueman/about/index.html
 
 # Article list grouped by year
 groupByYear: true
 
-# Content
-fancybox: true
-
 # Thumbnail
 thumbnail: true
-
-# Scroll Loading
-scrollLoading: true
 
 # Sidebar
 sidebar: left # sidebar's position (left or right)
 social_links:
-  twitter:
-  facebook:
-  google-plus:
-  github: https://github.com/ppoffice/hexo-theme-hueman
-  weibo:
-  rss:
+    twitter:
+    facebook:
+    google-plus:
+    github: https://github.com/ppoffice/hexo-theme-hueman
+    weibo:
+    rss:
 widgets:
-- recent_posts
-- category
-- archive
-- tag
-- tagcloud
-- links
+    - recent_posts
+    - category
+    - archive
+    - tag
+    - tagcloud
+    - links
 
 # Links
 links:
-  Hexo: http://hexo.io
+    Hexo: http://hexo.io
 
 # Don't Use Google APIs if you are in google-blocked areas
 use_google_apis: false
 
 # Miscellaneous
-google_analytics:
 favicon: /favicon.png
 fb_admins:
 fb_app_id:
+
+# Search
+search:
+    swiftype: # Enter swiftype install key here
+
+comment:
+    disqus: # Enter disqus shortname here
+    duoshuo: # Enter duoshuo shortname here
+
+# Plugins
+plugins:
+    fancybox: true # options: true, false
+    scrollLoading: true
+    google_analytics:

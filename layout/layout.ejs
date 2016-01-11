@@ -1,51 +1,22 @@
-<%- partial('_partial/head') %>
+<%- partial('common/head') %>
 <body>
   <div id="wrap">
-    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+    <%- partial('common/header', null, {cache: !config.relative_link}) %>
     <div class="container">
       <div class="main-body container-inner">
         <div class="main-body-inner">
           <section id="main">
-            <div class="main-body-header">
-<% var title = page.title;
-if (page.archive){
-  title = __('index.archive');
-  if (page.month){
-    title += ': ' + page.year + '/' + page.month;
-  } else if (page.year){
-    title += ': ' + page.year;
-  }
-  title = '<i class="icon fa fa-archive"></i>' + title;
-} else if (page.category){
-  title = '<i class="icon fa fa-folder-open"></i>' + __('index.category') + '<em class="page-title-link">' + page.category + '</em>';
-} else if (page.tag){
-  title = '<i class="icon fa fa-tag"></i>' + __('index.tag') + '<em>' + page.tag + '</em>';
-} else if (is_post()) {
-  title = list_categories(page.categories, {show_count: false, style: 'none', class: 'page-title', separator: '<i class="icon fa fa-angle-right"></i>'});
-  if(title == ""){
-    title = __('index.uncategorized');
-  }
-} else if (is_home()) {
-  title = '<em class="page-title-link" data-url="home">' + __('index.home') + '</em>';
-} else if (page.subtitle) {
-  title = '<em class="page-title-link" data-url="' + url_for(page.path) + '">' + page.subtitle + '</em>';
-} else if (page.title) {
-  title = '<em class="page-title-link" data-url="' + url_for(page.path) + '">' + page.title + '</em>';
-} else {
-  title = config.title;
-} %>
-              <h1 class="header"><% if (title){ %><%- title %><% } %></h1>
-            </div>
+            <%- partial('common/content-title') %>
             <div class="main-body-content">
               <%- body %>
             </div>
           </section>
-          <%- partial('_partial/sidebar') %>
+          <%- partial('common/sidebar') %>
         </div>
       </div>
     </div>
-    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
+    <%- partial('common/footer', null, {cache: !config.relative_link}) %>
+    <%- partial('common/scripts') %>
   </div>
 </body>
 </html>

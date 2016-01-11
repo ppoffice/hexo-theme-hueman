@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <%
+        var title = page.title;
+        if (is_archive()) {
+            title = 'Archives';
+            if (is_month()) {
+                title += ': ' + page.year + '/' + page.month;
+            } else if (is_year()) {
+                title += ': ' + page.year;
+            }
+        } else if (is_category()) {
+            title = 'Category: ' + page.category;
+        } else if (is_tag()) {
+            title = 'Tag: ' + page.tag;
+        }
+    %>
+    <title><% if (title) { %><%= title %> | <% } %><%= config.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <%
+    if (page.tags) {
+        var keywords = [];
+        for (var i in page.tags.data) {
+            keywords.push(page.tags.data[i].name);
+        }
+    %>
+        <meta name="keywords" content="<%= keywords.join(',') %>" />
+    <% } %>
+    <%- open_graph({ twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id }) %>
+    <% if (theme.rss) { %>
+        <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="<%= theme.rssType || "application/atom+xml" %>" />
+    <% } %>
+    <% if (theme.favicon) { %>
+        <link rel="icon" href="<%- theme.favicon %>" />
+    <% } %>
+
+    <%- css('css/style') %>
+    <% if (theme.fancybox) { %>
+        <%- css('vendor/fancybox/jquery.fancybox') %>
+    <% } %>
+    <% if (theme.scrollLoading) { %>
+        <%- css('vendor/scrollLoading/style') %>
+    <% } %>
+
+    <% if (theme.logo) { %>
+        <% if (theme.logo) {%>
+        <style type="text/css">
+            .logo { background-image:url(<%= theme.logo.url || theme.logo %>);
+              <% if (theme.logo.width) { %>
+                width: <%= theme.logo.width %>;
+              <% } %>
+              <% if (theme.logo.height) { %>
+                height: <%= theme.logo.height %>;
+              <% } %>
+              <% if (theme.logo.width && theme.logo.height) { %>
+                -webkit-background-size: <%= theme.logo.width %> <%= theme.logo.height %>;
+                -moz-background-size: <%= theme.logo.width %> <%= theme.logo.height %>;
+                background-size: <%= theme.logo.width %> <%= theme.logo.height %>;
+              <% } %>
+              }
+
+            <% if (theme.logo.width || theme.logo.height) { %>
+              #footer .logo {
+              <% if (theme.logo.width) { %>
+                width: <%= theme.logo.width %>;
+              <% } %>
+              <% if (theme.logo.height) { %>
+                height: <%= theme.logo.height %>;
+              <% } %>
+              <% if (theme.logo.width && theme.logo.height) { %>
+                -webkit-background-size: <%= theme.logo.width %> <%= theme.logo.height %>;
+                -moz-background-size: <%= theme.logo.width %> <%= theme.logo.height %>;
+                background-size: <%= theme.logo.width %> <%= theme.logo.height %>;
+              <% } %>
+              }
+            <% } %>
+        </style>
+        <% } %>
+    <% } %>
+
+    <%- css('vendor/font-awesome/css/font-awesome.min') %>
+    <%- css('vendor/titillium-web/styles') %>
+    <%- css('vendor/source-code-pro/styles') %>
+
+    <%- partial('plugin/scripts', { isHead: true }) %>
+</head>

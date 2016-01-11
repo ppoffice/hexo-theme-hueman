@@ -1,0 +1,14 @@
+<% if (typeof(isHead) !== 'undefined' && isHead) { %>
+    <% if (theme.plugins.google_analytics) { %>
+        <%- partial('plugin/google-analytics') %>
+    <% } %>
+<% } else { %>
+    <% if (theme.plugins.fancybox) { %>
+        <%- js('vendor/fancybox/jquery.fancybox.pack') %>
+    <% } %>
+
+    <% if (theme.plugins.scrollLoading) { %>
+        <%- js('vendor/scrollLoading/jquery.scrollLoading') %>
+        <%- js('vendor/scrollLoading/main') %>
+    <% } %>
+<% } %>

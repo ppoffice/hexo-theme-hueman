@@ -1,26 +1,26 @@
 index:
-  home: 'Home'
-  about: 'About'
-  search: 'Search'
-  archive: 'archive'
-  category: 'category : '
-  uncategorized: 'uncategorized'
-  tag: 'tag : '
+    home: 'Home'
+    about: 'About'
+    search: 'Search'
+    archive: 'archive'
+    category: 'category : '
+    uncategorized: 'uncategorized'
+    tag: 'tag : '
 nav:
-  current_page:
-    other: 'Page %d '
-  total_page:
-    other: 'of %d'
+    current_page:
+        other: 'Page %d '
+    total_page:
+        other: 'of %d'
 sidebar:
-  follow: 'follow'
-  newer: 'newer'
-  older: 'older'
-  recents: 'recents'
-  archives: 'archives'
-  categories: 'categories'
-  links: 'links'
-  tags: 'tags'
-  tag_cloud: 'tag cloud'
+    follow: 'follow'
+    newer: 'newer'
+    older: 'older'
+    recents: 'recents'
+    archives: 'archives'
+    categories: 'categories'
+    links: 'links'
+    tags: 'tags'
+    tag_cloud: 'tag cloud'
 article:
-  comments: 'Comments'
-  share: 'Share'
+    comments: 'Comments'
+    share: 'Share'
