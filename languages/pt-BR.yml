@@ -2,10 +2,10 @@ index:
     home: 'Home'
     about: 'Sobre'
     search: 'Busca'
-    archive: 'arquivo'
-    category: 'categoria : '
+    archive: 'Arquivo'
+    category: 'Categoria'
     uncategorized: 'sem categoria'
-    tag: 'tag : '
+    tag: 'Tag'
 nav:
     current_page:
         other: 'Página %d '

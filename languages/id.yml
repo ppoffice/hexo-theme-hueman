@@ -2,10 +2,10 @@ index:
     home: 'Beranda'
     about: 'Tentang'
     search: 'Cari'
-    archive: 'arsip'
-    category: 'kategori: '
+    archive: 'Arsip'
+    category: 'Kategori'
     uncategorized: 'belum terkategori'
-    tag: 'tag: '
+    tag: 'Tag'
 nav:
     current_page:
         other: 'Halaman %d '

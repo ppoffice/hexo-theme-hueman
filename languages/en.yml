@@ -2,10 +2,10 @@ index:
     home: 'Home'
     about: 'About'
     search: 'Search'
-    archive: 'archive'
-    category: 'category : '
+    archive: 'Archive'
+    category: 'Category'
     uncategorized: 'uncategorized'
-    tag: 'tag : '
+    tag: 'Tag'
 nav:
     current_page:
         other: 'Page %d '

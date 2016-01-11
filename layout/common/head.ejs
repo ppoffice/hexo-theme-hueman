@@ -5,16 +5,16 @@
     <%
         var title = page.title;
         if (is_archive()) {
-            title = 'Archives';
+            title = __('index.archive');
             if (is_month()) {
                 title += ': ' + page.year + '/' + page.month;
             } else if (is_year()) {
                 title += ': ' + page.year;
             }
         } else if (is_category()) {
-            title = 'Category: ' + page.category;
+            title = __('index.category') + ': ' + page.category;
         } else if (is_tag()) {
-            title = 'Tag: ' + page.tag;
+            title = __('index.tag') + ': ' + page.tag;
         }
     %>
     <title><% if (title) { %><%= title %> | <% } %><%= config.title %></title>
