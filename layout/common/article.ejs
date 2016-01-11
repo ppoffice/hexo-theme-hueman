@@ -18,13 +18,7 @@
                 <a href="<%- url_for((post.link?post.link:post.path)) %>" class="title"><%= post.title %></a>
             </h2>
             <p class="article-excerpt">
-                <% var excerpt;
-                    if(post.excerpt)
-                        excerpt = post.excerpt.replace(/\<[^\>]+\>/g, "");
-                    else{
-                        excerpt = post.content.replace(/\<[^\>]+\>/g, "").substring(0,200);
-                    } %>
-                <%- excerpt %>
+                <%- excerpt(post) %>
             </p>
         </div>
     </article>
