@@ -1,119 +1,119 @@
 $nav-link
-  float: left
-  color: color-nav-foreground
-  text-decoration: none
-  text-shadow: 0 1px rgba(0, 0, 0, 0.2)
-  display: block
-  padding: 20px 15px
-  transition: 0.2s ease-in
-  &:hover
-    color: #fff
-    background: color-nav-hover-background
+    float: left
+    color: color-nav-foreground
+    text-decoration: none
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2)
+    display: block
+    padding: 20px 15px
+    transition: 0.2s ease-in
+    &:hover
+        color: #fff
+        background: color-nav-hover-background
 
 .nav-container
-  clearfix()
-  padding: 0 15px
-  background: color-nav-background
-  z-index: 1
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05),
-              0 -1px 0 rgba(0,0,0,0.2),
-              inset 1px 0 0 rgba(0,0,0,0.2),
-              inset -1px 0 0 rgba(0,0,0,0.2)
-  .nav-icon
-    @extend $nav-link
-    line-height: 20px
-    padding: 15px 14px
-    text-align: center
-    font-size: font-size
-    position: relative
-    cursor: pointer
-  #main-nav-toggle
-    display: none
-    width: 100%
-    text-align: right
-    box-sizing: border-box
-    border-bottom: 1px solid rgba(255,255,255,0.06)
-    &:before
-      content: "\f0c9"
-  .nav-container-inner
     clearfix()
-    #main-nav
-      float: left
-      .main-nav-list
-        float: left
-      .main-nav-list-item
+    padding: 0 15px
+    background: color-nav-background
+    z-index: 1
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.05),
+                            0 -1px 0 rgba(0,0,0,0.2),
+                            inset 1px 0 0 rgba(0,0,0,0.2),
+                            inset -1px 0 0 rgba(0,0,0,0.2)
+    .nav-icon
+        @extend $nav-link
+        line-height: 20px
+        padding: 15px 14px
+        text-align: center
+        font-size: font-size
         position: relative
-        float: left
-        &.top-level-menu
-          & > a:after
-            content: "\f0d7" !important
-            float: none
-            margin-left: 6px
-            font-size: 14px
-            line-height: 1.2em
-            opacity: 0.5
-            font-family: FontAwesome
-            display: inline-block
-          &:hover
-            & > a
-              color: #fff
-              background: rgba(0,0,0,0.1)
-        .main-nav-list-link
-          @extend $nav-link
-          line-height: 20px
-          padding: 15px 14px
-          font-size: 16px
-          &.current
-            color: #fff
-        .main-nav-list-child
-          top: 100%
-          display: none
-          padding: 10px 0
-          overflow: hidden
-          position: absolute
-          width: main-nav-child-width
-          background: color-nav-background url(images/opacity-10.png) repeat
-          li
-            box-shadow: 0 1px 0 rgba(255,255,255,0.06)
-            &:last-child
-              box-shadow: none
-          li, li a
-            width: 100%
-            display: block
-            box-sizing: border-box
-    #sub-nav
-      float: right
+        cursor: pointer
+    #main-nav-toggle
+        display: none
+        width: 100%
+        text-align: right
+        box-sizing: border-box
+        border-bottom: 1px solid rgba(255,255,255,0.06)
+        &:before
+            content: "\f0c9"
+    .nav-container-inner
+        clearfix()
+        #main-nav
+            float: left
+            .main-nav-list
+                float: left
+            .main-nav-list-item
+                position: relative
+                float: left
+                &.top-level-menu
+                    & > a:after
+                        content: "\f0d7" !important
+                        float: none
+                        margin-left: 6px
+                        font-size: 14px
+                        line-height: 1.2em
+                        opacity: 0.5
+                        font-family: FontAwesome
+                        display: inline-block
+                    &:hover
+                        & > a
+                            color: #fff
+                            background: rgba(0,0,0,0.1)
+                .main-nav-list-link
+                    @extend $nav-link
+                    line-height: 20px
+                    padding: 15px 14px
+                    font-size: 16px
+                    &.current
+                        color: #fff
+                .main-nav-list-child
+                    top: 100%
+                    display: none
+                    padding: 10px 0
+                    overflow: hidden
+                    position: absolute
+                    width: main-nav-child-width
+                    background: color-nav-background url(images/opacity-10.png) repeat
+                    li
+                        box-shadow: 0 1px 0 rgba(255,255,255,0.06)
+                        &:last-child
+                            box-shadow: none
+                    li, li a
+                        width: 100%
+                        display: block
+                        box-sizing: border-box
+        #sub-nav
+            float: right
 
 .search-form
-  padding: 14px 15px 16px
-  height: 50px
-  overflow: hidden
-  box-sizing: border-box
-  &:before
-    content: "\f002"
-    margin-right: 8px
-    color: color-nav-foreground
-    font: normal normal normal 16px/1 FontAwesome
+    padding: 14px 15px 16px
+    height: 50px
+    overflow: hidden
+    box-sizing: border-box
+    &:before
+        content: "\f002"
+        margin-right: 8px
+        color: color-nav-foreground
+        font: normal normal normal 16px/1 FontAwesome
 
 .search-form-input,
 .search-form-input.st-ui-search-input,
 .search-form-input.st-default-search-input
-  -webkit-appearance: textarea
-  padding: 0
-  width: 100px
-  height: auto !important
-  border: none !important
-  outline: none !important
-  background: none !important
-  line-height: line-height
-  transition: 0.2s ease-in
-  font: 16px font-sans
-  color: color-nav-foreground
-  &:focus
-    width: 200px
-  &::-webkit-search-results-decoration
-  &::-webkit-search-cancel-button
-    -webkit-appearance: none
+    -webkit-appearance: textarea
+    padding: 0
+    width: 100px
+    height: auto !important
+    border: none !important
+    outline: none !important
+    background: none !important
+    line-height: line-height
+    transition: 0.2s ease-in
+    font: 16px font-sans
+    color: color-nav-foreground
+    &:focus
+        width: 200px
+    &::-webkit-search-results-decoration
+    &::-webkit-search-cancel-button
+        -webkit-appearance: none
 
 .search-form-submit
-  display: none
+    display: none

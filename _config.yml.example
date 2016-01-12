@@ -1,30 +1,29 @@
-# Logo Url
-# Please enter an absolute path to your logo file
-# or remove the following line with replacing logo-header.png with your own logo
-logo:
-
-# Header
+# Menus
 menu:
     Home: /hexo-theme-hueman/
     # Delete this row if you don't want categories in your header nav bar
     Categories:
     About: /hexo-theme-hueman/about/index.html
 
-# Article list grouped by year
-groupByYear: true
+# Customize
+customize:
+    logo:
+        width: 165
+        height: 60
+        url: images/logo-header.png
+    theme_color: '#3b8dbd'
+    sidebar: left # sidebar position, options: left, right
+    thumbnail: true # enable posts thumbnail, options: true, false
+    favicon: # path to favicon
+    social_links: # for more icons, please see http://fontawesome.io/icons/#brand
+        twitter: /
+        facebook: /
+        google-plus: /
+        github: https://github.com/ppoffice/hexo-theme-hueman
+        weibo: /
+        rss: /
 
-# Thumbnail
-thumbnail: true
-
-# Sidebar
-sidebar: left # sidebar's position (left or right)
-social_links:
-    twitter:
-    facebook:
-    google-plus:
-    github: https://github.com/ppoffice/hexo-theme-hueman
-    weibo:
-    rss:
+# Widgets
 widgets:
     - recent_posts
     - category
@@ -33,28 +32,27 @@ widgets:
     - tagcloud
     - links
 
-# Links
-links:
-    Hexo: http://hexo.io
-
-# Don't Use Google APIs if you are in google-blocked areas
-use_google_apis: false
-
-# Miscellaneous
-favicon: /favicon.png
-fb_admins:
-fb_app_id:
-
 # Search
 search:
-    swiftype: # Enter swiftype install key here
+    swiftype: # enter swiftype install key here
 
+# Comment
 comment:
-    disqus: # Enter disqus shortname here
-    duoshuo: # Enter duoshuo shortname here
+    disqus: hexo-theme-hueman # enter disqus shortname here
+    duoshuo: # enter duoshuo shortname here
 
 # Plugins
 plugins:
     fancybox: true # options: true, false
-    scrollLoading: true
+    scrollLoading: true # options: true, false
     google_analytics:
+
+# Miscellaneous
+miscellaneous:
+    open_graph: # see http://ogp.me
+        fb_app_id:
+        fb_admins:
+        twitter_id:
+        google_plus:
+    links:
+        Hexo: http://hexo.io

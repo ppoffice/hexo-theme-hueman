@@ -4,7 +4,10 @@ vendor-prefixes = webkit moz ms official
 
 // Colors
 color-default = #555
-color-link = #3b8dbd
+if hexo-config("customize.theme_color")
+    color-theme = convert(hexo-config("customize.theme_color"))
+else
+    color-theme = #3b8dbd
 color-grey = #aaa
 color-header-background = #26272b
 color-main-background = #fff
@@ -35,12 +38,12 @@ line-height = 1.6em
 line-height-title = 1.3em
 
 // Header
-logo-img = "images/logo-header.png"
-logo-width = 165px
-logo-height = 60px
+logo-url = hexo-config("customize.logo.url")
+logo-width = 0px + hexo-config("customize.logo.width")
+logo-height = 0px + hexo-config("customize.logo.height")
 
 // Sidebar
-sidebar = hexo-config("sidebar")
+sidebar = hexo-config("customize.sidebar")
 sidebar-width = 340px
 sidebar-toggle-width = 50px
 

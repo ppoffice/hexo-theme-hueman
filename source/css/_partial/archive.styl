@@ -1,91 +1,91 @@
 .archives-wrap
-  margin: block-margin 0
+    margin: block-margin 0
 
 .archives
-  clearfix()
+    clearfix()
 
 .archive-year-wrap
-  padding: 18px 30px 17px
-  font-size: font-size + 2
-  color: color-default + #111
-  border-bottom: 1px solid color-border-light
+    padding: 18px 30px 17px
+    font-size: font-size + 2
+    color: color-default + #111
+    border-bottom: 1px solid color-border-light
 
 .archive-year
-  @extend $block-caption
-  i
-    margin-right: 8px
+    @extend $block-caption
+    i
+        margin-right: 8px
 
 .archives
-  column-gap: 10px
-  @media mq-tablet
-    column-count: 2
-  @media mq-normal
-    column-count: 3
+    column-gap: 10px
+    @media mq-tablet
+        column-count: 2
+    @media mq-normal
+        column-count: 3
 
 .archive-article
-  avoid-column-break()
+    avoid-column-break()
 
 .archive-article-inner
-  padding: 10px
-  margin-bottom: 15px
+    padding: 10px
+    margin-bottom: 15px
 
 .archive-article-title
-  text-decoration: none
-  font-weight: bold
-  color: color-default
-  transition: color 0.2s
-  line-height: line-height
-  &:hover
-    color: color-link
+    text-decoration: none
+    font-weight: bold
+    color: color-default
+    transition: color 0.2s
+    line-height: line-height
+    &:hover
+        color: color-theme
 
 .archive-article-footer
-  margin-top: 1em
+    margin-top: 1em
 
 .archive-article-date
-  color: color-grey
-  text-decoration: none
-  font-size: 0.85em
-  line-height: 1em
-  margin-bottom: 0.5em
-  display: block
+    color: color-grey
+    text-decoration: none
+    font-size: 0.85em
+    line-height: 1em
+    margin-bottom: 0.5em
+    display: block
 
 #page-nav
-  clearfix()
-  float: left
-  width: 100%
-  display: block
-  margin: 30px 0px 45px 0px
-  text-align: center
-  color: color-grey
-  .pages
+    clearfix()
+    float: left
+    width: 100%
     display: block
-    font-size: 17px
-    font-weight: 300
-    margin-bottom: 1em!important
-    border: none!important
-    &:before
-      content: "\f15c"
-      font-family: FontAwesome
-      margin-right: 6px
-  .page-number,
-  .extend
-    color: color-link
-    position: relative
-    overflow: hidden
-    font-size: 16px
-    padding: 7px 8px
-    display: inline
-    margin: 0 2px
-    text-decoration: none
-    border-bottom: 3px solid color-border
-    border-top: 1px solid #f1f1f1
-    font-weight: 600
-    transition: 0.2s ease-in
-    &:hover,
-    &:active,
-    &.current
-      color: #444
-      border-bottom: 3px solid color-link
-      border-top: 1px solid #f1f1f1
-  .space
-    color: color-border
+    margin: 30px 0px 45px 0px
+    text-align: center
+    color: color-grey
+    .pages
+        display: block
+        font-size: 17px
+        font-weight: 300
+        margin-bottom: 1em!important
+        border: none!important
+        &:before
+            content: "\f15c"
+            font-family: FontAwesome
+            margin-right: 6px
+    .page-number,
+    .extend
+        color: color-theme
+        position: relative
+        overflow: hidden
+        font-size: 16px
+        padding: 7px 8px
+        display: inline
+        margin: 0 2px
+        text-decoration: none
+        border-bottom: 3px solid color-border
+        border-top: 1px solid #f1f1f1
+        font-weight: 600
+        transition: 0.2s ease-in
+        &:hover,
+        &:active,
+        &.current
+            color: #444
+            border-bottom: 3px solid color-theme
+            border-top: 1px solid #f1f1f1
+    .space
+        color: color-border
