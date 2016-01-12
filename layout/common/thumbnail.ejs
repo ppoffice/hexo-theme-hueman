@@ -1,4 +1,3 @@
-<% if(theme.thumbnail == true) { %>
 <a href="<%- url_for((post.link ? post.link : post.path)) %>" class="thumbnail">
     <% var thumbnailUrl = thumbnail(post) %>
     <% if (thumbnailUrl) { %>
@@ -7,4 +6,3 @@
         <span class="thumbnail-image thumbnail-none"></span>
     <% } %>
 </a>
-<% }%>

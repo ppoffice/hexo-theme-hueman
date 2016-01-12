@@ -1,4 +1,10 @@
 <% if (typeof(isHead) !== 'undefined' && isHead) { %>
+    <% if (theme.plugins.fancybox) { %>
+        <%- css('vendor/fancybox/jquery.fancybox') %>
+    <% } %>
+    <% if (theme.plugins.scrollLoading) { %>
+        <%- css('vendor/scrollLoading/style') %>
+    <% } %>
     <% if (theme.plugins.google_analytics) { %>
         <%- partial('plugin/google-analytics') %>
     <% } %>

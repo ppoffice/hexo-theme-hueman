@@ -24,7 +24,7 @@
   .main-body
     margin-top: - sidebar-toggle-width
   .main-body-inner
-    if sidebar is right
+    if customize->sidebar is right
       padding-right: sidebar-toggle-width
       background-position: -340px 0 !important
     else
@@ -32,7 +32,7 @@
       background-position: -290px 0 !important
     #sidebar
       clearfix()
-      if sidebar is right
+      if customize->sidebar is right
         right: 0
         background: url(images/s-left.png) repeat-y right 0
       else
@@ -58,7 +58,7 @@
           width: 38px
           font-family: fontawesome
           &:before
-            if sidebar is right
+            if customize->sidebar is right
               content: '\f100'
             else
               content: '\f101'

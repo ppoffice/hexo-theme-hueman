@@ -16,7 +16,7 @@
             title = '<i class="icon fa fa-tag"></i>' + __('index.tag') + ': <em>' + page.tag + '</em>';
         } else if (is_post()) {
             title = list_categories(page.categories, {show_count: false, style: 'none', class: 'page-title', separator: '<i class="icon fa fa-angle-right"></i>'});
-            if(title == "") {
+            if (title == "") {
                 title = __('index.uncategorized');
             }
         } else if (is_home()) {
