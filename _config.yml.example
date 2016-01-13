@@ -42,6 +42,9 @@ comment:
     disqus: hexo-theme-hueman # enter disqus shortname here
     duoshuo: # enter duoshuo shortname here
 
+# Comment
+share: default # options: jiathis, bdshare, addtoany, default
+
 # Plugins
 plugins:
     fancybox: true # options: true, false

@@ -12,7 +12,7 @@
             <%- post.content %>
         </div>
         <footer class="article-footer">
-            <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><i class="fa fa-share"></i><%=__('article.share')%></a>
+            <%- partial('share/index', { post: post }) %>
             <% if (post.comments && config.disqus_shortname) { %>
                 <a href="<%- post.permalink %>#comments" class="article-comment-link"><i class="fa fa-comments"></i><%=__('article.comments')%></a>
             <% } %>
