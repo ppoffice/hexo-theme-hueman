@@ -1,6 +1,7 @@
 # Hueman
 #### Probably the most beautiful theme for Hexo. [Preview](http://ppoffice.github.io/hexo-theme-hueman/)
-![](http://ppoffice.github.io/hexo-theme-hueman/gallery/preview.jpg "")
+
+![Hueman](https://cloud.githubusercontent.com/assets/8849362/12326809/da2012c0-bb0d-11e5-8f7f-0b12cf0c2113.jpg)
 
 > This theme is ported from [AlxMedia](https://github.com/AlxMedia)'s the WordPress theme [Hueman](https://github.com/AlxMedia/hueman).
 
