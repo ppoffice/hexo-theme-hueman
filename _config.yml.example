@@ -39,8 +39,9 @@ search:
 
 # Comment
 comment:
-    disqus: hexo-theme-hueman # enter disqus shortname here
+    disqus: # enter disqus shortname here
     duoshuo: # enter duoshuo shortname here
+    youyan: # enter youyan uid here
 
 # Comment
 share: default # options: jiathis, bdshare, addtoany, default
@@ -49,7 +50,8 @@ share: default # options: jiathis, bdshare, addtoany, default
 plugins:
     fancybox: true # options: true, false
     scrollLoading: true # options: true, false
-    google_analytics:
+    google_analytics: # enter the tracking ID for your Google Analytics
+    baidu_analytics: # enter Baidu Analytics hash key
 
 # Miscellaneous
 miscellaneous:

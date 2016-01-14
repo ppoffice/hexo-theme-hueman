@@ -8,6 +8,9 @@
     <% if (theme.plugins.google_analytics) { %>
         <%- partial('plugin/google-analytics') %>
     <% } %>
+    <% if (theme.plugins.baidu_analytics) { %>
+        <%- partial('plugin/baidu-analytics') %>
+    <% } %>
 <% } else { %>
     <% if (theme.plugins.fancybox) { %>
         <%- js('vendor/fancybox/jquery.fancybox.pack') %>
