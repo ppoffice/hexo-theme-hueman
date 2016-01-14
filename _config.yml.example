@@ -36,10 +36,11 @@ widgets:
 # Search
 search:
     swiftype: # enter swiftype install key here
+    baidu: false # you need to disable other search engines to use Baidu search, options: true, false
 
 # Comment
 comment:
-    disqus: # enter disqus shortname here
+    disqus: hexo-theme-hueman # enter disqus shortname here
     duoshuo: # enter duoshuo shortname here
     youyan: # enter youyan uid here
 
