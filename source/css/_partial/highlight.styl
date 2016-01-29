@@ -3,7 +3,7 @@ highlight-background = #2d2d2d
 highlight-current-line = #393939
 highlight-selection = #515151
 highlight-foreground = #cccccc
-highlight-comment = #999999
+highlight-comment = ghostwhite
 highlight-red = #f2777a
 highlight-orange = #f99157
 highlight-yellow = #ffcc66
@@ -43,6 +43,7 @@ $line-numbers
       padding: 0
   .highlight
     @extend $code-block
+    border: 1px solid darkgray
     pre
       border: none
       margin: 0
@@ -59,6 +60,7 @@ $line-numbers
       color: highlight-comment
       line-height: 1em
       margin-bottom: 1em
+      text-decoration: underline
       a
         float: right
     .gutter pre
