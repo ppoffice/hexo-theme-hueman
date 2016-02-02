@@ -44,7 +44,7 @@ comment:
     duoshuo: # enter duoshuo shortname here
     youyan: # enter youyan uid here
 
-# Comment
+# Share
 share: default # options: jiathis, bdshare, addtoany, default
 
 # Plugins

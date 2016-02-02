@@ -2,21 +2,18 @@
     <div class="article-inner">
         <% if (post.link || post.title) { %>
             <header class="article-header">
-                <%- partial('post/title', {class_name: 'article-title'}) %>
+                <%- partial('post/title', { class_name: 'article-title' }) %>
             </header>
         <% } %>
-        <p class="article-byline">
-            <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-        </p>
+        <div class="article-subtitle">
+            <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
+            <%- partial('post/tag') %>
+        </div>
         <div class="article-entry" itemprop="articleBody">
             <%- post.content %>
         </div>
         <footer class="article-footer">
             <%- partial('share/index', { post: post }) %>
-            <% if (post.comments && config.disqus_shortname) { %>
-                <a href="<%- post.permalink %>#comments" class="article-comment-link"><i class="fa fa-comments"></i><%=__('article.comments')%></a>
-            <% } %>
-            <%- partial('post/tag') %>
         </footer>
     </div>
 </article>
