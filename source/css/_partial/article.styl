@@ -99,10 +99,28 @@
     a&:hover
         color: color-theme
 
-.article-byline
-    margin-bottom: 10px
-    a
-        @extend $block-caption
+.article-date,
+.article-tag-list
+    @extend $block-caption
+
+.article-tag-list
+    clearfix()
+    float: right
+    &:before
+        float: left
+        content: '\f02b'
+        margin-right: 8px
+        font-family: FontAwesome
+
+.article-tag-list-item
+    float: left
+    margin-right: 10px
+
+.article-tag-list-link
+    color: color-default
+    text-decoration: none
+    &:before
+        content: '#'
 
 .article-entry
     @extend $base-style
@@ -217,14 +235,6 @@
         text-decoration: none
         &:hover
             color: color-default
-
-.article-tag-list-item
-    float: left
-    margin-right: 10px
-
-.article-tag-list-link
-    &:before
-        content: "#"
 
 .article-comment-link,
 .article-share-link
