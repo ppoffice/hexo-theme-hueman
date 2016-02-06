@@ -1,7 +1,7 @@
 <article class="article article-summary">
     <div class="article-summary-inner">
         <% if (theme.customize.thumbnail === true) { %>
-        <%- partial('common/thumbnail') %>
+        <%- partial('common/thumbnail', { counter: true }) %>
         <% } %>
         <div class="article-meta">
             <p class="category">

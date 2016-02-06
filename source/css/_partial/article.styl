@@ -17,7 +17,7 @@
         a, i
             margin-right: 6px
 .article-row
-    clearfix();
+    clearfix()
     width: 100%
     float: left
     position: relative
@@ -41,6 +41,23 @@
             position: relative
             margin-bottom: 1em
             padding-bottom: 47.11%
+            .comment-counter
+                right: 0
+                top: 15px
+                color: white
+                font-size: 12px
+                padding: 2px 7px
+                position: absolute
+                display: inline-block
+                background-color: #82b965
+                &:before
+                    top: 3px
+                    left: -16px
+                    content: ''
+                    position: absolute
+                    display: inline-block
+                    border: 9px solid transparent
+                    border-right-color: #82b965
             .thumbnail-image
                 display: block
                 position: absolute
