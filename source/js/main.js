@@ -26,10 +26,10 @@
         $(this).find('.fancybox').each(function(){
             $(this).attr('rel', 'article' + i);
         });
-        if ($.fancybox) {
-            $('.fancybox').fancybox();
-        }
     });
+    if ($.fancybox) {
+        $('.fancybox').fancybox();
+    }
 
     // Sidebar expend
     $('#sidebar .sidebar-toggle').click(function () {
