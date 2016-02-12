@@ -184,10 +184,22 @@
         border-bottom: 1px solid color-border
         padding: 10px 0
     blockquote
-        font-family: font-serif
-        font-size: 1.4em
-        margin: line-height 20px
-        text-align: center
+        color: #777
+        quote: none
+        margin: 0 0 20px 0
+        position: relative
+        font-style: italic
+        padding-left: 50px
+        &:before
+            top: 0
+            left: 0
+            color: #ccc
+            font-size: 32px
+            content: "\f10d"
+            position: absolute
+            text-align: center
+            font-style: normal
+            font-family: 'FontAwesome'
         footer
             font-size: font-size
             margin: line-height 0
