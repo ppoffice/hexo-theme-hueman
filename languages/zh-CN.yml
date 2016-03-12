@@ -3,7 +3,7 @@ index:
     about: '关于'
     search: '搜索'
     archive: '归档'
-    category: '分类：'
+    categories: '分类：'
     uncategorized: '未分类'
     tag: '标签：'
 nav:
