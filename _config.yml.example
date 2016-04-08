@@ -1,9 +1,9 @@
 # Menus
 menu:
-    Home: /hexo-theme-hueman/
+    Home: /
     # Delete this row if you don't want categories in your header nav bar
     Categories:
-    About: /hexo-theme-hueman/about/index.html
+    About: /about/index.html
 
 # Customize
 customize:
@@ -11,7 +11,7 @@ customize:
         width: 165
         height: 60
         url: images/logo-header.png
-    theme_color: '#3b8dbd'
+    theme_color: '#006bde'
     highlight: androidstudio
     sidebar: left # sidebar position, options: left, right
     thumbnail: true # enable posts thumbnail, options: true, false
@@ -35,6 +35,7 @@ widgets:
 
 # Search
 search:
+    insight: true # you need to install `hexo-generator-json-content` before using Insight Search
     swiftype: # enter swiftype install key here
     baidu: false # you need to disable other search engines to use Baidu search, options: true, false
 

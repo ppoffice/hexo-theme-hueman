@@ -24,10 +24,10 @@ Hueman inserts your blog categories into main menu in the header section. You ca
 
 ![](http://ppoffice.github.io/hexo-theme-hueman/gallery/main-menu.jpg "")
 
-### Custom Search Engines
-Hueman uses Google as default search engine, but also provide custom search engines such as Swiftype and Baidu.
+### Self-hosted Insite Search Engine
+With the help of [Insight Search](https://github.com/ppoffice/hexo-theme-hueman/wiki/Search#insight-search), you can search anything inside your site without any third-party plugin.
 
-![](https://camo.githubusercontent.com/b96754b093fb1de24f9ecc4e333b0963602d75e4/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31342f353639376139316465386638342e706e67)
+![](https://ooo.0o0.ooo/2016/04/08/5707c54e356ed.png)
 
 ### Custom Comment Services
 Hueman supports several comment services, give you better choices to communicate with your readers.

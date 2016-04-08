@@ -24,3 +24,10 @@ sidebar:
 article:
     comments: 'Комментарии'
     share: 'Поделиться'
+insight:
+    hint: 'Введите что-нибудь...'
+    posts: 'посты'
+    pages: 'страницы'
+    categories: 'категории'
+    tags: 'теги'
+    untitled: '(Без названия)'
