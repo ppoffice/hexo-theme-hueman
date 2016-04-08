@@ -5,6 +5,7 @@ categories:
 - Github
 tags:
 - markdown
+thumbnail: /gallery/markdown.jpg
 ---
 ![](/hexo-theme-hueman/gallery/markdown.jpg "")
 A markdown example shows how to write a markdown file. This document integrates core syntax and extensions (GMF).

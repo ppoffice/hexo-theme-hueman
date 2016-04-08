@@ -2,6 +2,7 @@ title: Take a Deep Breath and Just Be
 date: 2015-12-11 21:55:37
 categories:
 - LifeStyle
+thumbnail: /gallery/salt-lake.jpg
 ---
 ![](/hexo-theme-hueman/gallery/salt-lake.jpg "")
 This is Hueman, a free responsive, high resolution and pretty flexible theme for you to use to write about things you love. Make sure to check all the examples out! To download this theme or to check the full feature list, just go here. Feel free to leave a comment there if you digg it!
