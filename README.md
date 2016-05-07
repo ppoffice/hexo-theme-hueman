@@ -9,6 +9,7 @@ visit my blog.
 This is a hexo them folked from [ppoffice's hexo hueman theme](https://github.com/ppoffice/hexo-theme-hueman.git)
 It was not changed a lot. But there are some different advantages/features.
 
+## Features
 
 ##Features (Same as ppoffice's hueman folk)
 - thumbnail ![nail](https://camo.githubusercontent.com/a94ea9af588698d5b04e89689a52effd037e02a8/687474703a2f2f70706f66666963652e6769746875622e696f2f6865786f2d7468656d652d6875656d616e2f67616c6c6572792f7468756d626e61696c2e6a7067)
@@ -16,6 +17,7 @@ It was not changed a lot. But there are some different advantages/features.
 - Multi languages
 - ...
 
+Hueman knows on what screen size you are browsering the website, and reorganize the layout to fit your device.
 
 ##Different Features:
 - enable right sidebar (same as the origin)
@@ -26,9 +28,14 @@ It was not changed a lot. But there are some different advantages/features.
 - migrate [random verse plugin](https://github.com/tim-hub/random-verse)
 - input nav bar by hand to avoid a `index.xxx` bug
 
+### Categories inside Main Menu
 
+Hueman inserts your blog categories into main menu in the header section. You can enable/disable this feature in `menu` setting.
 
+![](http://ppoffice.github.io/hexo-theme-hueman/gallery/main-menu.jpg "")
 
+### Self-hosted Insite Search Engine
+With the help of [Insight Search](https://github.com/ppoffice/hexo-theme-hueman/wiki/Search#insight-search), you can search anything inside your site without any third-party plugin.
 
 ##donation(bitcoin):
 

@@ -1,0 +1,23 @@
+<% if (typeof(isHead) !== 'undefined' && isHead) { %>
+    <% if (theme.plugins.fancybox) { %>
+        <%- css('vendor/fancybox/jquery.fancybox') %>
+    <% } %>
+    <% if (theme.plugins.scrollLoading) { %>
+        <%- css('vendor/scrollLoading/style') %>
+    <% } %>
+    <% if (theme.plugins.google_analytics) { %>
+        <%- partial('plugin/google-analytics') %>
+    <% } %>
+    <% if (theme.plugins.baidu_analytics) { %>
+        <%- partial('plugin/baidu-analytics') %>
+    <% } %>
+<% } else { %>
+    <% if (theme.plugins.fancybox) { %>
+        <%- js('vendor/fancybox/jquery.fancybox.pack') %>
+    <% } %>
+
+    <% if (theme.plugins.scrollLoading) { %>
+        <%- js('vendor/scrollLoading/jquery.scrollLoading') %>
+        <%- js('vendor/scrollLoading/main') %>
+    <% } %>
+<% } %>

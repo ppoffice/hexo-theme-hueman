@@ -1,248 +1,248 @@
 #sidebar
-  if sidebar is right
-    float: right
-    margin-right: - sidebar-width
-  else
-    float: left
-    margin-left: - sidebar-width
-  width: sidebar-width
-  .sidebar-toggle
-    display: none
-  .sidebar-top
-    clearfix()
-    background: color-link
-    padding: 15px 30px
-    .sidebar-top-inner
-      clearfix()
-    p
-      float: left
-      color: rgba(255,255,255,0.8)
-      font-size: 16px
-      font-weight: 600
-      text-transform: uppercase
-      line-height: 24px
-      padding: 3px 0
-    .social-links
-      float: right
-      position: relative
-      padding-top: 2px
-      li
+    if sidebar is right
+        float: right
+        margin-right: - sidebar-width
+    else
         float: left
-        margin-left: 8px
-        a
-          &:hover
-            i
-              &:before
-                color: #fff
-      .social-tooltip
-        position: relative
-        &:hover
-          &:after
-            top: -41px
-            background: #fff
-            font-size: 14px
-            color: #666
-            content: attr(title)
-            display: block
-            right: 0
-            padding: 5px 15px
-            position: absolute
-            white-space: nowrap
-            border-radius: 3px
-            box-shadow: 0 0 2px rgba(0,0,0,0.2)
+        margin-left: - sidebar-width
+    width: sidebar-width
+    .sidebar-toggle
+        display: none
+    .sidebar-top
+        clearfix()
+        background: color-theme
+        padding: 15px 30px
+        .sidebar-top-inner
+            clearfix()
+        p
+            float: left
+            color: rgba(255,255,255,0.8)
+            font-size: 16px
+            font-weight: 600
             text-transform: uppercase
-            z-index: 1
-          &:before
-            top: -10px
-            right: 8px
-            border: solid
-            border-color: #fff transparent
-            border-width: 5px 5px 0 5px
-            content: ""
-            display: block
-            position: absolute
-            z-index: 2
-    i
-      color: rgba(255,255,255,0.7)
-      font-size: font-icon-profile-size
-      width: font-icon-profile-size
+            line-height: 24px
+            padding: 3px 0
+        .social-links
+            float: right
+            position: relative
+            padding-top: 2px
+            li
+                float: left
+                margin-left: 8px
+                a
+                    &:hover
+                        i
+                            &:before
+                                color: #fff
+            .social-tooltip
+                position: relative
+                &:hover
+                    &:after
+                        top: -41px
+                        background: #fff
+                        font-size: 14px
+                        color: #666
+                        content: attr(title)
+                        display: block
+                        right: 0
+                        padding: 5px 15px
+                        position: absolute
+                        white-space: nowrap
+                        border-radius: 3px
+                        box-shadow: 0 0 2px rgba(0,0,0,0.2)
+                        text-transform: uppercase
+                        z-index: 1
+                    &:before
+                        top: -10px
+                        right: 8px
+                        border: solid
+                        border-color: #fff transparent
+                        border-width: 5px 5px 0 5px
+                        content: ""
+                        display: block
+                        position: absolute
+                        z-index: 2
+        i
+            color: rgba(255,255,255,0.7)
+            font-size: font-icon-profile-size
+            width: font-icon-profile-size
 
 #article-nav
-  clearfix()
-  position: relative
+    clearfix()
+    position: relative
 
 .article-nav-link-wrap
-  position: relative
-  margin-top: 0
-  display: block
-  color: color-grey
-  padding: 16px 40px 24px
-  border-bottom: 1px solid color-border
-  transition: 0.2s ease-in
-  text-align: center
-  text-decoration: none
-  .icon
-    position: absolute
-    color: #ccc
-    font-size: 18px
-    top: 50%
-    width: 1em
-    margin-top: -10px
-  #icon-chevron-left
-    left: 10px
-  #icon-chevron-right
-    right: 10px
-  &:hover
-    background: rgba(0,0,0,0.02)
+    position: relative
+    margin-top: 0
+    display: block
+    color: color-grey
+    padding: 16px 40px 24px
+    border-bottom: 1px solid color-border
+    transition: 0.2s ease-in
+    text-align: center
+    text-decoration: none
     .icon
-      color: color-link
+        position: absolute
+        color: #ccc
+        font-size: 18px
+        top: 50%
+        width: 1em
+        margin-top: -10px
+    #icon-chevron-left
+        left: 10px
+    #icon-chevron-right
+        right: 10px
+    &:hover
+        background: rgba(0,0,0,0.02)
+        .icon
+            color: color-theme
 
 .article-nav-caption
-  display: block
-  font-size: 12px
-  color: color-grey
-  letter-spacing: 0.5px
-  line-height: 24px
-  font-weight: normal
-  text-transform: uppercase
+    display: block
+    font-size: 12px
+    color: color-grey
+    letter-spacing: 0.5px
+    line-height: 24px
+    font-weight: normal
+    text-transform: uppercase
 
 .article-nav-title
-  font-size: 15px
-  color: #666
+    font-size: 15px
+    color: #666
 
 .widget-wrap
-  padding: 30px 30px 20px
+    padding: 30px 30px 20px
 
 .widget-title
-  font-size: 15px
-  font-weight: 400
-  text-transform: uppercase
-  margin-bottom: 6px
+    font-size: 15px
+    font-weight: 400
+    text-transform: uppercase
+    margin-bottom: 6px
 
 .widget
-  @extend $base-style
-  line-height: line-height
-  word-wrap: break-word
-  font-size: 0.9em
-  color: color-sidebar-text
-  border-radius: 3px
-  a
-    text-decoration: none
+    @extend $base-style
+    line-height: line-height
+    word-wrap: break-word
+    font-size: 0.9em
     color: color-sidebar-text
-    &:hover
-      color: color-sidebar-text-dark
-  ul, ol, dl
+    border-radius: 3px
+    a
+        text-decoration: none
+        color: color-sidebar-text
+        &:hover
+            color: color-sidebar-text-dark
     ul, ol, dl
-      margin-left: 15px
-      list-style: disc
-  ul, ol
-    list-style: none
-    margin: 0
+        ul, ol, dl
+            margin-left: 15px
+            list-style: disc
     ul, ol
-      margin: 0 20px
-    ul
-      list-style: disc
-    ol
-      list-style: decimal
+        list-style: none
+        margin: 0
+        ul, ol
+            margin: 0 20px
+        ul
+            list-style: disc
+        ol
+            list-style: decimal
 
 .widget-list
-  ul, ol
-    list-style: none
-    li
-      padding: 10px 0
-      font-size: font-size + 1
-      border-bottom: 1px solid #E4E4E4
-      a
-        color: color-sidebar-text
-        &:before
-          color: #ccc
-          content: "\f0da"
-          font-size: 12px
-          margin-right: 6px
-          font-family: FontAwesome
-          transition: 0.2s ease
-        &:hover:before
-          color: color-sidebar-text-dark
     ul, ol
-      list-style: none
-      li
-        border: none
-        &:last-child
-          padding-bottom: 0px
+        list-style: none
+        li
+            padding: 10px 0
+            font-size: font-size + 1
+            border-bottom: 1px solid #E4E4E4
+            a
+                color: color-sidebar-text
+                &:before
+                    color: #ccc
+                    content: "\f0da"
+                    font-size: 12px
+                    margin-right: 6px
+                    font-family: FontAwesome
+                    transition: 0.2s ease
+                &:hover:before
+                    color: color-sidebar-text-dark
+        ul, ol
+            list-style: none
+            li
+                border: none
+                &:last-child
+                    padding-bottom: 0px
 
 .widget-float
-  a
-    font-size: font-size + 1
+    a
+        font-size: font-size + 1
 
 
 #recent-post
-  li
-    clearfix()
-    padding: 10px 0 10px 94px
-    border-bottom: 1px solid color-border
-  &.no-thumbnail
     li
-      padding: 10px 0px
-  li
-    .item-thumbnail
-      opacity: 1
-      margin-left: -94px
-      transition: all 0.2s ease
-      float: left
-      .thumbnail
-        width: 80px
-        height: 80px
-        display: block
-        position: relative
-        overflow: hidden
-        span
-          width: 100%
-          height: 100%
-          display: block
-        .thumbnail-image
-          position: absolute
-          background-size: cover
-          background-position: center
-        .thumbnail-none
-          background-image: url(thumbnail-default-small)
-          background-size: 100% 100%
-    .item-inner
-      a
-      .item-category
-        font-size: 13px
-        text-transform: uppercase
-        a
-          color: color-link
-          &:hover
-            color: color-sidebar-text-dark
-        a, .icon
-          margin-right: 5px
-      .item-title
-        font-size: 15px
-        a
-          color: color-sidebar-text-dark
-          transition: all 0.2s ease
-      .item-date
-        color: #aaa
-        font-size: 13px
-        text-transform: uppercase
-    &:hover
-      .item-thumbnail
-        opacity: 0.8
-      .item-title a
-        color: color-link
+        clearfix()
+        padding: 10px 0 10px 94px
+        border-bottom: 1px solid color-border
+    &.no-thumbnail
+        li
+            padding: 10px 0px
+    li
+        .item-thumbnail
+            opacity: 1
+            margin-left: -94px
+            transition: all 0.2s ease
+            float: left
+            .thumbnail
+                width: 80px
+                height: 80px
+                display: block
+                position: relative
+                overflow: hidden
+                span
+                    width: 100%
+                    height: 100%
+                    display: block
+                .thumbnail-image
+                    position: absolute
+                    background-size: cover
+                    background-position: center
+                .thumbnail-none
+                    background-image: url(thumbnail-default-small)
+                    background-size: 100% 100%
+        .item-inner
+            a
+            .item-category
+                font-size: 13px
+                text-transform: uppercase
+                a
+                    color: color-theme
+                    &:hover
+                        color: color-sidebar-text-dark
+                a, .icon
+                    margin-right: 5px
+            .item-title
+                font-size: 15px
+                a
+                    color: color-sidebar-text-dark
+                    transition: all 0.2s ease
+            .item-date
+                color: #aaa
+                font-size: 13px
+                text-transform: uppercase
+        &:hover
+            .item-thumbnail
+                opacity: 0.8
+            .item-title a
+                color: color-theme
 
 .category-list-count
 .tag-list-count
 .archive-list-count
-  padding-left: 5px
-  color: color-grey
-  font-size: 0.85em
-  &:before
-    content: "("
-  &:after
-    content: ")"
+    padding-left: 5px
+    color: color-grey
+    font-size: 0.85em
+    &:before
+        content: "("
+    &:after
+        content: ")"
 
 .tagcloud
-  a
-    margin-right: 5px
+    a
+        margin-right: 5px

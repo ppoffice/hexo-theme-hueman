@@ -1,0 +1,23 @@
+<article class="article article-summary">
+    <div class="article-summary-inner">
+        <% if (theme.customize.thumbnail === true) { %>
+        <%- partial('common/thumbnail', { counter: true }) %>
+        <% } %>
+        <div class="article-meta">
+            <p class="category">
+            <%- list_categories(post.categories, {
+                depth:2,
+                style: 'none',
+                show_count: false,
+                class: 'article-category',
+                separator: '<i class="icon fa fa-angle-right"></i>',
+            }) %>
+            </p>
+            <p class="date"><time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time></p>
+        </div>
+        <%- partial('post/title', { class_name: 'article-title', linkable: true }) %>
+        <p class="article-excerpt">
+            <%- excerpt(post) %>
+        </p>
+    </div>
+</article>

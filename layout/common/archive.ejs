@@ -1,0 +1,32 @@
+<% var last, postCount = 0; %>
+<% page.posts.each(function(post, i) { %>
+    <% var year = post.date.year(); %>
+    <% if (last != year) { %>
+        <% if (last != null) { %>
+            </div></section>
+        <% } %>
+        <% last = year; postCount = 0;%>
+        <section class="archives-wrap">
+            <div class="archive-year-wrap">
+                <a href="<%- url_for('archives/' + year) %>" class="archive-year"><i class="icon fa fa-calendar-o"></i><%= year %></a>
+            </div>
+            <div class="archives">
+    <% } %>
+    <% postCount++; %>
+    <% if (postCount % 2 == 1) { %>
+        <div class="article-row">
+    <% } %>
+        <%- partial('summary', { post: post }) %>
+    <% if (postCount == page.posts.length || postCount % 2 == 0) { %>
+        </div>
+    <% } %>
+<% }) %>
+<% if (page.posts.length) { %>
+    </div></section>
+<% } %>
+<% if (page.total > 1) { %>
+    <nav id="page-nav">
+        <span class="pages"><%= _p('nav.current_page', page.current) %><%= _p('nav.total_page', page.total) %></span>
+        <%- paginator({prev_text: '&laquo;', next_text: '&raquo;'}) %>
+    </nav>
+<% } %>

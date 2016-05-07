@@ -4,16 +4,15 @@ vendor-prefixes = webkit moz ms official
 
 // Colors
 color-default = #555
-color-link = #3b8dbd
+if hexo-config("customize.theme_color")
+    color-theme = convert(hexo-config("customize.theme_color"))
+else
+    color-theme = #3b8dbd
 color-grey = #aaa
 color-header-background = #26272b
 color-main-background = #fff
 color-background = #eaeaea
 color-mobile-nav-background = #191919
-color-twitter = #00aced
-color-facebook = #3b5998
-color-pinterest = #cb2027
-color-google = #dd4b39
 color-border = #ddd
 color-border-light = #eee
 color-nav-foreground = rgba(255,255,255,0.7)
@@ -35,12 +34,12 @@ line-height = 1.6em
 line-height-title = 1.3em
 
 // Header
-logo-img = "images/logo-header.png"
-logo-width = 165px
-logo-height = 60px
+logo-url = hexo-config("customize.logo.url")
+logo-width = 0px + hexo-config("customize.logo.width")
+logo-height = 0px + hexo-config("customize.logo.height")
 
 // Sidebar
-sidebar = hexo-config("sidebar")
+sidebar = hexo-config("customize.sidebar")
 sidebar-width = 340px
 sidebar-toggle-width = 50px
 
@@ -52,8 +51,16 @@ article-padding = 20px
 nav-height = 60px
 main-nav-child-width = 180px
 mobile-nav-width = 280px
-
 thumbnail-default = "images/thumb-default.png"
 thumbnail-default-small = "images/thumb-default-small.png"
 preloader = "images/preloader.gif"
 preloader-2x = "images/preloader@2x.gif"
+
+// Code Highlight
+highlight = hexo-config("customize.highlight") || "tomorrow"
+
+// Miscellaneous
+color-twitter = #00aced
+color-facebook = #3b5998
+color-pinterest = #cb2027
+color-google = #dd4b39

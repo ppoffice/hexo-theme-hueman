@@ -1,0 +1,33 @@
+index:
+    home: 'Accueil'
+    about: 'À propos'
+    search: 'Rechercher'
+    archive: 'Archive'
+    category: 'Categorie'
+    uncategorized: 'Aucune catégorie'
+    tag: 'Tag'
+nav:
+    current_page:
+        other: 'Page %d '
+    total_page:
+        other: 'sur %d'
+sidebar:
+    follow: 'suivre'
+    newer: '+ récent'
+    older: '- récent'
+    recents: 'récents'
+    archives: 'archives'
+    categories: 'catégories'
+    links: 'liens'
+    tags: 'tags'
+    tag_cloud: 'tag cloud'
+article:
+    comments: 'Commentaires'
+    share: 'Partager'
+insight:
+    hint: 'Type something...'
+    posts: 'Articles'
+    pages: 'Pages'
+    categories: 'Catégories'
+    tags: 'Tags'
+    untitled: '(Untitled)'

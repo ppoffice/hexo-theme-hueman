@@ -1,0 +1,33 @@
+index:
+    home: 'Beranda'
+    about: 'Tentang'
+    search: 'Cari'
+    archive: 'Arsip'
+    category: 'Kategori'
+    uncategorized: 'belum terkategori'
+    tag: 'Tag'
+nav:
+    current_page:
+        other: 'Halaman %d '
+    total_page:
+        other: 'dari %d'
+sidebar:
+    follow: 'ikuti'
+    newer: 'lebih baru'
+    older: 'lebih lawas'
+    recents: 'terbaru'
+    archives: 'arsip'
+    categories: 'kategori'
+    links: 'tautan'
+    tags: 'tag'
+    tag_cloud: 'awan tag'
+article:
+    comments: 'Komentar'
+    share: 'Bagikan'
+insight:
+    hint: 'Type something...'
+    posts: 'pos'
+    pages: 'Pages'
+    categories: 'kategori'
+    tags: 'tag'
+    untitled: '(Untitled)'

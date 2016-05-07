@@ -1,0 +1,33 @@
+index:
+    home: 'Home'
+    about: 'Sobre'
+    search: 'Busca'
+    archive: 'Arquivo'
+    category: 'Categoria'
+    uncategorized: 'sem categoria'
+    tag: 'Tag'
+nav:
+    current_page:
+        other: 'Página %d '
+    total_page:
+        other: 'de %d'
+sidebar:
+    follow: 'seguir'
+    newer: 'novos'
+    older: 'antigos'
+    recents: 'recentes'
+    archives: 'arquivos'
+    categories: 'categorias'
+    links: 'links'
+    tags: 'tags'
+    tag_cloud: 'tag cloud'
+article:
+    comments: 'Comentários'
+    share: 'Compartilhar'
+insight:
+    hint: 'Type something...'
+    posts: 'Posts'
+    pages: 'Pages'
+    categories: 'categorias'
+    tags: 'tags'
+    untitled: '(Untitled)'

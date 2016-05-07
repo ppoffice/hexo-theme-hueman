@@ -1,0 +1,12 @@
+<% if (theme.share === 'jiathis') { %>
+    <%- partial('jiathis') %>
+<% } %>
+<% if (theme.share === 'bdshare') { %>
+    <%- partial('bdshare') %>
+<% } %>
+<% if (theme.share === 'addtoany') { %>
+    <%- partial('addtoany') %>
+<% } %>
+<% if (!theme.share || theme.share === 'default') { %>
+    <%- partial('default', { post: post }) %>
+<% } %>

@@ -1,0 +1,41 @@
+<header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="<%- url_for() %>" class="logo"></a>
+                    </h1>
+                    <% if (theme.subtitle) { %>
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle"><%= theme.subtitle %></p>
+                        </h2>
+                    <% } %>
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            <% for (var i in theme.menu) {
+                                    if (i == 'Categories') { %>
+                                        <%- list_categories({
+                                            depth: 2,
+                                            style: 'list',
+                                            class: 'main-nav',
+                                            show_count: false,
+                                        }) %>
+                                    <% } else { %>
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="<%- url_for(theme.menu[i]) %>"><%= __('index.' + i.toLowerCase()) %></a>
+                                </li>
+                            <% }} %>
+                        </ul>
+                        <nav id="sub-nav">
+                            <%- partial('search/index') %>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

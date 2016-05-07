@@ -1,0 +1,33 @@
+index:
+    home: 'Inicio'
+    about: 'Acerca de'
+    search: 'Buscar'
+    archive: 'Archivo'
+    category: 'Categoria'
+    uncategorized: 'Sin categoría'
+    tag: 'Etiqueta'
+nav:
+    current_page:
+        other: 'Página %d '
+    total_page:
+        other: 'de %d'
+sidebar:
+    follow: 'seguir'
+    newer: 'más nuevo'
+    older: 'antiguo'
+    recents: 'recientes'
+    archives: 'archivos'
+    categories: 'categorias'
+    links: 'links'
+    tags: 'etiquetas'
+    tag_cloud: 'etiqueta cloud'
+article:
+    comments: 'Comentarios'
+    share: 'Compartir'
+insight:
+    hint: 'Type something...'
+    posts: 'Entradas'
+    pages: 'Pages'
+    categories: 'Categorias'
+    tags: 'Etiquetas'
+    untitled: '(Untitled)'
