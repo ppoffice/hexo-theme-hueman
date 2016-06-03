@@ -23,7 +23,7 @@ sidebar:
     tag_cloud: 'címkefelhő'
 article:
     comments: 'Komment'
-    share: 'Megosztés'
+    share: 'Megosztás'
 insight:
     hint: 'Keresendő szöveg...'
     posts: 'Bejegyzések'
