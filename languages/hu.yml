@@ -1,0 +1,33 @@
+index:
+    home: 'Főoldal'
+    about: 'Elérhetőség'
+    search: 'Keresés'
+    archive: 'Archívum'
+    category: 'Kategória'
+    uncategorized: 'kategorizálatlan'
+    tag: 'Címke'
+nav:
+    current_page:
+        other: '%d. oldal '
+    total_page:
+        other: '/ %d'
+sidebar:
+    follow: 'követés'
+    newer: 'következő'
+    older: 'előző'
+    recents: 'friss'
+    archives: 'archívum'
+    categories: 'kategórák'
+    links: 'linkek'
+    tags: 'címkék'
+    tag_cloud: 'címkefelhő'
+article:
+    comments: 'Komment'
+    share: 'Megosztás'
+insight:
+    hint: 'Keresendő szöveg...'
+    posts: 'Bejegyzések'
+    pages: 'Oldalak'
+    categories: 'Kategóriák'
+    tags: 'Címkék'
+    untitled: '(Névtelen)'
