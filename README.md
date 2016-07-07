@@ -1,7 +1,7 @@
 # Hueman
 #### Probably the most beautiful theme for Hexo. [Preview](http://ppoffice.github.io/hexo-theme-hueman/)
 
-![Hueman](https://cloud.githubusercontent.com/assets/8849362/12326809/da2012c0-bb0d-11e5-8f7f-0b12cf0c2113.jpg)
+![Hueman](http://ppoffice.github.io/hexo-theme-hueman/gallery/screenshot.jpg "")
 
 > This theme is ported from [AlxMedia](https://github.com/AlxMedia)'s the WordPress theme [Hueman](https://github.com/AlxMedia/hueman).
 
@@ -27,23 +27,23 @@ Hueman inserts your blog categories into main menu in the header section. You ca
 ### Self-hosted Insite Search Engine
 With the help of [Insight Search](https://github.com/ppoffice/hexo-theme-hueman/wiki/Search#insight-search), you can search anything inside your site without any third-party plugin.
 
-![](https://ooo.0o0.ooo/2016/04/08/5707c54e356ed.png)
+![](http://ppoffice.github.io/hexo-theme-hueman/gallery/insight-search.png "")
 
 ### Custom Comment Services
 Hueman supports several comment services, give you better choices to communicate with your readers.
 
-![](https://camo.githubusercontent.com/3aa534804da281e1fe8107dbfb72be8f777a0dc0/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31342f353639373936626137656430642e706e67)
+![](http://ppoffice.github.io/hexo-theme-hueman/gallery/custom-comments.png "")
 
 ### Thumbnail
 
-Hueman finds the first image in every post as the thumbnail for the post. If the post does not contain a image link, Hueman uses the default thumbnail image. You can enable/disable this feature in `thumbnail` setting.
+Hueman uses the `thumbnail` [front-matter](https://hexo.io/docs/front-matter.html) option to set the thumbnail for a post. If the post does not have a `thumbnail` option, Hueman will find the first image in the post as the thumbnail. You can enable/disable this feature in `thumbnail` setting.
 
 ![](http://ppoffice.github.io/hexo-theme-hueman/gallery/thumbnail.jpg "")
 
 ### Code Highlight
 Hueman has more than 60 themes imported from [Highlight.js](https://github.com/isagalaev/highlight.js), and it is very easy to customize your own highlight theme.
 
-![](https://camo.githubusercontent.com/29244be9b08db085cc83244e9add325eaf5d0945/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31342f353639373362663136383064312e706e67)
+![](http://ppoffice.github.io/hexo-theme-hueman/gallery/code-highlight.png "")
 
 ### Scroll Loading
 
