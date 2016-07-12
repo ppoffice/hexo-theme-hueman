@@ -24,3 +24,10 @@ sidebar:
 article:
     comments: 'Comments'
     share: 'Share'
+insight:
+    hint: 'Type something...'
+    posts: 'Posts'
+    pages: 'Pages'
+    categories: 'Categories'
+    tags: 'Tags'
+    untitled: '(Untitled)'

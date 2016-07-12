@@ -1,0 +1,33 @@
+index:
+    home: 'Inici'
+    about: 'Quant a'
+    search: 'Cercar'
+    archive: 'Arxiu'
+    category: 'Categoria'
+    uncategorized: 'Sense categoria'
+    tag: 'Etiqueta'
+nav:
+    current_page:
+        other: 'Pàgina %d '
+    total_page:
+        other: 'de %d'
+sidebar:
+    follow: 'seguir'
+    newer: 'més nou'
+    older: 'antic'
+    recents: 'recents'
+    archives: 'arxius'
+    categories: 'categories'
+    links: 'links'
+    tags: 'etiquetes'
+    tag_cloud: 'etiqueta cloud'
+article:
+    comments: 'Comentaris'
+    share: 'Compartir'
+insight:
+    hint: 'Type something...'
+    posts: 'Posts'
+    pages: 'Pages'
+    categories: 'categories'
+    tags: 'etiquetes'
+    untitled: '(Untitled)'

@@ -5,10 +5,12 @@
                 <%- partial('post/title', { class_name: 'article-title' }) %>
             </header>
         <% } %>
-        <div class="article-subtitle">
-            <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
-            <%- partial('post/tag') %>
-        </div>
+        <% if (post.layout != 'page') { %>
+            <div class="article-subtitle">
+                <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
+                <%- partial('post/tag') %>
+            </div>
+        <% } %>
         <div class="article-entry" itemprop="articleBody">
             <%- post.content %>
         </div>

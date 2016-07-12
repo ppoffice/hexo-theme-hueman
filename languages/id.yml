@@ -24,3 +24,10 @@ sidebar:
 article:
     comments: 'Komentar'
     share: 'Bagikan'
+insight:
+    hint: 'Type something...'
+    posts: 'pos'
+    pages: 'Pages'
+    categories: 'kategori'
+    tags: 'tag'
+    untitled: '(Untitled)'

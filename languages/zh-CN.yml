@@ -24,3 +24,10 @@ sidebar:
 article:
     comments: '评论'
     share: '分享到'
+insight:
+    hint: '想要查找什么...'
+    posts: '文章'
+    pages: '页面'
+    categories: '分类'
+    tags: '标签'
+    untitled: '(未命名)'
