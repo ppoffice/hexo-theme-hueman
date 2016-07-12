@@ -20,7 +20,7 @@
                 $(this).after('<span class="caption">' + alt + '</span>');
             }
 
-            $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+            $(this).wrap('<a href="' + this.getAttribute('data-url') + '" title="' + alt + '" class="fancybox"></a>');
         });
 
         $(this).find('.fancybox').each(function(){
