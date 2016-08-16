@@ -8,14 +8,25 @@
         <% if (post.layout != 'page') { %>
             <div class="article-subtitle">
                 <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
-                <%- partial('post/tag') %>
+                <% if (theme.customize.tags_position != 'bottom') { %>
+                    <%- partial('post/tag') %>
+                <% } %>
             </div>
         <% } %>
         <div class="article-entry" itemprop="articleBody">
             <%- post.content %>
         </div>
         <footer class="article-footer">
-            <%- partial('share/index', { post: post }) %>
+            <% if (theme.customize.tags_position == 'bottom') { %>
+                <div style="float: left; width: 80%;">
+                    <%- partial('post/tag') %>
+                </div>
+                <div>
+                    <%- partial('share/index', { post: post }) %>
+                </div>
+            <% } else { %>
+                <%- partial('share/index', { post: post }) %>
+            <% } %>
         </footer>
     </div>
 </article>
