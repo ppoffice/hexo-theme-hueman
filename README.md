@@ -47,7 +47,7 @@ Hueman has more than 60 themes imported from [Highlight.js](https://github.com/i
 
 ### lightgallery
 
-Icarus uses [lightgallery.js](https://sachinchoolur.github.io/lightgallery.js/) to showcase your photos. Just enable it in your configuration, and that's all!
+Hueman uses [lightgallery.js](https://sachinchoolur.github.io/lightgallery.js/) to showcase your photos. Just enable it in your configuration, and that's all!
 
 ![](http://ppoffice.github.io/hexo-theme-hueman/gallery/lightgallery.jpg "")
 
