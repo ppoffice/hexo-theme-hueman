@@ -159,9 +159,6 @@
         text-decoration: none
         &:hover
             text-decoration: underline
-        //fancybox bug fix
-        &.fancybox
-            display: block !important
     ul, ol, dl
         margin-top: line-height
         margin-bottom: line-height
@@ -377,36 +374,40 @@ $article-share-link
         display: block
         max-width: 100%
         margin: 0 auto
-/*
-$article-gallery-ctrl
-    position: absolute
-    top: 0
-    height: 100%
-    width: 60px
-    color: #fff
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3)
-    opacity: 0.3
-    transition: opacity 0.2s
-    cursor: pointer
-    &:hover
-        opacity: 0.8
-    &:before
-        font-size: 30px
-        font-family: font-icon
-        position: absolute
-        top: 50%
-        margin-top: @font-size * -0.5
 
-.article-gallery-prev
-    @extend $article-gallery-ctrl
-    left: 0
-    &:before
-        content: "\f053"
-        left: 15px
-
-.article-gallery-next
-    @extend $article-gallery-ctrl
-    right: 0
-    &:before
-        content: "\f054"
-        right: 15px*/
+.article-gallery
+    overflow: hidden
+    background: black
+    position: relative
+    text-align: center
+    margin: line-height 0
+    .gallery-item
+        display: none
+        max-width: 100%
+        &:before,
+        &:after
+            top: 50%
+            width: 40px
+            height: 36px
+            font-size: 36px
+            line-height: 36px
+            margin-top: -18px
+            position: absolute
+            font-family: FontAwesome
+            color: rgba(255, 255, 255, .5)
+        &:hover
+            &:before,
+            &:after
+                color: rgba(255, 255, 255, .8)
+        &:before
+            left: 0
+            content: "\f104"
+        &:after
+            right: 0
+            content: "\f105"
+        &:first-child
+            display: block
+        img
+            display: block
+            max-width: 100%
+            margin: 0 auto
