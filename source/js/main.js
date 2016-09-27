@@ -20,7 +20,7 @@
         });
 
     });
-    if (lightGallery) {
+    if (typeof lightGallery != 'undefined') {
         var options = {
             selector: '.gallery-item',
         };
