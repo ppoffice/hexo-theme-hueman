@@ -1,3 +1,8 @@
+<!-- Facebook Comment Config -->
+<%= page.comment.facebook.language %>
+<%= page.comment.facebook.comment_count %>
+<%= page.comment.facebook.comment_colorscheme %>
+<!-- Facebook Comments Block -->
 <% if (typeof(script) !== 'undefined' && script
    && typeof(page.comment.facebook.language) !== 'undefined'  && page.comment.facebook.language ) { %>
 <script>(function(d, s, id) {
@@ -9,15 +14,10 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 <% } else if ( typeof(page.comment.facebook.comment_count) !== 'undefined' && page.comment.facebook.comment_count
           &&   typeof(page.comment.facebook.comment_colorscheme) !== 'undefined' && page.comment.facebook.comment_colorscheme { %>
-  <!-- Facebook Comments Block -->
   <div class="fb-comments"
     data-href="<%= page.permalink %>"
     data-num-posts="<%= page.comment.facebook.comment_count %>"
     data-width="100%"
     data-colorscheme="<%= page.comment.facebook.comment_colorscheme %>">
   </div>
-<% } else { %>
-  <%- page.comment.facebook.language %>
-  <%- page.comment.facebook.comment_count %>
-  <%- page.comment.facebook.comment_colorscheme %>
 <% } %>
