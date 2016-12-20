@@ -1,4 +1,7 @@
 <% if (typeof(script) !== 'undefined' && script
+   && typeof(page) !== 'undefined'  && page
+   && typeof(page.comment) !== 'undefined'  && page.comment
+   && typeof(page.comment.facebook) !== 'undefined'  && page.comment.facebook
    && typeof(page.comment.facebook.language) !== 'undefined'  && page.comment.facebook.language ) { %>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -7,7 +10,10 @@
   js.src = "//connect.facebook.net/<%= page.comment.facebook.language %>/sdk.js#xfbml=1&version=v2.8";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<% } else if ( typeof(page.comment.facebook.comment_count) !== 'undefined' && page.comment.facebook.comment_count
+<% } else if ( typeof(page) !== 'undefined' && page
+          &&   typeof(page.comment) !== 'undefined' && page.comment
+          &&   typeof(page.comment.facebook) !== 'undefined' && page.comment.facebook
+          &&   typeof(page.comment.facebook.comment_count) !== 'undefined' && page.comment.facebook.comment_count
           &&   typeof(page.comment.facebook.comment_colorscheme) !== 'undefined' && page.comment.facebook.comment_colorscheme ) { %>
   <!-- Facebook Comments Block -->
   <div class="fb-comments"
