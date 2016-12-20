@@ -8,7 +8,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <% } else if ( typeof(page.comment.facebook.comment_count) !== 'undefined' && page.comment.facebook.comment_count
-          &&   typeof(page.comment.facebook.comment_colorscheme) !== 'undefined' && page.comment.facebook.comment_colorscheme { %>
+          &&   typeof(page.comment.facebook.comment_colorscheme) !== 'undefined' && page.comment.facebook.comment_colorscheme ) { %>
   <!-- Facebook Comments Block -->
   <div class="fb-comments"
     data-href="<%= page.permalink %>"
