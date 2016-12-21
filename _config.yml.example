@@ -44,6 +44,7 @@ comment:
     disqus: hexo-theme-hueman # enter disqus shortname here
     duoshuo: # enter duoshuo shortname here
     youyan: # enter youyan uid here
+    facebook: # enter true to enable
 
 # Share
 share: default # options: jiathis, bdshare, addtoany, default
