@@ -6,6 +6,7 @@ index:
     category: 'Categoria'
     uncategorized: 'Sin categoría'
     tag: 'Etiqueta'
+    letters: 'Cartas'
 nav:
     current_page:
         other: 'Página %d '
