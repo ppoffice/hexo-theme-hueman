@@ -7,6 +7,8 @@ menu:
 
 # Customize
 customize:
+    header-background-image: "http://www.example.org/background/01_Pic350x1450.jpeg" # Just comment out if you don't need it.
+    header-background-image-lowres: "http://www.example.org/background/01_Pic500x500px.jpeg" # Just comment out if you don't need it.
     logo:
         width: 165
         height: 60
