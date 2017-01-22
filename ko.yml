@@ -1,0 +1,33 @@
+index:
+    home: '홈'
+    about: 'About'
+    search: '검색'
+    archive: '아카이브'
+    category: '카테고리'
+    uncategorized: '미지정'
+    tag: '태그'
+nav:
+    current_page:
+        other: 'Page %d '
+    total_page:
+        other: 'of %d'
+sidebar:
+    follow: '팔로우'
+    newer: '새로운'
+    older: '오래된'
+    recents: '최근 글'
+    archives: '아카이브'
+    categories: '카테고리'
+    links: '링크'
+    tags: '태그'
+    tag_cloud: '태그 클라우드'
+article:
+    comments: '댓글'
+    share: '공유하기'
+insight:
+    hint: 'Type something...'
+    posts: '포스트'
+    pages: 'Pages'
+    categories: '카테고리'
+    tags: '태그'
+    untitled: '(Untitled)'
