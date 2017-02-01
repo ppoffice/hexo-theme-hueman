@@ -3,7 +3,7 @@
         <h3 class="widget-title"><%= __('sidebar.sticky') %></h3>
         <div class="widget">
             <ul id="recent-post" class="<%= (theme.customize.thumbnail?'':'no-thumbnail') %>">
-                <% site.posts.filter(function(post) { return post.sticky; }).sort('date', -1).limit(5).each(function(post) { %>
+                <% site.posts.filter(function(post) { return post.sticky; }).sort('sticky', -1).limit(5).each(function(post) { %>
                     <% if (!post.hidden) { %>
                         <li>
                             <% if (theme.customize.thumbnail === true) { %>
