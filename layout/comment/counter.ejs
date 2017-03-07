@@ -6,7 +6,7 @@
     <% } else if (theme.comment.duoshuo) { %>
         <span class="ds-thread-count" data-thread-key="<%= post.path %>">0</span>
     <% } else if (theme.comment.isso) { %>
-        <span><a href="/<%= post.path %>#isso-thread"></a></span>
+        <span><a href="<%= post.permalink %>#isso-thread"></a></span>
     <% } else if (theme.comment.facebook) { %>
         <span class="fb-comments-count" data-href="<%= post.permalink %>">0</span>
     <% } %>
