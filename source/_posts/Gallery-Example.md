@@ -1,5 +1,7 @@
 title: Gallery Example
 date: 2016-07-08 00:00:00
+categories:
+- Technology
 photos:
 - https://www.hdwallpapers.net/previews/starry-night-over-corsica-986.jpg
 - https://www.hdwallpapers.net/previews/water-plant-close-up-979.jpg
