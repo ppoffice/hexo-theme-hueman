@@ -1,10 +1,13 @@
 title: 中文测试
-date: 2015-01-26 21:55:37
+date: 2016-01-31 21:55:37
+categories:
+- Language
 tags:
 comments: false
 meta:
 - name="robots";content="noindex, follow"
 ---
+![](/hexo-theme-hueman/gallery/china-great-wall.jpg "")
 ## 桃花源记
 ### 朝代：魏晋
 ### 作者：陶渊明
