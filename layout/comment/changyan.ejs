@@ -1,5 +1,5 @@
-<% if (typeof(script) !== 'undefined' && script && is_post()) { %>
-    <div id="SOHUCS" sid="<%= page.permalink %>"></div>
+<% if (typeof(script) !== 'undefined' && script) { %>
+    <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=<%= theme.comment.changyan.appId %>"></script>
     <script type="text/javascript">
         (function() {
             var appid = '<%= theme.comment.changyan.appId %>';
@@ -39,7 +39,5 @@
         })();
     </script>
 <% } else { %>
-    <div id="SOHUCS">
-        <noscript>Please enable JavaScript to view the <a href="//changyan.kuaizhan.com/">comments powered by Changyan.</a></noscript>
-    </div>
+    <div id="SOHUCS" sid="<%= page.permalink %>"></div>
 <% } %>
