@@ -1,0 +1,33 @@
+index:
+    home: '首頁'
+    about: '關於'
+    search: '搜尋'
+    archive: '記錄'
+    category: '分類：'
+    uncategorized: '未分類'
+    tag: '標籤：'
+nav:
+    current_page:
+        other: '第 %d 頁，'
+    total_page:
+        other: '共 %d 頁'
+sidebar:
+    follow: '追隨 '
+    newer: '下一篇'
+    older: '上一篇'
+    recents: '最新文章'
+    archives: '記錄'
+    categories: '分類'
+    links: '連結'
+    tags: '標籤'
+    tag_cloud: '標籤雲'
+article:
+    comments: '評論'
+    share: '分享到'
+insight:
+    hint: '輸入關鍵字(休息,食記...)'
+    posts: '文章'
+    pages: '頁面'
+    categories: '分類'
+    tags: '標籤'
+    untitled: '(未命名)'
