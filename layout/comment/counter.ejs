@@ -5,6 +5,12 @@
         <span class="disqus-comment-count" data-disqus-identifier="<%= post.disqusId || '' %>" data-disqus-url="<%= post.permalink %>">0</span>
     <% } else if (theme.comment.duoshuo) { %>
         <span class="ds-thread-count" data-thread-key="<%= post.path %>">0</span>
+    <% } else if (theme.comment.isso) { %>
+        <span><a href="<%= post.permalink %>#isso-thread"></a></span>
+    <% } else if (theme.comment.facebook) { %>
+        <span class="fb-comments-count" data-href="<%= post.permalink %>">0</span>
+    <% } else if (theme.comment.changyan.on) { %>
+        <span class="cy_cmt_count" id="sourceId::<%= post.permalink %>">0</span>
     <% } %>
 </span>
 <% } %>

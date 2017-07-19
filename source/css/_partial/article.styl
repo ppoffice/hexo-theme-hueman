@@ -4,18 +4,6 @@
 .article-inner
     overflow: hidden
 
-.article-meta
-    clearfix()
-    height: line-height
-    line-height: line-height
-    overflow: hidden
-    p
-        float: left
-        color: #bbb
-    .category
-        text-transform: uppercase
-        a, i
-            margin-right: 6px
 .article-row
     clearfix()
     width: 100%
@@ -24,6 +12,7 @@
     padding: 30px 0px 0px 30px
     border-bottom: 1px solid #eee
     box-sizing: border-box
+
 .article-summary
     width: 50%
     float: left
@@ -117,28 +106,38 @@
     a&:hover
         color: color-theme
 
-.article-date,
-.article-tag-list
+.article-meta
     @extend $block-caption
-
-.article-tag-list
     clearfix()
-    float: right
-    &:before
+    line-height: line-height
+    & > div
         float: left
-        content: '\f02b'
-        margin-right: 8px
-        font-family: FontAwesome
+        margin-right: 10px
+        .fa
+            margin-right: 3px
+    a
+        color: color-default
+        &:hover
+            color: color-link
+    .category
+        text-transform: uppercase
+        a, i
+            margin-left: 0
+            margin-right: 6px
 
-.article-tag-list-item
-    float: left
-    margin-right: 10px
+.article-summary
+    .article-meta
+        height: line-height
+        overflow: hidden
+        a
+            color: color-theme
+        & > div
+            margin-right: 0
 
-.article-tag-list-link
-    color: color-default
-    text-decoration: none
-    &:before
-        content: '#'
+.article-tag
+    .tag-link
+        &:before
+            content: "#"
 
 .article-entry
     @extend $base-style
@@ -162,6 +161,10 @@
     ul, ol, dl
         margin-top: line-height
         margin-bottom: line-height
+        list-style-position: outside
+        padding-left: 1.4em
+        p
+            margin: 0
     img, video
         max-width: 100%
         height: auto
@@ -411,6 +414,24 @@ $article-share-link
             display: block
             max-width: 100%
             margin: 0 auto
+
+/* right-to-left languages */
+.article.rtl
+    .article-title,
+    .article-excerpt,
+    .article-entry p
+        direction: rtl
+    .article-meta
+        & > div
+            float: right
+            margin-left: 10px
+            margin-right: 0
+        .category
+            a, i
+                margin-right: 0
+                margin-left: 6px
+                &:first-child
+                    margin-left: 0
 
 /* lightgallery */
 .lg-outer

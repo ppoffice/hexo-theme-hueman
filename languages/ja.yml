@@ -1,0 +1,33 @@
+index:
+    home: 'ホーム'
+    about: 'このブログについて'
+    search: '検索'
+    archive: 'アーカイブ'
+    category: 'カテゴリー'
+    uncategorized: 'カテゴリ未設定'
+    tag: 'タグ'
+nav:
+    current_page:
+        other: ' %d ページ'
+    total_page:
+        other: '%d ページ中'
+sidebar:
+    follow: 'フォロー'
+    newer: '新しい'
+    older: '古い'
+    recents: '最新'
+    archives: 'アーカイブ'
+    categories: 'カテゴリー'
+    links: 'リンク'
+    tags: 'タグ'
+    tag_cloud: 'タグクラウド'
+article:
+    comments: 'コメント'
+    share: 'シェア'
+insight:
+    hint: '入力してください'
+    posts: '記事'
+    pages: 'ページ'
+    categories: 'カテゴリー'
+    tags: 'タグ'
+    untitled: '（名称未設定）'

@@ -6,6 +6,12 @@
         <%- partial('comment/duoshuo') %>
     <% } else if (theme.comment.youyan) { %>
         <%- partial('comment/youyan') %>
+    <% } else if (theme.comment.facebook) { %>
+      <%- partial('comment/facebook') %>
+    <% } else if (theme.comment.isso) { %>
+        <%- partial('comment/isso') %>
+    <% } else if (theme.comment.changyan.on) { %>
+        <%- partial('comment/changyan') %>
     <% } %>
     </section>
 <% } %>

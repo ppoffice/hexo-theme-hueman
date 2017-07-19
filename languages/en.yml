@@ -16,6 +16,7 @@ sidebar:
     newer: 'newer'
     older: 'older'
     recents: 'recents'
+    sticky: 'Popular'
     archives: 'archives'
     categories: 'categories'
     links: 'links'
