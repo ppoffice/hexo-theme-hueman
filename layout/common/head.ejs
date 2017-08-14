@@ -18,6 +18,9 @@
         }
     %>
     <title><% if (title) { %><%= title %> | <% } %><%= config.title %></title>
+    <% if (theme.plugins.bing_site_verification) { %>
+      <meta name="msvalidate.01" content="<%- theme.plugins.bing_site_verification %>" />
+    <% } %>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <% if (page.tags) {
         var keywords = [];
