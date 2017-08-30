@@ -12,6 +12,8 @@
         <%- partial('comment/isso') %>
     <% } else if (theme.comment.changyan.on) { %>
         <%- partial('comment/changyan') %>
+    <% } else if (theme.comment.valine.on) { %>
+        <%- partial('comment/valine') %>
     <% } %>
     </section>
 <% } %>
