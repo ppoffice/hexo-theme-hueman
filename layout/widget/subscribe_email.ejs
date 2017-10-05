@@ -1,0 +1,19 @@
+<div class="widget-wrap widget-float">
+  <h3 class="widget-title">Subscribe To List</h3>
+  <div class="widget">
+    <form id="mc-form">
+      <input id="mc-email" type="email" placeholder="email">
+      <label for="mc-email"></label>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<script>
+(function (window) {
+    var CONFIG = {
+      'PROVIDER':'<%= (theme.plugins.subscribe_email.provider) %>',
+      'MAILCHIMP_URL':'<%= (theme.plugins.subscribe_email.mailchimp_url) %>',
+    }
+    window.SUBSCRIBE_EMAIL_CONFIG = CONFIG;
+})(window);
+</script>

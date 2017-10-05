@@ -1,4 +1,4 @@
-(function ($) {
+(function ($, SUBSCRIBE_EMAIL_CONFIG) {
     // To top button
     $("#back-to-top").on('click', function () {
         $('body, html').animate({ scrollTop: 0 }, 600);
@@ -133,4 +133,11 @@
         }
     });
 
-})(jQuery);
+    if(SUBSCRIBE_EMAIL_CONFIG.PROVIDER === 'mailchimp'){
+      console.log('chimp',SUBSCRIBE_EMAIL_CONFIG)
+      $('#mc-form').ajaxChimp({
+        url: SUBSCRIBE_EMAIL_CONFIG.MAILCHIMP_URL
+      });
+    }
+
+})(jQuery, window.SUBSCRIBE_EMAIL_CONFIG);
