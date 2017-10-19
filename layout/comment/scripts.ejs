@@ -10,4 +10,6 @@
     <%- partial('comment/isso', { script: true }) %>
 <% } else if (theme.comment.changyan.on) { %>
     <%- partial('comment/changyan', { script: true }) %>
+<% } else if (theme.comment.valine.on) { %>
+    <%- partial('comment/valine', { script: true }) %>
 <% } %>
