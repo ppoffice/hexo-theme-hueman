@@ -8,7 +8,10 @@
                     </h1>
                     <% if (theme.subtitle) { %>
                         <h2 class="subtitle-wrap">
-                            <p class="subtitle"><%= theme.subtitle %></p>
+                          <% if (theme.title) { %>
+                            <p class="title"><%= theme.title %></p>
+                          <% } %>
+                          <p class="subtitle"><%= theme.subtitle %></p>
                         </h2>
                     <% } %>
                 </div>

@@ -4,6 +4,8 @@
 @media only screen and (min-width: 960px)
     .nav-container-inner
         display: block !important
+    .title
+        text-align: left
 
 /* ------------------------------------------------------------------------- *
  *    Toggle Sidebar s1 : 959px > 480px
@@ -11,6 +13,8 @@
 @media only screen and (min-width: 480px) and (max-width: 959px)
     #header
         padding-bottom: sidebar-toggle-width
+        .title
+          text-align: left
         .nav-container-inner
             display: block !important
             #main-nav
@@ -108,6 +112,10 @@
             text-align: center
             .logo
                 margin: 0 auto
+        .title-wrap
+            display: block
+            width: 100%
+            margin-left: 0px
         .subtitle-wrap
             display: block
             width: 100%
