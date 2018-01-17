@@ -13,8 +13,8 @@ nav:
         other: '共 %d 页'
 sidebar:
     follow: '关注我 '
-    newer: '下一篇'
-    older: '上一篇'
+    newer: '上一篇'
+    older: '下一篇'
     recents: '最新文章'
     archives: '归档'
     categories: '分类'
