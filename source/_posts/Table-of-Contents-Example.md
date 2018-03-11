@@ -8,8 +8,19 @@ thumbnail: /hexo-theme-hueman/gallery/snow-wolf.jpg
 toc: true
 ---
 # How to enable table of content for a post?
+First, let's enable the `catalog` widget:
+```diff
+widgets:
++   - catalog
+    - recent_posts
+    - category
+    - archive
+    - tag
+    - tagcloud
+    - links
+```
 
-Add the highlighted line to the front-matter of your post Markdown file:
+Then, add `toc: true` to the front-matter of the posts where you want to show a catalog:
 
 ```diff
 title: Table of Contents Example
