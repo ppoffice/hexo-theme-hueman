@@ -24,6 +24,7 @@ sidebar:
 article:
     comments: '评论'
     share: '分享到'
+    catalogue: '目录'
 insight:
     hint: '想要查找什么...'
     posts: '文章'
