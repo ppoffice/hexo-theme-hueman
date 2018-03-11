@@ -20,7 +20,7 @@
     <div class="widgets-container">
         <% if (theme.widgets) { %>
             <% theme.widgets.forEach(function(widget) { %>
-                <%- partial('widget/' + widget) %>
+                <%- partial('widget/' + widget, {post: page}) %>
             <% }) %>
         <% } %>
     </div>

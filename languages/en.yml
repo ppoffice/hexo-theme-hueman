@@ -22,10 +22,10 @@ sidebar:
     links: 'links'
     tags: 'tags'
     tag_cloud: 'tag cloud'
+    catalogue: 'Catalog'
 article:
     comments: 'Comments'
     share: 'Share'
-    catalogue: 'Table of Contents'
 insight:
     hint: 'Type something...'
     posts: 'Posts'

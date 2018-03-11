@@ -149,9 +149,12 @@
     ul, ol
         list-style: none
         li
-            padding: 10px 0
+            margin: 10px 0
+            padding-bottom: 10px
             font-size: font-size + 1
             border-bottom: 1px solid #E4E4E4
+            &:last-child
+                margin-bottom: 0px
             a
                 color: color-sidebar-text
                 &:before
@@ -167,8 +170,7 @@
             list-style: none
             li
                 border: none
-                &:last-child
-                    padding-bottom: 0px
+                padding-bottom: 0
 
 .widget-float
     a
@@ -246,3 +248,12 @@
 .tagcloud
     a
         margin-right: 5px
+
+.toc-article
+    margin: 0
+    padding: 0
+    .toc
+        padding: 0
+        margin: 10px 0 0
+        .toc-item
+            list-style: none

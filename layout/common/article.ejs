@@ -13,12 +13,6 @@
         <% } %>
         <%- partial('post/gallery') %>
         <div class="article-entry" itemprop="articleBody">
-            <% if (post.toc) { %>
-            <div id="toc" class="toc-article">
-                <strong class="toc-title"><%= __('article.catalogue') %></strong>
-                <%- toc(post.content) %>
-            </div>
-            <% } %>
             <%- post.content %>
         </div>
         <footer class="article-footer">

@@ -26,6 +26,7 @@ customize:
 
 # Widgets
 widgets:
+    - catalog
     - recent_posts
     - category
     - archive
