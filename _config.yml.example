@@ -73,6 +73,10 @@ plugins:
     baidu_analytics: # enter Baidu Analytics hash key
     bing_site_verification: # enter Bing verification key here
     mathjax: false # options: true, false
+    subscribe_email:
+      # have used this field to add support for other email providers as well
+      provider: mailchimp
+      mailchimp_url: # enter the URL which you get from your mailchimp signup form
 
 # Miscellaneous
 miscellaneous:
