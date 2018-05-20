@@ -1,5 +1,8 @@
 {
   "name": "hexo-theme-hueman",
   "version": "0.2.1",
-  "private": true
+  "private": true,
+  "peerDependencies": {
+    "hexo-pwa": ">= 0.1.3",
+  }
 }

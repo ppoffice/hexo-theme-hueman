@@ -1,0 +1,20 @@
+<% if (config.pwa) { %>
+<%
+  var icon = config.pwa.manifest.body.icons.find(icon => icon.sizes === '152x152');
+%>
+<% if (icon) { %>
+<link rel="icon" href="/<%= icon.src %>" />
+<link rel="apple-touch-icon" href="/<%= icon.src %>" />
+
+<meta name="msapplication-TileImage" content="/<%= icon.src %>" />
+<% } %>
+
+<meta name="msapplication-TileColor" content="<%= theme.customize.theme_color %>" />
+
+<meta name="theme-color" content="<%= theme.customize.theme_color %>" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="<%= config.pwa.manifest.body.name %>" />
+
+<% } %>
