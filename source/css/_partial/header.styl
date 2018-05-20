@@ -2,6 +2,10 @@
     background: color-header-background
     padding-bottom: nav-height
     position: relative
+    if header-background-image is defined && header-background-image is not ""
+      background-image: url(header-background-image)
+      background-repeat: no-repeat
+      background-size: cover
 
 #header-outer
     height: 100%

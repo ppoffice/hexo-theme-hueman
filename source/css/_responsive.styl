@@ -102,6 +102,8 @@
     .container
         padding: 0px
     #header
+        if header-background-image-lowres is defined && header-background-image-lowres is not ""
+            background-image: url(header-background-image-lowres)
         .logo-wrap
             width: 100%
             display: block
