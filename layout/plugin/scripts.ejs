@@ -11,7 +11,7 @@
     <% if (theme.plugins.baidu_analytics) { %>
         <%- partial('plugin/baidu-analytics') %>
     <% } %>
-<% } else if (typeof(isBeforeFooter) !== 'undefined' && isBeforeFooter) { %>
+<% } else if (typeof(isFooter) !== 'undefined' && isFooter) { %>
     <% if (theme.plugins.statcounter && theme.plugins.statcounter.on) { %>
         <%- partial('plugin/statcounter') %>
     <% } %>

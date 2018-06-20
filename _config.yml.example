@@ -46,7 +46,7 @@ comment:
     duoshuo: # enter duoshuo shortname here
     youyan: # enter youyan uid here
     facebook: # enter true to enable
-    isso: 
+    isso: # options for isso. All fields below are OPTIONAL (except for site). See https://posativ.org/isso/docs/configuration/client/ for more information.
         on: # enter true to enable isso
         site: # enter the domain name of your own comment isso server, eg. comments.example.com
         lang: # two letter language code, eg. en
@@ -90,6 +90,7 @@ plugins:
       sc_project: # enter statcounter project id
       sc_invisible: # enter 1 to make statcounter invisible
       sc_security: # enter security code
+      public: # enter true if you want a link to your public stats. Must be configured on statcouter as well.
       on: # enter true to enable statcounter
     mathjax: false # options: true, false
 

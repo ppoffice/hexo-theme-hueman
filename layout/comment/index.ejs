@@ -10,10 +10,8 @@
         <%- partial('comment/livere') %>
     <% } else if (theme.comment.facebook) { %>
       <%- partial('comment/facebook') %>
-    <% } else if ((typeof(theme.comment.isso) === 'object' 
-                     && theme.comment.isso.on)
-                   /* for backwards-compatibility */
-                   || typeof(theme.comment.isso) === 'string' { %>
+    <% } else if (typeof(theme.comment.isso) === 'string' 
+                   || theme.comment.isso && theme.comment.isso.on) { %>
         <%- partial('comment/isso') %>
     <% } else if (theme.comment.changyan.on) { %>
         <%- partial('comment/changyan') %>
