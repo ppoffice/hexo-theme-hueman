@@ -11,10 +11,10 @@
     <% if (theme.plugins.baidu_analytics) { %>
         <%- partial('plugin/baidu-analytics') %>
     <% } %>
+<% } else if (typeof(isBeforeFooter) !== 'undefined' && isBeforeFooter) { %>
     <% if (theme.plugins.statcounter && theme.plugins.statcounter.on) { %>
         <%- partial('plugin/statcounter') %>
     <% } %>
-
 <% } else { %>
     <% if (theme.plugins.lightgallery) { %>
         <%- js('libs/lightgallery/js/lightgallery.min') %>

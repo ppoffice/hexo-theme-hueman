@@ -10,7 +10,10 @@
         <%- partial('comment/livere') %>
     <% } else if (theme.comment.facebook) { %>
       <%- partial('comment/facebook') %>
-    <% } else if (theme.comment.isso) { %>
+    <% } else if ((typeof(theme.comment.isso) === 'object' 
+                     && theme.comment.isso.on)
+                   /* for backwards-compatibility */
+                   || typeof(theme.comment.isso) === 'string' { %>
         <%- partial('comment/isso') %>
     <% } else if (theme.comment.changyan.on) { %>
         <%- partial('comment/changyan') %>

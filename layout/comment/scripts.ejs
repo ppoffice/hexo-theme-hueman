@@ -8,7 +8,10 @@
     <%- partial('comment/livere', { script: true }) %>
 <% } else if (theme.comment.facebook) { %>
     <%- partial('comment/facebook', { script: true }) %>
-<% } else if (theme.comment.isso) { %>
+<% } else if ((typeof(theme.comment.isso) === 'object' 
+                 && theme.comment.isso.on) 
+                 /* for backwards-compatibility */
+              || typeof(theme.comment.isso) === 'string' { %>
     <%- partial('comment/isso', { script: true }) %>
 <% } else if (theme.comment.changyan.on) { %>
     <%- partial('comment/changyan', { script: true }) %>

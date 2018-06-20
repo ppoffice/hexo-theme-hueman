@@ -11,8 +11,8 @@ if (typeof(script) !== 'undefined' && script) {
               'vote_levels'];
           for (var p of props) {
               if (theme.comment.isso[p]) { %>
-                  <%= (p == 'vote_levels' ? 'data-vote-levels' : 'data-isso-' +
-                    p.replace('_', '-')) %> = "<%= theme.comment.isso[p] %>"
+                  <%= 'data-isso-' + p.replace('_', '-')) %> = 
+                      "<%= theme.comment.isso[p] %>"
               <% }
           }
         %>
