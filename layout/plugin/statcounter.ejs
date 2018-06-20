@@ -1,0 +1,23 @@
+<!-- Default Statcounter code -->
+<% let sc = theme.plugins.statcounter; %>
+<script type="text/javascript">
+  var sc_project=<%= sc.sc_project %>; 
+  var sc_invisible=<%= sc.sc_invisible %>; 
+  var sc_security="<%= sc.sc_security %>"; 
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js">
+</script>
+<noscript>
+  <div class="statcounter">
+    <a title="Web Analytics" href="http://statcounter.com/" target="_blank">
+      <img class="statcounter" 
+        src="//c.statcounter.com/<%= sc.sc_project %>/0/<%= 
+          sc.sc_security %>/<%= sc.sc_invisible %>/"
+        alt="Web Analytics">
+    </a>
+  </div>
+</noscript>
+<!-- End of Statcounter Code -->
+<% if (sc.public) { %>
+  <a href="http://statcounter.com/p<%= sc.sc_project %>/?guest=1">View My Stats</a>
+<% } %>
