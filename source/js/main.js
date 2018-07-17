@@ -115,7 +115,6 @@
 
     // Fold second-level menu
     $('.main-nav-list-item').hover(function () {
-        console.log(1)
         if ($(window).width() < 480) {
             return;
         }
