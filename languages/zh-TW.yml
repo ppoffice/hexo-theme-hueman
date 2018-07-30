@@ -16,11 +16,13 @@ sidebar:
     newer: '下一篇'
     older: '上一篇'
     recents: '最新文章'
+    sticky: '熱門文章'
     archives: '所有文章'
     categories: '分類'
     links: '連結'
     tags: '標籤'
     tag_cloud: '標籤雲'
+    catalogue: '目錄'
 article:
     comments: '評論'
     share: '分享到'
