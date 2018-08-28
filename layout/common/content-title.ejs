@@ -10,6 +10,11 @@
                 title += ': ' + page.year;
             }
             title = '<i class="icon fa fa-archive"></i>' + title;
+	} else if (page.author && !is_post()) {
+	    title = page.author.name;
+	    if (page.author.about) {
+	        title += ' - ' + page.author.about;
+	    }
         } else if (page.category) {
             title = '<i class="icon fa fa-folder-open"></i>' + __('index.category') + ': <em class="page-title-link">' + page.category + '</em>';
         } else if (page.tag) {
