@@ -1,0 +1,29 @@
+<% 
+if (typeof(script) !== 'undefined' && script) { 
+    let isso = theme.comment.isso;
+    let issoSite = (typeof(isso) === 'string' ? isso : isso.site);
+    if (isso === issoSite) { //isso is a string
+        //TODO: maybe something better error logging
+        console.warn('WARN  Specifying property "comment.isso" as a ' +
+        'string is deprecated. Please consider using the object form. See ' +
+        'the respective _config.yml.example file for an example.');
+    }
+%>
+    <script data-isso="//<%= issoSite %>"
+        <%
+          let props = ['css', 'lang', 'reply_to_self', 'require_author',
+              'require_email', 'max_comments_top', 'max_comments_nested',
+              'reveal_on_click', 'avatar', 'avatar_bg', 'avatar_fg', 'vote',
+              'vote_levels'];
+          for (var p of props) {
+              if (theme.comment.isso[p]) { %>
+                  <%= 'data-isso-' + p.replace('_', '-') %> = 
+                      "<%= theme.comment.isso[p] %>"
+              <% } %>
+          <% } %>
+        src="//<%= issoSite %>/js/embed.min.js">
+    </script>
+<% } else { %>
+    <section id="isso-thread"></section>
+<% } %>
+

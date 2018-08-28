@@ -16,11 +16,13 @@ sidebar:
     newer: 'newer'
     older: 'older'
     recents: 'recents'
+    sticky: 'Popular'
     archives: 'archives'
     categories: 'categories'
     links: 'links'
     tags: 'tags'
     tag_cloud: 'tag cloud'
+    catalogue: 'Catalog'
 article:
     comments: 'Comments'
     share: 'Share'

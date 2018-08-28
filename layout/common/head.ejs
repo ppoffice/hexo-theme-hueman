@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+
+    <%- partial('pwa/index') %>
     <%
         var title = page.title;
         if (is_archive()) {
@@ -18,6 +20,9 @@
         }
     %>
     <title><% if (title) { %><%= title %> | <% } %><%= config.title %></title>
+    <% if (theme.plugins.bing_site_verification) { %>
+      <meta name="msvalidate.01" content="<%- theme.plugins.bing_site_verification %>" />
+    <% } %>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <% if (page.tags) {
         var keywords = [];
@@ -44,12 +49,12 @@
         <link rel="icon" href="<%- url_for(theme.customize.favicon) %>" />
     <% } %>
 
-    <%- css('vendor/font-awesome/css/font-awesome.min') %>
-    <%- css('vendor/titillium-web/styles') %>
-    <%- css('vendor/source-code-pro/styles') %>
+    <%- css('libs/font-awesome/css/font-awesome.min') %>
+    <%- css('libs/titillium-web/styles') %>
+    <%- css('libs/source-code-pro/styles') %>
 
     <%- css('css/style') %>
 
-    <%- js('vendor/jquery/2.0.3/jquery.min') %>
+    <%- js('libs/jquery/3.3.1/jquery.min') %>
     <%- partial('plugin/scripts', { isHead: true }) %>
 </head>

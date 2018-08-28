@@ -6,6 +6,17 @@
         <%- partial('comment/duoshuo') %>
     <% } else if (theme.comment.youyan) { %>
         <%- partial('comment/youyan') %>
+    <% } else if (theme.comment.livere) { %>
+        <%- partial('comment/livere') %>
+    <% } else if (theme.comment.facebook) { %>
+      <%- partial('comment/facebook') %>
+    <% } else if (typeof(theme.comment.isso) === 'string' 
+                   || theme.comment.isso && theme.comment.isso.on) { %>
+        <%- partial('comment/isso') %>
+    <% } else if (theme.comment.changyan.on) { %>
+        <%- partial('comment/changyan') %>
+    <% } else if (theme.comment.valine.on) { %>
+        <%- partial('comment/valine') %>
     <% } %>
     </section>
 <% } %>

@@ -1,0 +1,33 @@
+index:
+    home: 'Anasayfa'
+    about: 'Hakkında'
+    search: 'Ara'
+    archive: 'Arşiv'
+    category: 'Kategori'
+    uncategorized: 'Kategorisiz'
+    tag: 'Etiket'
+nav:
+    current_page:
+        other: 'Sayfa %d '
+    total_page:
+        other: 'toplam %d'
+sidebar:
+    follow: 'Takip Et'
+    newer: 'sonraki'
+    older: 'önceki'
+    recents: 'son yazılar'
+    archives: 'arşiv'
+    categories: 'kategoriler'
+    links: 'linkler'
+    tags: 'etiketler'
+    tag_cloud: 'etiket bulutu'
+article:
+    comments: 'Yorumlar'
+    share: 'Paylaş'
+insight:
+    hint: 'Bir şeyler yaz...'
+    posts: 'Gönderiler'
+    pages: 'Sayfalar'
+    categories: 'Kategoriler'
+    tags: 'Etiketler'
+    untitled: '(Başlıksız)'

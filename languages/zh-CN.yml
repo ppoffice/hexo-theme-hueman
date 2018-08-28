@@ -21,6 +21,7 @@ sidebar:
     links: '链接'
     tags: '标签'
     tag_cloud: '标签云'
+    catalogue: '目录'
 article:
     comments: '评论'
     share: '分享到'

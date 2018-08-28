@@ -1,10 +1,10 @@
-<article class="article article-summary">
+<article class="article article-summary<%= (post.direction && post.direction.toLowerCase() === 'rtl' ? ' rtl' : '') %>">
     <div class="article-summary-inner">
         <% if (theme.customize.thumbnail === true) { %>
         <%- partial('common/thumbnail', { counter: true }) %>
         <% } %>
         <div class="article-meta">
-            <p class="category">
+            <div class="category">
             <%- list_categories(post.categories, {
                 depth:2,
                 style: 'none',
@@ -12,8 +12,8 @@
                 class: 'article-category',
                 separator: '<i class="icon fa fa-angle-right"></i>',
             }) %>
-            </p>
-            <p class="date"><time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time></p>
+            </div>
+            <div class="date"><time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time></div>
         </div>
         <%- partial('post/title', { class_name: 'article-title', linkable: true }) %>
         <p class="article-excerpt">

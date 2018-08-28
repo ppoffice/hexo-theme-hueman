@@ -1,0 +1,10 @@
+<% if (typeof(post) != 'undefined' && post.toc) { %>
+<div class="widget-wrap widget-list">
+    <h3 class="widget-title"><%= __('sidebar.catalogue') %></h3>
+    <div class="widget">
+        <div id="toc" class="toc-article">
+            <%- toc(post.content) %>
+        </div>
+    </div>
+</div>
+<% } %>
