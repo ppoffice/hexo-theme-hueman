@@ -3,9 +3,7 @@
   "version": "0.2.1",
   "private": true,
   "peerDependencies": {
-    "hexo-pwa": ">= 0.1.3"
-  },
-  "dependencies": {
+    "hexo-pwa": ">= 0.1.3",
     "hexo-multiauthor": "0.0.1"
   }
 }
