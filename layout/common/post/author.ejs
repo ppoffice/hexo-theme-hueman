@@ -1,0 +1,5 @@
+<% if (post.authorId) { %>
+  <div class="article-author">
+    <a href="<%- config.root %><%- 'author/' + post.authorId %>"><%= post.author.name %></a>
+  </div>
+<% } %>
