@@ -18,10 +18,13 @@
                 <div id="toc" class="article-toc-article">
                     <div class="article-toc-title"><%= __('article.toc') %></div>
                     <% if (theme.customize && theme.customize.toc) { %>
-                        <%- toc(post.content, { 
+                        <%- toc(post.content, {
                             list_number: (typeof theme.customize.toc.numbering !== undefined ? theme.customize.toc.numbering : true),
                             class: 'article-toc-toc',
                             max_depth: (typeof theme.customize.toc.max_depth !== undefined ? theme.customize.toc.max_depth : 6)})
+                        %>
+                    <% } else { %> <%# if theme.customize.toc is not define %>
+                        <%- toc(post.content, {class: 'article-toc-toc'})
                         %>
                     <% } %>
                 </div>
