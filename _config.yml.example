@@ -23,6 +23,9 @@ customize:
         github: https://github.com/ppoffice/hexo-theme-hueman
         weibo: /
         rss: /
+    toc: # if you want to change from default you need to define all options
+        numbering: false # Displays list number, default true
+        max_depth: 5 # Maximum heading depth of generated toc, default 6
 
 # Widgets
 widgets:
