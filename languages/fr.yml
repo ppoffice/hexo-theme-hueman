@@ -24,6 +24,7 @@ sidebar:
 article:
     comments: 'Commentaires'
     share: 'Partager'
+    toc: 'Table des matières'
 insight:
     hint: 'Type something...'
     posts: 'Articles'
