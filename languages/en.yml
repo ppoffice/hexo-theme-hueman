@@ -26,6 +26,7 @@ sidebar:
 article:
     comments: 'Comments'
     share: 'Share'
+    toc: 'Table of contents'
 insight:
     hint: 'Type something...'
     posts: 'Posts'
