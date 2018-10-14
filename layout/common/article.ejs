@@ -14,6 +14,16 @@
         <% } %>
         <%- partial('post/gallery') %>
         <div class="article-entry" itemprop="articleBody">
+            <% if(post.toc === true){ %>
+                <div id="toc" class="article-toc-article">
+                    <div class="article-toc-title"><%= __('article.toc') %></div>
+                    <% if (theme.customize && theme.customize.toc && theme.customize.toc.numbering && theme.customize.toc.max_depth) { %>
+                        <%- toc(post.content, {list_number: theme.customize.toc.numbering, class: 'article-toc-toc', max_depth: theme.customize.toc.max_depth}) %>
+                    <% } else { %>
+                        <%- toc(post.content, {class: 'article-toc-toc'}) %>
+                    <% } %>
+                </div>
+            <% } %>
             <%- post.content %>
         </div>
         <footer class="article-footer">
