@@ -8,11 +8,13 @@
     <%- partial('comment/livere', { script: true }) %>
 <% } else if (theme.comment.facebook) { %>
     <%- partial('comment/facebook', { script: true }) %>
-<% } else if (typeof(theme.comment.isso) === 'string' 
+<% } else if (typeof(theme.comment.isso) === 'string'
                || theme.comment.isso && theme.comment.isso.on) { %>
     <%- partial('comment/isso', { script: true }) %>
 <% } else if (theme.comment.changyan.on) { %>
     <%- partial('comment/changyan', { script: true }) %>
 <% } else if (theme.comment.valine.on) { %>
     <%- partial('comment/valine', { script: true }) %>
+<% } else if (theme.comment.gitalk.on) { %>
+    <%- partial('comment/gitalk', { script: true }) %>
 <% } %>

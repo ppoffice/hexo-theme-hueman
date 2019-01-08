@@ -10,13 +10,15 @@
         <%- partial('comment/livere') %>
     <% } else if (theme.comment.facebook) { %>
       <%- partial('comment/facebook') %>
-    <% } else if (typeof(theme.comment.isso) === 'string' 
+    <% } else if (typeof(theme.comment.isso) === 'string'
                    || theme.comment.isso && theme.comment.isso.on) { %>
         <%- partial('comment/isso') %>
     <% } else if (theme.comment.changyan.on) { %>
         <%- partial('comment/changyan') %>
     <% } else if (theme.comment.valine.on) { %>
         <%- partial('comment/valine') %>
+    <% } else if (theme.comment.gitalk.on) { %>
+        <%- partial('comment/gitalk') %>
     <% } %>
     </section>
 <% } %>

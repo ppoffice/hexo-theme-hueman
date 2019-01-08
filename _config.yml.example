@@ -75,6 +75,14 @@ comment:
         avatar: identicon # (''/mm/identicon/monsterid/wavatar/retro/hide), more to see https://valine.js.org/avatar/
         avatar_cdn: https://gravatar.loli.net/avatar/ # avatar CDN address, default gravatar.loli.net
         pageSize: 10 # comments of one page
+    gitalk:
+        on: # enter true to enable gitalk
+        owner: # GitHub user name
+        repo: # GitHub repository name
+        client_id: # OAuth application client id
+        client_secret: # OAuth application client secret
+        admin: # GitHub repo owner and collaborators who can initialize github issues
+               # Can either be a string or an array.
 
 # Share
 share: default # options: jiathis, bdshare, addtoany, default
