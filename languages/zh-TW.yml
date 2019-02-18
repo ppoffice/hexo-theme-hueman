@@ -3,9 +3,9 @@ index:
     about: '關於'
     search: '搜尋'
     archive: '所有文章'
-    category: '分類：'
+    category: '分類'
     uncategorized: '未分類'
-    tag: '標籤：'
+    tag: '標籤'
 nav:
     current_page:
         other: '第 %d 頁，'
