@@ -3,9 +3,9 @@ index:
     about: '关于'
     search: '搜索'
     archive: '归档'
-    category: '分类'
+    category: '分类：'
     uncategorized: '未分类'
-    tag: '标签'
+    tag: '标签：'
 nav:
     current_page:
         other: '第 %d 页，'
@@ -32,3 +32,10 @@ insight:
     categories: '分类'
     tags: '标签'
     untitled: '(未命名)'
+counter:
+    views: 阅读次数
+    count: 本文字数
+    count_total: 站点总字数
+    time: 阅读时长
+    time_total: 站点阅读时长
+    time_minutes: 分钟

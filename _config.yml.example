@@ -75,6 +75,8 @@ comment:
         avatar: identicon # (''/mm/identicon/monsterid/wavatar/retro/hide), more to see https://valine.js.org/avatar/
         avatar_cdn: https://gravatar.loli.net/avatar/ # avatar CDN address, default gravatar.loli.net
         pageSize: 10 # comments of one page
+        isitor: true # count reading numbers; If true, the numbers will also show below the title of every post
+        recordip: #false # If true, record commenter's ip, which is shown in LeanCloud pannel
     gitalk:
         on: # enter true to enable gitalk
         owner: # GitHub user name
@@ -101,6 +103,7 @@ plugins:
       public: # enter true if you want a link to your public stats. Must be configured on statcouter as well.
       on: # enter true to enable statcounter
     mathjax: false # options: true, false
+    counter: true # for post words count and time of reading, need hexo-wordcount: https://github.com/willin/hexo-wordcount
 
 # Miscellaneous
 miscellaneous:

@@ -31,3 +31,10 @@ insight:
     categories: 'Categorias'
     tags: 'Etiquetas'
     untitled: '(Untitled)'
+counter:
+    views: Visitas
+    count: Cantidad de caracteres en el articulo
+    count_total: Cantidad total de caracteres
+    time: Tiempo de lectura
+    time_total: Tiempo total de lectura
+    time_minutes: minutos.

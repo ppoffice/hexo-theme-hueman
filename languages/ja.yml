@@ -31,3 +31,10 @@ insight:
     categories: 'カテゴリー'
     tags: 'タグ'
     untitled: '（名称未設定）'
+counter:
+    views: 閲覧数
+    count: 単語数
+    count_total: 単語の総数
+    time: 読書の時間
+    time_total: 読書の合計時間
+    time_minutes: 分
