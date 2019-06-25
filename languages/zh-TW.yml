@@ -33,7 +33,7 @@ insight:
     categories: '分類'
     tags: '標籤'
     untitled: '(未命名)'
-    counter:
+counter:
     views: 閱讀次數
     count: 文章字數
     count_total: 總字數
