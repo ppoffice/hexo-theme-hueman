@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+
+    <%- partial('pwa/index') %>
     <%
         var title = page.title;
         if (is_archive()) {
@@ -53,6 +55,6 @@
 
     <%- css('css/style') %>
 
-    <%- js('libs/jquery/2.0.3/jquery.min') %>
+    <%- js('libs/jquery/3.3.1/jquery.min') %>
     <%- partial('plugin/scripts', { isHead: true }) %>
 </head>

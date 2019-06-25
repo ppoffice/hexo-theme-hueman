@@ -42,7 +42,7 @@
     }
 
     // Sidebar expend
-    $('#sidebar .sidebar-toggle').click(function () {
+    $('#sidebar .sidebar-toggle').on('click', function () {
         if($('#sidebar').hasClass('expend')) {
             $('#sidebar').removeClass('expend');
         } else {
@@ -109,7 +109,7 @@
     }
     autoHideMenus();
 
-    $(window).resize(function () {
+    $(window).on('resize', function () {
         autoHideMenus();
     });
 

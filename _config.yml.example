@@ -46,7 +46,21 @@ comment:
     duoshuo: # enter duoshuo shortname here
     youyan: # enter youyan uid here
     facebook: # enter true to enable
-    isso: # enter the domain name of your own comment isso server eg. comments.example.com
+    isso: # options for isso. All fields below are OPTIONAL (except for site). See https://posativ.org/isso/docs/configuration/client/ for more information.
+        on: # enter true to enable isso
+        site: # enter the domain name of your own comment isso server, eg. comments.example.com
+        lang: # two letter language code, eg. en
+        reply-to-self: # true when your server spam guard has this value set
+        require-author: # true when your server spam guard has this value set
+        require-email: # true when your server spam guard has this value set
+        max-comments-top: # number of top level comments to show, specify "inf" for all
+        max-comments-nested: # number of nested comments to show.
+        reveal-on-click: # number of comments to reveal when clicking "hidden" link
+        avatar: # true|false, setting to enable avatar generation
+        avatar-bg: # background color of avatar, i.e. "#f0f0f0"
+        avatar-fg: # set pallet of foreground colors (up to 8) i.e. "#9abf88 #5698c4 #e279a3 #9163b6"
+        vote: # true|false, setting to enable voting feature on client side.
+        vote-levels: # levels to customize appearance of comments, eg. "[-5, 5, 15]" or "0,5,10"
     changyan:
         appId: # enter the changyan appId here
         appKey: # enter the changyan appKey here
@@ -61,6 +75,14 @@ comment:
         avatar: identicon # (''/mm/identicon/monsterid/wavatar/retro/hide), more to see https://valine.js.org/avatar/
         avatar_cdn: https://gravatar.loli.net/avatar/ # avatar CDN address, default gravatar.loli.net
         pageSize: 10 # comments of one page
+    gitalk:
+        on: # enter true to enable gitalk
+        owner: # GitHub user name
+        repo: # GitHub repository name
+        client_id: # OAuth application client id
+        client_secret: # OAuth application client secret
+        admin: # GitHub repo owner and collaborators who can initialize github issues
+               # Can either be a string or an array.
 
 # Share
 share: default # options: jiathis, bdshare, addtoany, default
@@ -72,6 +94,12 @@ plugins:
     google_analytics: # enter the tracking ID for your Google Analytics
     baidu_analytics: # enter Baidu Analytics hash key
     bing_site_verification: # enter Bing verification key here
+    statcounter:
+      sc_project: # enter statcounter project id
+      sc_invisible: # enter 1 to make statcounter invisible
+      sc_security: # enter security code
+      public: # enter true if you want a link to your public stats. Must be configured on statcouter as well.
+      on: # enter true to enable statcounter
     mathjax: false # options: true, false
 
 # Miscellaneous
