@@ -8,6 +8,7 @@
         <% if (post.layout != 'page') { %>
             <div class="article-meta">
                 <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
+		<%- partial('post/author') %>
                 <%- partial('post/tag') %>
             </div>
         <% } %>
@@ -19,5 +20,6 @@
             <%- partial('share/index', { post: post }) %>
         </footer>
     </div>
+    <%- partial('post/ld_json', { post: post }) %>
 </article>
 <%- partial('comment/index') %>

@@ -1,0 +1,20 @@
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "<%= config.author %>"
+        },
+        <% if (post.title) { %>"headline": "<%= post.title %>",<% } %>
+        "image": "<%- url_for(config.url + thumbnail(post)) %>",
+        <% if (post.tags) { %>"keywords": "<%- post.tags.map(t => t.name).join(' ') %>",<% } %>
+        <% if (post.categories) { %>"genre": "<%- post.categories.map(c => c.name).join(' ') %>",<% } %>
+        "datePublished": "<%- date(post.date, 'YYYY-MM-DD') %>",
+        "dateCreated": "<%- date(post.date, 'YYYY-MM-DD') %>",
+        <% if (post.updated) { %>"dateModified": "<%- date(post.updated, 'YYYY-MM-DD') %>",<% } %>
+        "url": "<%- url_for(config.url + '/' + post.path) %>",
+        "description": "<%- excerpt(post) %>"
+        "wordCount": <%- post.content.split(' ').length %>
+    }
+</script>
