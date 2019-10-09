@@ -8,7 +8,7 @@
                         meta = meta.split(',').filter(function (item) {
                             return GUEST.indexOf(item)>-1;
                         });
-                        var avatarcdn = '<%= theme.comment.valine.avatar_cdn %>' == true ? true : false;
+                        var avatarcdn = '<%= theme.comment.valine.avatar_cdn %>' == true;
                         new Valine({
                             el: '.vcomments',
                             notify: "<%= theme.comment.valine.notify %>",
