@@ -8,13 +8,11 @@
                         meta = meta.split(',').filter(function (item) {
                             return GUEST.indexOf(item)>-1;
                         });
-                        var notify = '<%= theme.comment.valine.notify %>' == true ? true : false;
-                        var verify = '<%= theme.comment.valine.verify %>' == true ? true : false;
                         var avatarcdn = '<%= theme.comment.valine.avatar_cdn %>' == true ? true : false;
                         new Valine({
                             el: '.vcomments',
-                            notify: notify,
-                            verify: verify,
+                            notify: "<%= theme.comment.valine.notify %>",
+                            verify: "<%= theme.comment.valine.verify %>",
                             app_id: "<%= theme.comment.valine.appid %>",
                             app_key: "<%= theme.comment.valine.appkey %>",
                             placeholder: "<%= theme.comment.valine.placeholder %>",
