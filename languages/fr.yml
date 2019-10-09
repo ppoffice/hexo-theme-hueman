@@ -33,3 +33,10 @@ insight:
     categories: 'Catégories'
     tags: 'Tags'
     untitled: '(Sans titre)'
+counter:
+    views: Vues
+    count: Symbols count in article
+    count_total: Symbols count total
+    time: Temps de lecture
+    time_total: Temps total de lecture
+    time_minutes: mins.

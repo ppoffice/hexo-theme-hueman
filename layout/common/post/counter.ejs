@@ -1,0 +1,10 @@
+<% if (theme.plugins.counter) { %>
+   <div class="article-counter">
+      <i class="fa fa-file-word-o"></i>
+      <span class="post-count-item-text"><%=  __('counter.count') + (':')%> </span>
+      <span class="post-count"><%= wordcount(post.content) %></span>
+      <i class="fa fa-clock-o"></i>
+      <span class="post-time-item-text"><%= __('counter.time') + (':')%> </span>
+      <span class="post-count"><%= min2read(post.content) %> <%=  __('counter.time_minutes')%> </span>
+   </div>
+<% } %>

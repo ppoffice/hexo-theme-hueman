@@ -1,19 +1,24 @@
-<% if (typeof(script) !== 'undefined' && script) { %>
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-    <script>
-        new Valine({
-            el: '#valine-thread' ,
-            notify:<%= theme.comment.valine.notify %>,
-            verify:<%= theme.comment.valine.verify %>,
-            app_id: '<%= theme.comment.valine.appId %>',
-            app_key: '<%= theme.comment.valine.appKey %>',
-            placeholder: '<%= theme.comment.valine.placeholder %>',
-            pageSize: '<%= theme.comment.valine.pageSize %>',
-            avatar: '<%= theme.comment.valine.avatar %>',
-            avatar_cdn:  '<%= theme.comment.valine.avatar_cdn %>'
-        });
-    </script>
-<% } else { %>
-    <div id="valine-thread"></div>
-<% } %>
+<% if(theme.comment.valine.on) { %>
+                    <!-- Valine -->
+                    <div class="vcomments"></div>
+                    <script src="//unpkg.com/valine"></script>
+                    <script>
+                        var GUEST = ['nick','mail','link'];
+                        var meta = '<%= theme.comment.valine.meta %>';
+                        meta = meta.split(',').filter(function (item) {
+                            return GUEST.indexOf(item)>-1;
+                        });
+                        var avatarcdn = '<%= theme.comment.valine.avatar_cdn %>' == true;
+                        new Valine({
+                            el: '.vcomments',
+                            notify: "<%= theme.comment.valine.notify %>",
+                            verify: "<%= theme.comment.valine.verify %>",
+                            app_id: "<%= theme.comment.valine.appid %>",
+                            app_key: "<%= theme.comment.valine.appkey %>",
+                            placeholder: "<%= theme.comment.valine.placeholder %>",
+                            avatar:"<%= theme.comment.valine.avatar %>",
+                            recordIP:"<%= theme.comment.valine.recordip %>",
+                            visitor: "<%= theme.comment.valine.visitor %>"
+                        });
+                    </script>
+                <% } %>

@@ -33,3 +33,10 @@ insight:
     categories: '分類'
     tags: '標籤'
     untitled: '(未命名)'
+counter:
+    views: 閱讀次數
+    count: 文章字數
+    count_total: 總字數
+    time: 所需閱讀時間
+    time_total: 所需總閱讀時間
+    time_minutes: 分鐘

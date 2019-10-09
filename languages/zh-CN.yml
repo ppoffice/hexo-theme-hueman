@@ -32,3 +32,10 @@ insight:
     categories: '分类'
     tags: '标签'
     untitled: '(未命名)'
+counter:
+    views: 阅读次数
+    count: 本文字数
+    count_total: 站点总字数
+    time: 阅读时长
+    time_total: 站点阅读时长
+    time_minutes: 分钟

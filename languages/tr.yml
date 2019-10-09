@@ -31,3 +31,10 @@ insight:
     categories: 'Kategoriler'
     tags: 'Etiketler'
     untitled: '(Başlıksız)'
+counter:
+    views: Görünümler
+    count: Makalede sayılan semboller
+    count_total: Sayılan toplan semboller
+    time: Okuma Süresi
+    time_total: Toplmada Okuma Süresi
+    time_minutes: dk.

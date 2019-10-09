@@ -31,3 +31,10 @@ insight:
     categories: 'категории'
     tags: 'теги'
     untitled: '(Без названия)'
+counter:
+    views: Просмотров
+    count: Кол-во символов в статье
+    count_total: Общее кол-во символов
+    time: Время чтения
+    time_total: Общее время чтения
+    time_minutes: мин.

@@ -31,3 +31,10 @@ insight:
     categories: '카테고리'
     tags: '태그'
     untitled: '(Untitled)'
+counter:
+    views: Views
+    count: Symbols count in article
+    count_total: Symbols count total
+    time: Reading time
+    time_total: Reading time total
+    time_minutes: mins.
