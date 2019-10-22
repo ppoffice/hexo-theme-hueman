@@ -30,7 +30,7 @@
             keywords.push(page.tags.data[i].name);
         }
     %>
-        <meta name="keywords" content="<%= keywords.join(',') %>" />
+    <meta name="keywords" content="<%= keywords.join(',') %>" />
     <% } %>
     <%- open_graph({
         image:          thumbnail(page),
