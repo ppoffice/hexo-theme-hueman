@@ -19,7 +19,7 @@ customize:
     social_links: # for more icons, please see http://fontawesome.io/icons/#brand
         twitter: /
         facebook: /
-        google-plus: /
+        stack-overflow: /
         github: https://github.com/ppoffice/hexo-theme-hueman
         weibo: /
         rss: /
@@ -111,6 +111,5 @@ miscellaneous:
         fb_app_id:
         fb_admins:
         twitter_id:
-        google_plus:
     links:
         Hexo: http://hexo.io
