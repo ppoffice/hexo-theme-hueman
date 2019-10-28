@@ -39,3 +39,5 @@ counter:
     time: 阅读时长
     time_total: 站点阅读时长
     time_minutes: 分钟
+adsense:
+    sponsored: Sponsored
