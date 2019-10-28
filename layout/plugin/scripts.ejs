@@ -36,4 +36,8 @@
         </script>
         <%- js('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML') %>
     <% } %>
+
+    <% if (theme.plugins.google_adsense && theme.plugins.google_adsense.publisher_id) { %>
+      <%- partial('plugin/google-adsense') %>
+    <% } %>
 <% } %>

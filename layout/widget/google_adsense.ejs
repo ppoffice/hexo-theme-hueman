@@ -1,0 +1,20 @@
+<div class="widget-wrap widget-float">
+<% if (theme.plugins.google_adsense && theme.plugins.google_adsense.publisher_id) { %>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- huemen sidebar -->
+    <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-<%= theme.plugins.google_adsense.publisher_id %>"
+            data-ad-slot="<%= theme.plugins.google_adsense.ad_slot %>"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+<% } else { %>
+    <h3 class="widget-title"><%=  __('adsense.sponsored') %></h3>
+    <div class="widget">
+        <a href="https://marcofranssen.nl?adsense_widget">This widget is sponsored by, Marco Franssen, main contributor to this theme.</a>
+    </div>
+<% } %>
+</div>

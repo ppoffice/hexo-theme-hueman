@@ -1,13 +1,14 @@
 # Hueman
-#### Probably the most beautiful theme for Hexo. [Preview](http://ppoffice.github.io/hexo-theme-hueman/)
+
+> Probably the most beautiful theme for Hexo. [Preview](http://ppoffice.github.io/hexo-theme-hueman/)
 
 ![Hueman](http://ppoffice.github.io/hexo-theme-hueman/gallery/screenshot.jpg "")
 
 > This theme is ported from [AlxMedia](https://github.com/AlxMedia)'s the WordPress theme [Hueman](https://github.com/AlxMedia/hueman).
-
 > Special thanks to [AlxMedia](https://github.com/AlxMedia), who designed the original theme [Hueman](https://github.com/AlxMedia/hueman) for wordpress.
 
-#### [View Documentation](https://github.com/ppoffice/hexo-theme-hueman/wiki)
+**[View Documentation](https://github.com/ppoffice/hexo-theme-hueman/wiki)**
+
 :star: It is strongly recommended that you read the docs before using Hueman.
 
 ## Features
@@ -25,11 +26,13 @@ Hueman inserts your blog categories into main menu in the header section. You ca
 ![](http://ppoffice.github.io/hexo-theme-hueman/gallery/main-menu.jpg "")
 
 ### Self-hosted Insite Search Engine
+
 With the help of [Insight Search](https://github.com/ppoffice/hexo-theme-hueman/wiki/Search#insight-search), you can search anything inside your site without any third-party plugin.
 
 ![](http://ppoffice.github.io/hexo-theme-hueman/gallery/insight-search.png "")
 
 ### Custom Comment Services
+
 Hueman supports several comment services, give you better choices to communicate with your readers.
 
 ![](http://ppoffice.github.io/hexo-theme-hueman/gallery/custom-comments.png "")
@@ -41,6 +44,7 @@ Hueman uses the `thumbnail` [front-matter](https://hexo.io/docs/front-matter.htm
 ![](http://ppoffice.github.io/hexo-theme-hueman/gallery/thumbnail.jpg "")
 
 ### Code Highlight
+
 Hueman has more than 60 themes imported from [Highlight.js](https://github.com/isagalaev/highlight.js), and it is very easy to customize your own highlight theme.
 
 ![](http://ppoffice.github.io/hexo-theme-hueman/gallery/code-highlight.png "")
@@ -53,16 +57,20 @@ Hueman uses [lightgallery.js](https://sachinchoolur.github.io/lightgallery.js/) 
 
 ### Sidebar
 
-Hueman provides 6 built-in widgets:
+Hueman provides 9 built-in widgets:
 
-- recent_posts
-- category
 - archives
+- catalog
+- category
+- google_adsense
+- links
+- recent_posts
+- sticky_posts
 - tag
 - tagcloud
-- links
 
 All of them are enabled by default. You can edit them in `widget` setting.
 
-### And so many new features to be explored...
+### And so many new features to be explored
+
 [View Documentation](https://github.com/ppoffice/hexo-theme-hueman/wiki)
