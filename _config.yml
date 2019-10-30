@@ -70,5 +70,5 @@ theme: hueman
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:ppoffice/hexo-theme-hueman.git
+  repository: https://github.com/ppoffice/hexo-theme-hueman.git
   branch: gh-pages
