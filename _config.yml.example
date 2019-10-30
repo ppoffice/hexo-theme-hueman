@@ -27,15 +27,13 @@ customize:
 # Widgets
 widgets:
     - catalog
-    - google_adsense
     - recent_posts
     - category
-    - google_adsense
     - archive
     - tag
-    - google_adsense
     - tagcloud
     - links
+#    - google_adsense
 
 # Search
 search:
@@ -109,7 +107,7 @@ plugins:
       public: # enter true if you want a link to your public stats. Must be configured on statcouter as well.
       on: # enter true to enable statcounter
     mathjax: false # options: true, false
-    counter: true # for post words count and time of reading, need hexo-wordcount: https://github.com/willin/hexo-wordcount
+    counter: false # for post words count and time of reading, need hexo-wordcount: https://github.com/willin/hexo-wordcount
 
 # Miscellaneous
 miscellaneous:
