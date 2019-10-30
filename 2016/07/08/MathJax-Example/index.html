@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>MathJax Example | Hueman</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="" />
+    
+    <meta name="description" content="f(a)=12&amp;#x3C0;i&amp;#x222E;&amp;#x3B3;f(z)z&amp;#x2212;adz ConfigurationTo enable MathJax support, just set plugins.mathjax = true in your theme _config.yml file. 1234# Pluginsplugins:    ...    mathjax: true #">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MathJax Example">
+<meta property="og:url" content="http:&#x2F;&#x2F;ppoffice.github.io&#x2F;2016&#x2F;07&#x2F;08&#x2F;MathJax-Example&#x2F;index.html">
+<meta property="og:site_name" content="Hueman">
+<meta property="og:description" content="f(a)=12&amp;#x3C0;i&amp;#x222E;&amp;#x3B3;f(z)z&amp;#x2212;adz ConfigurationTo enable MathJax support, just set plugins.mathjax = true in your theme _config.yml file. 1234# Pluginsplugins:    ...    mathjax: true #">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http:&#x2F;&#x2F;ppoffice.github.io&#x2F;hexo-theme-hueman&#x2F;gallery&#x2F;math.jpg">
+<meta property="og:updated_time" content="2019-10-30T15:54:31.968Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;ppoffice.github.io&#x2F;hexo-theme-hueman&#x2F;gallery&#x2F;math.jpg">
+    
+
+    
+        <link rel="alternate" href="/" title="Hueman" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="/hexo-theme-hueman/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/hexo-theme-hueman/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/hexo-theme-hueman/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/hexo-theme-hueman/css/style.css">
+
+    <script src="/hexo-theme-hueman/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/hexo-theme-hueman/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/hexo-theme-hueman/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/hexo-theme-hueman/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">Inspire and empower.</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/hexo-theme-hueman/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/hexo-theme-hueman/categories/Language/">Language</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/hexo-theme-hueman/categories/LifeStyle/">LifeStyle</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/hexo-theme-hueman/categories/Music/">Music</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/hexo-theme-hueman/categories/Technology/">Technology</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/hexo-theme-hueman/categories/Technology/Github/">Github</a></li></ul></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/hexo-theme-hueman/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/hexo-theme-hueman/',
+        CONTENT_URL: '/hexo-theme-hueman/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/hexo-theme-hueman/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/hexo-theme-hueman/categories/Technology/">Technology</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-MathJax-Example" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        MathJax Example
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+      <i class="fa fa-calendar"></i>
+      <a href="/hexo-theme-hueman/2016/07/08/MathJax-Example/" class="article-date">
+         <time datetime="2016-07-09T00:07:55.000Z" itemprop="datePublished">2016-07-08</time>
+      </a>
+    </div>
+
+
+                
+
+                
+                
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><img src="/hexo-theme-hueman/gallery/math.jpg" alt=""></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>f</mi><mrow><mo>(</mo><mi>a</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mi>&#x3C0;</mi><mi>i</mi></mrow></mfrac><msub><mo>&#x222E;</mo><mrow><mi>&#x3B3;</mi></mrow></msub><mfrac><mrow><mi>f</mi><mo>(</mo><mi>z</mi><mo>)</mo></mrow><mrow><mi>z</mi><mo>&#x2212;</mo><mi>a</mi></mrow></mfrac><mi>d</mi><mi>z</mi></mrow></math></p>
+<h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><p>To enable MathJax support, just set <code>plugins.mathjax = true</code> in your theme <code>_config.yml</code> file.</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Plugins</span></span><br><span class="line"><span class="attr">plugins:</span></span><br><span class="line">    <span class="string">...</span></span><br><span class="line"><span class="attr">    mathjax:</span> <span class="literal">true</span> <span class="comment"># options: true, false</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>For further MathJax configurations, please edit <code>&lt;theme folder&gt;/layout/plugin/scripts.ejs</code>:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span> (<span class="attr">theme.plugins.mathjax</span>) &#123; %&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- Edit here --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/x-mathjax-config"</span>&gt;</span></span><br><span class="line"><span class="actionscript">        MathJax.Hub.Config(&#123; tex2jax: &#123; inlineMath: [[<span class="string">'$'</span>,<span class="string">'$'</span>], [<span class="string">'\\('</span>,<span class="string">'\\)'</span>]] &#125; &#125;);</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">js</span>('<span class="attr">https:</span>//<span class="attr">cdn.mathjax.org</span>/<span class="attr">mathjax</span>/<span class="attr">latest</span>/<span class="attr">MathJax.js</span>?<span class="attr">config</span>=<span class="string">TeX-MML-AM_CHTML</span>') %&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="TeX-and-LaTeX-input"><a href="#TeX-and-LaTeX-input" class="headerlink" title="TeX and LaTeX input"></a>TeX and LaTeX input</h2><blockquote>
+<p>Please be noted that when you write Tex/LaTeX in Markdown files, you need to use escape characters to prevent certain signs from being processed by Markdown interpreter.</p>
+</blockquote>
+<h4 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">When $a \ne 0$, there are two solutions to \\(ax^2 + bx + c = 0\\) and they are</span><br><span class="line">$$x = &#123;-b \pm \sqrt&#123;b^2-4ac&#125; \over 2a&#125;.$$</span><br></pre></td></tr></table></figure>
+
+<h4 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h4><p>When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are<br>$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
+<h2 id="MathML-input"><a href="#MathML-input" class="headerlink" title="MathML input"></a>MathML input</h2><blockquote>
+<p>Attention: please be noted that newline characters will be transformed to <code>&lt;br&gt;</code> tag by Markdown interpreter and this will interfere with MathML notation. Please write all MathML inline.</p>
+</blockquote>
+<h4 id="Input-1"><a href="#Input-1" class="headerlink" title="Input"></a>Input</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">When&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mo&gt;&amp;#x2260;&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/math&gt;, there are two solutions to &lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;msup&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo&gt;+&lt;/mo&gt; &lt;mi&gt;b&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;+&lt;/mo&gt; &lt;mi&gt;c&lt;/mi&gt; &lt;mo&gt;=&lt;/mo&gt; &lt;mn&gt;0&lt;/mn&gt;&lt;/math&gt; and they are</span><br><span class="line">&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;&gt;&lt;mi&gt;x&lt;/mi&gt; &lt;mo&gt;=&lt;/mo&gt;&lt;mrow&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mo&gt;&amp;#x2212;&lt;/mo&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mo&gt;&amp;#x00B1;&lt;/mo&gt;&lt;msqrt&gt;&lt;msup&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo&gt;&amp;#x2212;&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;/msqrt&gt;&lt;/mrow&gt;&lt;mrow&gt; &lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;a&lt;/mi&gt; &lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mrow&gt;&lt;mtext&gt;.&lt;/mtext&gt;&lt;/math&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="Result-1"><a href="#Result-1" class="headerlink" title="Result"></a>Result</h4><p>When<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&#x2260;</mo><mn>0</mn></math>, there are two solutions to <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo> <mi>b</mi><mi>x</mi><mo>+</mo> <mi>c</mi> <mo>=</mo> <mn>0</mn></math> and they are<br><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>x</mi> <mo>=</mo><mrow><mfrac><mrow><mo>&#x2212;</mo><mi>b</mi><mo>&#x00B1;</mo><msqrt><msup><mi>b</mi><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mi>a</mi><mi>c</mi></msqrt></mrow><mrow> <mn>2</mn><mi>a</mi> </mrow></mfrac></mrow><mtext>.</mtext></math></p>
+<h2 id="AsciiMath-input"><a href="#AsciiMath-input" class="headerlink" title="AsciiMath input"></a>AsciiMath input</h2><blockquote>
+<p>Attention: please be noted that when you write AsciiMath in Markdown files, you need to use escape characters to prevent certain signs from being processed by Markdown interpreter.</p>
+</blockquote>
+<h4 id="Input-2"><a href="#Input-2" class="headerlink" title="Input"></a>Input</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">When \`a != 0\`, there are two solutions to \`ax^2 + bx + c = 0\` and they are&lt;p style=&quot;text-align:center&quot;&gt;\`x = (-b +- sqrt(b^2-4ac))/(2a) .\`&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="Result-2"><a href="#Result-2" class="headerlink" title="Result"></a>Result</h4><p>When `a != 0`, there are two solutions to `ax^2 + bx + c = 0` and they are<p style="text-align:center">`x = (-b +- sqrt(b^2-4ac))/(2a) .`</p></p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://ppoffice.github.io/2016/07/08/MathJax-Example/" data-id="ck2dhn2l7000ilwyt5gh91b37" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "PPOffice"
+        },
+        "headline": "MathJax Example",
+        "image": "http://ppoffice.github.io/hexo-theme-hueman/gallery/math.jpg",
+        "keywords": "",
+        "genre": "Technology",
+        "datePublished": "2016-07-08",
+        "dateCreated": "2016-07-08",
+        "dateModified": "2019-10-30",
+        "url": "http://ppoffice.github.io/2016/07/08/MathJax-Example/",
+        "description": "
+f(a)=12&#x3C0;i&#x222E;&#x3B3;f(z)z&#x2212;adz
+ConfigurationTo enable MathJax support, just set plugins.mathjax = true in your theme _config.yml file.
+1234# Pluginsplugins:    ...    mathjax: true # options: true, false",
+        "wordCount": 435
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/hexo-theme-hueman/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/hexo-theme-hueman/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="stack-overflow" href="/hexo-theme-hueman/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-stack-overflow"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/hexo-theme-hueman/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/hexo-theme-hueman/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/hexo-theme-hueman/2016/12/11/Take-a-Deep-Breath-and-Just-Be/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            Take a Deep Breath and Just Be
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/hexo-theme-hueman/2016/07/08/Gallery-Example/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Gallery Example</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/hexo-theme-hueman/2016/12/11/Being-Outside-in-Fresh-Air-and-How-Your-Body-Loves-It/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/hexo-theme-hueman/gallery/shoes.jpg)" alt="Being Outside in Fresh Air &amp; How Your Body Loves It" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/hexo-theme-hueman/categories/LifeStyle/">LifeStyle</a></p>
+                            <p class="item-title"><a href="/hexo-theme-hueman/2016/12/11/Being-Outside-in-Fresh-Air-and-How-Your-Body-Loves-It/" class="title">Being Outside in Fresh Air &amp; How Your Body Loves It</a></p>
+                            <p class="item-date"><time datetime="2016-12-12T02:55:38.000Z" itemprop="datePublished">2016-12-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/hexo-theme-hueman/2016/12/11/Take-a-Deep-Breath-and-Just-Be/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/hexo-theme-hueman/gallery/salt-lake.jpg)" alt="Take a Deep Breath and Just Be" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/hexo-theme-hueman/categories/LifeStyle/">LifeStyle</a></p>
+                            <p class="item-title"><a href="/hexo-theme-hueman/2016/12/11/Take-a-Deep-Breath-and-Just-Be/" class="title">Take a Deep Breath and Just Be</a></p>
+                            <p class="item-date"><time datetime="2016-12-12T02:55:37.000Z" itemprop="datePublished">2016-12-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/hexo-theme-hueman/2016/07/08/MathJax-Example/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/hexo-theme-hueman/gallery/math.jpg)" alt="MathJax Example" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/hexo-theme-hueman/categories/Technology/">Technology</a></p>
+                            <p class="item-title"><a href="/hexo-theme-hueman/2016/07/08/MathJax-Example/" class="title">MathJax Example</a></p>
+                            <p class="item-date"><time datetime="2016-07-09T00:07:55.000Z" itemprop="datePublished">2016-07-08</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/hexo-theme-hueman/2016/07/08/Gallery-Example/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://www.hdwallpapers.net/previews/lion-453.jpg)" alt="Gallery Example" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/hexo-theme-hueman/categories/Technology/">Technology</a></p>
+                            <p class="item-title"><a href="/hexo-theme-hueman/2016/07/08/Gallery-Example/" class="title">Gallery Example</a></p>
+                            <p class="item-date"><time datetime="2016-07-08T04:00:00.000Z" itemprop="datePublished">2016-07-08</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/hexo-theme-hueman/2016/01/31/Chinese-Test/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/hexo-theme-hueman/gallery/china-great-wall.jpg)" alt="中文测试" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/hexo-theme-hueman/categories/Language/">Language</a></p>
+                            <p class="item-title"><a href="/hexo-theme-hueman/2016/01/31/Chinese-Test/" class="title">中文测试</a></p>
+                            <p class="item-date"><time datetime="2016-02-01T02:55:37.000Z" itemprop="datePublished">2016-01-31</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/hexo-theme-hueman/categories/Language/">Language</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/hexo-theme-hueman/categories/LifeStyle/">LifeStyle</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/hexo-theme-hueman/categories/Music/">Music</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/hexo-theme-hueman/categories/Technology/">Technology</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/hexo-theme-hueman/categories/Technology/Github/">Github</a><span class="category-list-count">1</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/hexo-theme-hueman/archives/2016/12/">December 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/hexo-theme-hueman/archives/2016/07/">July 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/hexo-theme-hueman/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/hexo-theme-hueman/archives/2015/03/">March 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/hexo-theme-hueman/archives/2015/02/">February 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/hexo-theme-hueman/archives/2015/01/">January 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/hexo-theme-hueman/archives/2014/12/">December 2014</a><span class="archive-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/hexo-theme-hueman/tags/Research/" rel="tag">Research</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/hexo-theme-hueman/tags/markdown/" rel="tag">markdown</a><span class="tag-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/hexo-theme-hueman/tags/Research/" style="font-size: 10px;">Research</a> <a href="/hexo-theme-hueman/tags/markdown/" style="font-size: 20px;">markdown</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/hexo-theme-hueman/" class="logo"></a>
+                </h1>
+                <p>&copy; 2019 PPOffice</p>
+                
+                <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank">PPOffice</a></p>
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'http://ppoffice.github.io/2016/07/08/MathJax-Example/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+
+    
+        <script src="/hexo-theme-hueman/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/hexo-theme-hueman/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/hexo-theme-hueman/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/hexo-theme-hueman/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/hexo-theme-hueman/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/hexo-theme-hueman/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/hexo-theme-hueman/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/hexo-theme-hueman/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/hexo-theme-hueman/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/hexo-theme-hueman/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/hexo-theme-hueman/js/main.js"></script>
+
+    </div>
+</body>
+</html>
