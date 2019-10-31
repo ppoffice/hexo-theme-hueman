@@ -1,0 +1,82 @@
+# Menus
+menu:
+    Home: /
+    # Delete this row if you don't want categories in your header nav bar
+    Categories:
+    About: /about/index.html
+
+# Customize
+customize:
+    logo:
+        width: 165
+        height: 60
+        url: images/logo-header.png
+    theme_color: '#006bde'
+    highlight: androidstudio
+    sidebar: left # sidebar position, options: left, right
+    thumbnail: true # enable posts thumbnail, options: true, false
+    favicon: # path to favicon
+    social_links: # for more icons, please see http://fontawesome.io/icons/#brand
+    #        twitter: /
+    #   facebook: /
+        google-plus: https://plus.google.com/u/0/113484801859713438237
+        github: https://github.com/tkit1994
+    #   weibo: /
+    #   rss: /
+
+# Widgets
+widgets:
+    - catalog
+    - recent_posts
+    - category
+    - archive
+    - tag
+    - tagcloud
+    - links
+
+# Search
+search:
+    insight: true # you need to install `hexo-generator-json-content` before using Insight Search
+    swiftype: # enter swiftype install key here
+    baidu: false # you need to disable other search engines to use Baidu search, options: true, false
+
+# Comment
+comment:
+    disqus: hexo-theme-hueman # enter disqus shortname here
+    duoshuo: # enter duoshuo shortname here
+    youyan: # enter youyan uid here
+    facebook: # enter true to enable
+    isso: # enter the domain name of your own comment isso server eg. comments.example.com
+    changyan:
+        appId: # enter the changyan appId here
+        appKey: # enter the changyan appKey here
+        on: # enter true to enable
+    valine: # Valine Comment System https://github.com/xCss/Valine
+        on:  # enter true to enable valine
+        appId:  # enter the leancloud application appId here
+        appKey:  # enter the leancloud application appKey here
+        notify: # enter true to enable <Mail notifier> https://github.com/xCss/Valine/wiki/Valine-%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E9%82%AE%E4%BB%B6%E6%8F%90%E9%86%92%E8%AE%BE%E7%BD%AE
+        verify: # enter true to enable <Validation code>
+        placeholder: Just Do It # enter the comment box placeholder
+
+# Share
+share: default # options: jiathis, bdshare, addtoany, default
+
+# Plugins
+plugins:
+    lightgallery: true # options: true, false
+    justifiedgallery: true # options: true, false
+    google_analytics: # enter the tracking ID for your Google Analytics
+    baidu_analytics: # enter Baidu Analytics hash key
+    bing_site_verification: # enter Bing verification key here
+    mathjax: true # options: true, false
+
+# Miscellaneous
+miscellaneous:
+    open_graph: # see http://ogp.me
+        fb_app_id:
+        fb_admins:
+        twitter_id:
+        google_plus:
+    links:
+        Hexo: http://hexo.io
