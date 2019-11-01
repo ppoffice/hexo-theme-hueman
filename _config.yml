@@ -66,7 +66,7 @@ share: default # options: jiathis, bdshare, addtoany, default
 plugins:
     lightgallery: true # options: true, false
     justifiedgallery: true # options: true, false
-    google_analytics: # enter the tracking ID for your Google Analytics
+    google_analytics: UA-151351366-1# enter the tracking ID for your Google Analytics
     baidu_analytics: # enter Baidu Analytics hash key
     bing_site_verification: # enter Bing verification key here
     mathjax: true # options: true, false
