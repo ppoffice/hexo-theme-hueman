@@ -1,6 +1,4 @@
-<% if(theme.comment.valine.on) { %>
-    <!-- Valine -->
-    <div class="vcomments"></div>
+<% if (typeof(script) !== 'undefined' && script) { %>
     <script src="//unpkg.com/valine"></script>
     <script>
         var GUEST = ['nick','mail','link'];
@@ -21,4 +19,7 @@
             visitor: "<%= theme.comment.valine.visitor %>"
         });
     </script>
+<% } else { %>
+    <!-- Valine -->
+    <div class="vcomments"></div>
 <% } %>
