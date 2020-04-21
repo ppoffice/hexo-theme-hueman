@@ -46,4 +46,7 @@
     <% if (theme.plugins.cookie_consent) { %>
       <%- partial('plugin/cookie-consent') %>
     <% } %>
+    <% if (theme.plugins.twitter_conversion_tracking.enabled && theme.plugins.twitter_conversion_tracking.pixel_id) { %>
+      <%- partial('plugin/twitter-conversion') %>
+    <% } %>
 <% } %>
