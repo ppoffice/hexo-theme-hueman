@@ -46,8 +46,10 @@ sidebar-toggle-width = 50px
 // Layout
 container-padding = 20px
 container-inner-min-width = 320px
-container-inner-max-width = 1120px
-article-padding = 20px
+if hexo-config("customize.max_width")
+    container-inner-max-width = convert(hexo-config("customize.max_width"))
+else
+    container-inner-max-width = 1120pxarticle-padding = 20px
 nav-height = 60px
 main-nav-child-width = 180px
 mobile-nav-width = 280px
