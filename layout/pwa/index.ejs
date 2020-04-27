@@ -4,11 +4,13 @@
 %>
 <% if (icon) { %>
 <link rel="icon" href="/<%= icon.src %>" />
-<link rel="apple-touch-icon" href="/<%= icon.src %>" />
 
 <meta name="msapplication-TileImage" content="/<%= icon.src %>" />
 <% } %>
 
+<% for (let ico of config.pwa.manifest.body.icons) { %>
+  <link rel="apple-touch-icon" sizes="<%= ico.sizes %>" href="<%= ico.src %>">
+<% } %>
 <meta name="msapplication-TileColor" content="<%= theme.customize.theme_color %>" />
 
 <meta name="theme-color" content="<%= theme.customize.theme_color %>" />
