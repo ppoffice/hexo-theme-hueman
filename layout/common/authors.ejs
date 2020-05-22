@@ -1,0 +1,15 @@
+<% if (post.layout == 'authors') { %>
+  <% var authors = {}; %>
+  <% site.posts.each(function(item, i) { %>
+      <div>
+          <% if (item.author && !authors[item.author.id]) { %>
+              <% authors[item.author.id] = item.author; %>
+          <% } %>
+      </div>
+  <% }) %>
+  <% for (const [id, author] of Object.entries(authors)) { %>
+      <div class="article-author">
+          <a href="<%- config.root %><%- 'author/' + author.id %>"><%= author.name %></a> - <%= author.about %>
+        </div>
+  <% } %>
+<% } %>

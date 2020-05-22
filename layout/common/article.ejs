@@ -5,7 +5,7 @@
                 <%- partial('post/title', { class_name: 'article-title' }) %>
             </header>
         <% } %>
-        <% if (post.layout != 'page') { %>
+        <% if (!['page','authors'].includes(post.layout)) { %>
             <div class="article-meta">
                 <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
                 <%- partial('post/author') %>
@@ -16,6 +16,7 @@
         <% } %>
         <%- partial('post/gallery') %>
         <div class="article-entry" itemprop="articleBody">
+            <%- partial('authors', { post: post }) %>
             <%- post.content %>
         </div>
         <footer class="article-footer">
