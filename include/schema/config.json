@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "/config.json",
+    "description": "The configuration file definition",
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string",
+            "description": "Version of the configuration file",
+            "default": "1.0.0"
+        }
+    },
+    "required": [
+        "version"
+    ]
+}
