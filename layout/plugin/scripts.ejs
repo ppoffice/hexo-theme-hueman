@@ -11,6 +11,9 @@
     <% if (theme.plugins.baidu_analytics) { %>
         <%- partial('plugin/baidu-analytics') %>
     <% } %>
+    <% if (theme.plugins.cookie_consent) { %>
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <% } %>
 <% } else if (typeof(isFooter) !== 'undefined' && isFooter) { %>
     <% if (theme.plugins.statcounter && theme.plugins.statcounter.on) { %>
         <%- partial('plugin/statcounter') %>
@@ -39,5 +42,11 @@
 
     <% if (theme.plugins.google_adsense && theme.plugins.google_adsense.publisher_id) { %>
       <%- partial('plugin/google-adsense') %>
+    <% } %>
+    <% if (theme.plugins.cookie_consent) { %>
+      <%- partial('plugin/cookie-consent') %>
+    <% } %>
+    <% if (theme.plugins.twitter_conversion_tracking.enabled && theme.plugins.twitter_conversion_tracking.pixel_id) { %>
+      <%- partial('plugin/twitter-conversion') %>
     <% } %>
 <% } %>

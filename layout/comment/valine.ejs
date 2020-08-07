@@ -1,6 +1,4 @@
-<% if(theme.comment.valine.on) { %>
-    <!-- Valine -->
-    <div class="vcomments"></div>
+<% if (typeof(script) !== 'undefined' && script) { %>
     <script src="//unpkg.com/valine"></script>
     <script>
         var GUEST = ['nick','mail','link'];
@@ -13,12 +11,15 @@
             el: '.vcomments',
             notify: "<%= theme.comment.valine.notify %>",
             verify: "<%= theme.comment.valine.verify %>",
-            app_id: "<%= theme.comment.valine.appid %>",
-            app_key: "<%= theme.comment.valine.appkey %>",
+            appId: "<%= theme.comment.valine.appId %>",
+            appKey: "<%= theme.comment.valine.appKey %>",
             placeholder: "<%= theme.comment.valine.placeholder %>",
             avatar:"<%= theme.comment.valine.avatar %>",
             recordIP:"<%= theme.comment.valine.recordip %>",
             visitor: "<%= theme.comment.valine.visitor %>"
         });
     </script>
+<% } else { %>
+    <!-- Valine -->
+    <div class="vcomments"></div>
 <% } %>

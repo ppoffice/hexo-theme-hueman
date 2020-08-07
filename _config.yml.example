@@ -108,6 +108,10 @@ plugins:
       on: # enter true to enable statcounter
     mathjax: false # options: true, false
     counter: false # for post words count and time of reading, need hexo-wordcount: https://github.com/willin/hexo-wordcount
+    cookie_consent: false
+    twitter_conversion_tracking:
+      enabled: false
+      pixel_id: ''
 
 # Miscellaneous
 miscellaneous:
