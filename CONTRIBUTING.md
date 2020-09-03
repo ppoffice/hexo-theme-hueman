@@ -25,16 +25,16 @@ The supported scopes are:
 - **i18n** for adding or updating translations
 - **test** for testing or linting-related commits
 - **build** for build scripts, CI, other development or deployment related commits
-- use __\*__ or leave empty to refer to commits that do not have a clear scope
+- use **\*** or leave empty to refer to commits that do not have a clear scope
 
 ## Submit changes
 
-1. Fork this repository, make changes to it, and run it against some actual Hexo sites to see if 
-anything is broken.
-You should also run `npm run lint` or `yarn lint` to find and fix any code formatting issue.
+1. Fork this repository, make changes to it, and run it against some actual Hexo sites to see if
+   anything is broken.
+   You should also run `npm run lint` or `yarn lint` to find and fix any code formatting issue.
 2. Submit a pull request to our repository. Please make sure you followed the instructions
-above.
-3. We will review the pull request regularly and inform you of our questions and any changes 
-that need to be made before we can merge your pull request.
+   above.
+3. We will review the pull request regularly and inform you of our questions and any changes
+   that need to be made before we can merge your pull request.
 4. We expect your response within two weeks, after which your pull request may be closed if
-no activity is shown.
+   no activity is shown.
