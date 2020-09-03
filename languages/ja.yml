@@ -1,42 +1,42 @@
 index:
-    home: 'ホーム'
-    about: 'このブログについて'
-    search: '検索'
-    archive: 'アーカイブ'
-    category: 'カテゴリー'
-    uncategorized: 'カテゴリ未設定'
-    tag: 'タグ'
+  home: 'ホーム'
+  about: 'このブログについて'
+  search: '検索'
+  archive: 'アーカイブ'
+  category: 'カテゴリー'
+  uncategorized: 'カテゴリ未設定'
+  tag: 'タグ'
 nav:
-    current_page:
-        other: ' %d ページ'
-    total_page:
-        other: '%d ページ中'
+  current_page:
+    other: ' %d ページ'
+  total_page:
+    other: '%d ページ中'
 sidebar:
-    follow: 'フォロー'
-    newer: '新しい'
-    older: '古い'
-    recents: '最新'
-    archives: 'アーカイブ'
-    categories: 'カテゴリー'
-    links: 'リンク'
-    tags: 'タグ'
-    tag_cloud: 'タグクラウド'
+  follow: 'フォロー'
+  newer: '新しい'
+  older: '古い'
+  recents: '最新'
+  archives: 'アーカイブ'
+  categories: 'カテゴリー'
+  links: 'リンク'
+  tags: 'タグ'
+  tag_cloud: 'タグクラウド'
 article:
-    comments: 'コメント'
-    share: 'シェア'
+  comments: 'コメント'
+  share: 'シェア'
 insight:
-    hint: '入力してください'
-    posts: '記事'
-    pages: 'ページ'
-    categories: 'カテゴリー'
-    tags: 'タグ'
-    untitled: '（名称未設定）'
+  hint: '入力してください'
+  posts: '記事'
+  pages: 'ページ'
+  categories: 'カテゴリー'
+  tags: 'タグ'
+  untitled: '（名称未設定）'
 counter:
-    views: 閲覧数
-    count: 単語数
-    count_total: 単語の総数
-    time: 読書の時間
-    time_total: 読書の合計時間
-    time_minutes: 分
+  views: 閲覧数
+  count: 単語数
+  count_total: 単語の総数
+  time: 読書の時間
+  time_total: 読書の合計時間
+  time_minutes: 分
 adsense:
-    sponsored: Sponsored
+  sponsored: Sponsored

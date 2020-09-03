@@ -1,42 +1,42 @@
 index:
-    home: '홈'
-    about: '내 정보'
-    search: '검색'
-    archive: '아카이브'
-    category: '카테고리'
-    uncategorized: '미지정'
-    tag: '태그'
+  home: '홈'
+  about: '내 정보'
+  search: '검색'
+  archive: '아카이브'
+  category: '카테고리'
+  uncategorized: '미지정'
+  tag: '태그'
 nav:
-    current_page:
-        other: '현재 %d 페이지 '
-    total_page:
-        other: '중 %d'
+  current_page:
+    other: '현재 %d 페이지 '
+  total_page:
+    other: '중 %d'
 sidebar:
-    follow: '팔로우'
-    newer: '신규'
-    older: '이전'
-    recents: '최근 글'
-    archives: '아카이브'
-    categories: '카테고리'
-    links: '링크'
-    tags: '태그'
-    tag_cloud: '태그 클라우드'
+  follow: '팔로우'
+  newer: '신규'
+  older: '이전'
+  recents: '최근 글'
+  archives: '아카이브'
+  categories: '카테고리'
+  links: '링크'
+  tags: '태그'
+  tag_cloud: '태그 클라우드'
 article:
-    comments: '댓글'
-    share: '공유하기'
+  comments: '댓글'
+  share: '공유하기'
 insight:
-    hint: '찾고자 하는 포스트를 검색하세요.'
-    posts: '포스트'
-    pages: '페이지'
-    categories: '카테고리'
-    tags: '태그'
-    untitled: '(Untitled)'
+  hint: '찾고자 하는 포스트를 검색하세요.'
+  posts: '포스트'
+  pages: '페이지'
+  categories: '카테고리'
+  tags: '태그'
+  untitled: '(Untitled)'
 counter:
-    views: 조회수
-    count: Symbols count in article
-    count_total: Symbols count total
-    time: 소요 시간
-    time_total: 전체 소요 시간
-    time_minutes: 분.
+  views: 조회수
+  count: Symbols count in article
+  count_total: Symbols count total
+  time: 소요 시간
+  time_total: 전체 소요 시간
+  time_minutes: 분.
 adsense:
-    sponsored: 후원자
+  sponsored: 후원자

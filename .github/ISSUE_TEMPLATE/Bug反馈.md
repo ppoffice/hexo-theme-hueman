@@ -7,22 +7,22 @@ assignees: ''
 
 ---
 
-> 确保你在提交Bug反馈之前仔细阅读了[Hexo文档](https://hexo.io/zh-cn/)，[Hueman用户指南](https://ppoffice.github.io/hexo-theme-hueman/tags/Hueman%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/)，和[GitHub issues](https://github.com/ppoffice/hexo-theme-hueman/issues)来了解你的问题是否已经被他人提出过。
+> 确保你在提交 Bug 反馈之前仔细阅读了[Hexo 文档](https://hexo.io/zh-cn/)，[Hueman 用户指南](https://ppoffice.github.io/hexo-theme-hueman/tags/Hueman%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/)，和[GitHub issues](https://github.com/ppoffice/hexo-theme-hueman/issues)来了解你的问题是否已经被他人提出过。
 
-**Bug描述**
-简洁清晰地描述你遇到的Bug是什么。
+**Bug 描述**
+简洁清晰地描述你遇到的 Bug 是什么。
 
 **系统与环境**
-列出你的Hexo和Hueman的版本和配置。
+列出你的 Hexo 和 Hueman 的版本和配置。
 
-- Hexo，操作系统，和Node.js的版本（使用`hexo version`命令来查看）
+- Hexo，操作系统，和 Node.js 的版本（使用`hexo version`命令来查看）
 - 站点配置文件`_config.yml`
 - 主题配置文件`themes/hueman/_config.yml`
-- 其他额外的配置文件（文章front-matter，`_config.post.yml`，或`_config.page.yml`）
-- 浏览器版本（如Firefox 70.0，Chrome Android 80.0）
+- 其他额外的配置文件（文章 front-matter，`_config.post.yml`，或`_config.page.yml`）
+- 浏览器版本（如 Firefox 70.0，Chrome Android 80.0）
 
 **复现方式**
-列出复现这个Bug的步骤，如：
+列出复现这个 Bug 的步骤，如：
 
 1. 访问‘...’
 2. 点击’...‘

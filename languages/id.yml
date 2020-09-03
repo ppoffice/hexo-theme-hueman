@@ -1,42 +1,42 @@
 index:
-    home: 'Beranda'
-    about: 'Tentang'
-    search: 'Cari'
-    archive: 'Arsip'
-    category: 'Kategori'
-    uncategorized: 'belum terkategori'
-    tag: 'Tag'
+  home: 'Beranda'
+  about: 'Tentang'
+  search: 'Cari'
+  archive: 'Arsip'
+  category: 'Kategori'
+  uncategorized: 'belum terkategori'
+  tag: 'Tag'
 nav:
-    current_page:
-        other: 'Halaman %d '
-    total_page:
-        other: 'dari %d'
+  current_page:
+    other: 'Halaman %d '
+  total_page:
+    other: 'dari %d'
 sidebar:
-    follow: 'ikuti'
-    newer: 'lebih baru'
-    older: 'lebih lawas'
-    recents: 'terbaru'
-    archives: 'arsip'
-    categories: 'kategori'
-    links: 'tautan'
-    tags: 'tag'
-    tag_cloud: 'awan tag'
+  follow: 'ikuti'
+  newer: 'lebih baru'
+  older: 'lebih lawas'
+  recents: 'terbaru'
+  archives: 'arsip'
+  categories: 'kategori'
+  links: 'tautan'
+  tags: 'tag'
+  tag_cloud: 'awan tag'
 article:
-    comments: 'Komentar'
-    share: 'Bagikan'
+  comments: 'Komentar'
+  share: 'Bagikan'
 insight:
-    hint: 'Type something...'
-    posts: 'pos'
-    pages: 'Pages'
-    categories: 'kategori'
-    tags: 'tag'
-    untitled: '(Untitled)'
+  hint: 'Type something...'
+  posts: 'pos'
+  pages: 'Pages'
+  categories: 'kategori'
+  tags: 'tag'
+  untitled: '(Untitled)'
 counter:
-    views: Views
-    count: Symbols count in article
-    count_total: Symbols count total
-    time: Reading time
-    time_total: Reading time total
-    time_minutes: mins.
+  views: Views
+  count: Symbols count in article
+  count_total: Symbols count total
+  time: Reading time
+  time_total: Reading time total
+  time_minutes: mins.
 adsense:
-    sponsored: Sponsored
+  sponsored: Sponsored

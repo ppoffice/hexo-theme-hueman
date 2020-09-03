@@ -1,42 +1,42 @@
 index:
-    home: 'Home'
-    about: 'Sobre'
-    search: 'Busca'
-    archive: 'Arquivo'
-    category: 'Categoria'
-    uncategorized: 'sem categoria'
-    tag: 'Tag'
+  home: 'Home'
+  about: 'Sobre'
+  search: 'Busca'
+  archive: 'Arquivo'
+  category: 'Categoria'
+  uncategorized: 'sem categoria'
+  tag: 'Tag'
 nav:
-    current_page:
-        other: 'Página %d '
-    total_page:
-        other: 'de %d'
+  current_page:
+    other: 'Página %d '
+  total_page:
+    other: 'de %d'
 sidebar:
-    follow: 'seguir'
-    newer: 'novos'
-    older: 'antigos'
-    recents: 'recentes'
-    archives: 'arquivos'
-    categories: 'categorias'
-    links: 'links'
-    tags: 'tags'
-    tag_cloud: 'tag cloud'
+  follow: 'seguir'
+  newer: 'novos'
+  older: 'antigos'
+  recents: 'recentes'
+  archives: 'arquivos'
+  categories: 'categorias'
+  links: 'links'
+  tags: 'tags'
+  tag_cloud: 'tag cloud'
 article:
-    comments: 'Comentários'
-    share: 'Compartilhar'
+  comments: 'Comentários'
+  share: 'Compartilhar'
 insight:
-    hint: 'Type something...'
-    posts: 'Posts'
-    pages: 'Pages'
-    categories: 'categorias'
-    tags: 'tags'
-    untitled: '(Untitled)'
+  hint: 'Type something...'
+  posts: 'Posts'
+  pages: 'Pages'
+  categories: 'categorias'
+  tags: 'tags'
+  untitled: '(Untitled)'
 counter:
-    views: Views
-    count: Symbols count in article
-    count_total: Symbols count total
-    time: Reading time
-    time_total: Reading time total
-    time_minutes: mins.
+  views: Views
+  count: Symbols count in article
+  count_total: Symbols count total
+  time: Reading time
+  time_total: Reading time total
+  time_minutes: mins.
 adsense:
-    sponsored: Sponsored
+  sponsored: Sponsored

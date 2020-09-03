@@ -1,42 +1,42 @@
 index:
-    home: 'Inici'
-    about: 'Quant a'
-    search: 'Cercar'
-    archive: 'Arxiu'
-    category: 'Categoria'
-    uncategorized: 'Sense categoria'
-    tag: 'Etiqueta'
+  home: 'Inici'
+  about: 'Quant a'
+  search: 'Cercar'
+  archive: 'Arxiu'
+  category: 'Categoria'
+  uncategorized: 'Sense categoria'
+  tag: 'Etiqueta'
 nav:
-    current_page:
-        other: 'Pàgina %d '
-    total_page:
-        other: 'de %d'
+  current_page:
+    other: 'Pàgina %d '
+  total_page:
+    other: 'de %d'
 sidebar:
-    follow: 'seguir'
-    newer: 'més nou'
-    older: 'antic'
-    recents: 'recents'
-    archives: 'arxius'
-    categories: 'categories'
-    links: 'links'
-    tags: 'etiquetes'
-    tag_cloud: 'etiqueta cloud'
+  follow: 'seguir'
+  newer: 'més nou'
+  older: 'antic'
+  recents: 'recents'
+  archives: 'arxius'
+  categories: 'categories'
+  links: 'links'
+  tags: 'etiquetes'
+  tag_cloud: 'etiqueta cloud'
 article:
-    comments: 'Comentaris'
-    share: 'Compartir'
+  comments: 'Comentaris'
+  share: 'Compartir'
 insight:
-    hint: 'Type something...'
-    posts: 'Posts'
-    pages: 'Pages'
-    categories: 'categories'
-    tags: 'etiquetes'
-    untitled: '(Untitled)'
+  hint: 'Type something...'
+  posts: 'Posts'
+  pages: 'Pages'
+  categories: 'categories'
+  tags: 'etiquetes'
+  untitled: '(Untitled)'
 counter:
-    views: Views
-    count: Symbols count in article
-    count_total: Symbols count total
-    time: Reading time
-    time_total: Reading time total
-    time_minutes: mins.
+  views: Views
+  count: Symbols count in article
+  count_total: Symbols count total
+  time: Reading time
+  time_total: Reading time total
+  time_minutes: mins.
 adsense:
-    sponsored: Sponsored
+  sponsored: Sponsored

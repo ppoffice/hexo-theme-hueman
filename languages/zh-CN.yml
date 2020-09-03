@@ -1,43 +1,43 @@
 index:
-    home: '主页'
-    about: '关于'
-    search: '搜索'
-    archive: '归档'
-    category: '分类'
-    uncategorized: '未分类'
-    tag: '标签'
+  home: '主页'
+  about: '关于'
+  search: '搜索'
+  archive: '归档'
+  category: '分类'
+  uncategorized: '未分类'
+  tag: '标签'
 nav:
-    current_page:
-        other: '第 %d 页，'
-    total_page:
-        other: '共 %d 页'
+  current_page:
+    other: '第 %d 页，'
+  total_page:
+    other: '共 %d 页'
 sidebar:
-    follow: '关注我 '
-    newer: '下一篇'
-    older: '上一篇'
-    recents: '最新文章'
-    archives: '归档'
-    categories: '分类'
-    links: '链接'
-    tags: '标签'
-    tag_cloud: '标签云'
-    catalogue: '目录'
+  follow: '关注我 '
+  newer: '下一篇'
+  older: '上一篇'
+  recents: '最新文章'
+  archives: '归档'
+  categories: '分类'
+  links: '链接'
+  tags: '标签'
+  tag_cloud: '标签云'
+  catalogue: '目录'
 article:
-    comments: '评论'
-    share: '分享到'
+  comments: '评论'
+  share: '分享到'
 insight:
-    hint: '想要查找什么...'
-    posts: '文章'
-    pages: '页面'
-    categories: '分类'
-    tags: '标签'
-    untitled: '(未命名)'
+  hint: '想要查找什么...'
+  posts: '文章'
+  pages: '页面'
+  categories: '分类'
+  tags: '标签'
+  untitled: '(未命名)'
 counter:
-    views: 阅读次数
-    count: 本文字数
-    count_total: 站点总字数
-    time: 阅读时长
-    time_total: 站点阅读时长
-    time_minutes: 分钟
+  views: 阅读次数
+  count: 本文字数
+  count_total: 站点总字数
+  time: 阅读时长
+  time_total: 站点阅读时长
+  time_minutes: 分钟
 adsense:
-    sponsored: Sponsored
+  sponsored: Sponsored

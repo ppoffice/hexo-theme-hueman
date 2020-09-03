@@ -1,42 +1,42 @@
 index:
-    home: 'Trang chủ'
-    about: 'Giới thiệu'
-    search: 'Tìm kiếm'
-    archive: 'Lưu trữ'
-    category: 'Chuyên mục'
-    uncategorized: 'Chưa phân loại'
-    tag: 'Thẻ'
+  home: 'Trang chủ'
+  about: 'Giới thiệu'
+  search: 'Tìm kiếm'
+  archive: 'Lưu trữ'
+  category: 'Chuyên mục'
+  uncategorized: 'Chưa phân loại'
+  tag: 'Thẻ'
 nav:
-    current_page:
-        other: '%d '
-    total_page:
-        other: '/ %d'
+  current_page:
+    other: '%d '
+  total_page:
+    other: '/ %d'
 sidebar:
-    follow: 'Theo dõi'
-    newer: 'Mới hơn'
-    older: 'Cũ hơn'
-    recents: 'Bài viết mới'
-    archives: 'Lưu trữ'
-    categories: 'Chuyên mục'
-    links: 'Liên kết'
-    tags: 'Thẻ'
-    tag_cloud: 'Mây thẻ'
+  follow: 'Theo dõi'
+  newer: 'Mới hơn'
+  older: 'Cũ hơn'
+  recents: 'Bài viết mới'
+  archives: 'Lưu trữ'
+  categories: 'Chuyên mục'
+  links: 'Liên kết'
+  tags: 'Thẻ'
+  tag_cloud: 'Mây thẻ'
 article:
-    comments: 'Bình luận'
-    share: 'Chia sẻ'
+  comments: 'Bình luận'
+  share: 'Chia sẻ'
 insight:
-    hint: 'Gõ gì đó...'
-    posts: 'Bài viết'
-    pages: 'Trang'
-    categories: 'Chuyên mục'
-    tags: 'Thẻ'
-    untitled: '(Không đề)'
+  hint: 'Gõ gì đó...'
+  posts: 'Bài viết'
+  pages: 'Trang'
+  categories: 'Chuyên mục'
+  tags: 'Thẻ'
+  untitled: '(Không đề)'
 counter:
-    views: Views
-    count: Symbols count in article
-    count_total: Symbols count total
-    time: Reading time
-    time_total: Reading time total
-    time_minutes: mins.
+  views: Views
+  count: Symbols count in article
+  count_total: Symbols count total
+  time: Reading time
+  time_total: Reading time total
+  time_minutes: mins.
 adsense:
-    sponsored: Sponsored
+  sponsored: Sponsored

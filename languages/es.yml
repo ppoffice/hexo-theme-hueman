@@ -1,42 +1,42 @@
 index:
-    home: 'Inicio'
-    about: 'Acerca de'
-    search: 'Buscar'
-    archive: 'Archivo'
-    category: 'Categoria'
-    uncategorized: 'Sin categoría'
-    tag: 'Etiqueta'
+  home: 'Inicio'
+  about: 'Acerca de'
+  search: 'Buscar'
+  archive: 'Archivo'
+  category: 'Categoria'
+  uncategorized: 'Sin categoría'
+  tag: 'Etiqueta'
 nav:
-    current_page:
-        other: 'Página %d '
-    total_page:
-        other: 'de %d'
+  current_page:
+    other: 'Página %d '
+  total_page:
+    other: 'de %d'
 sidebar:
-    follow: 'seguir'
-    newer: 'más nuevo'
-    older: 'antiguo'
-    recents: 'recientes'
-    archives: 'archivos'
-    categories: 'categorias'
-    links: 'links'
-    tags: 'etiquetas'
-    tag_cloud: 'etiqueta cloud'
+  follow: 'seguir'
+  newer: 'más nuevo'
+  older: 'antiguo'
+  recents: 'recientes'
+  archives: 'archivos'
+  categories: 'categorias'
+  links: 'links'
+  tags: 'etiquetas'
+  tag_cloud: 'etiqueta cloud'
 article:
-    comments: 'Comentarios'
-    share: 'Compartir'
+  comments: 'Comentarios'
+  share: 'Compartir'
 insight:
-    hint: 'Type something...'
-    posts: 'Entradas'
-    pages: 'Pages'
-    categories: 'Categorias'
-    tags: 'Etiquetas'
-    untitled: '(Untitled)'
+  hint: 'Type something...'
+  posts: 'Entradas'
+  pages: 'Pages'
+  categories: 'Categorias'
+  tags: 'Etiquetas'
+  untitled: '(Untitled)'
 counter:
-    views: Visitas
-    count: Cantidad de caracteres en el articulo
-    count_total: Cantidad total de caracteres
-    time: Tiempo de lectura
-    time_total: Tiempo total de lectura
-    time_minutes: minutos.
+  views: Visitas
+  count: Cantidad de caracteres en el articulo
+  count_total: Cantidad total de caracteres
+  time: Tiempo de lectura
+  time_total: Tiempo total de lectura
+  time_minutes: minutos.
 adsense:
-    sponsored: Sponsored
+  sponsored: Sponsored

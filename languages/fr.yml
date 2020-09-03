@@ -1,44 +1,44 @@
 index:
-    home: 'Accueil'
-    about: 'À propos'
-    search: 'Rechercher'
-    archive: 'Archive'
-    category: 'Categorie'
-    uncategorized: 'Aucune catégorie'
-    tag: 'Tag'
+  home: 'Accueil'
+  about: 'À propos'
+  search: 'Rechercher'
+  archive: 'Archive'
+  category: 'Categorie'
+  uncategorized: 'Aucune catégorie'
+  tag: 'Tag'
 nav:
-    current_page:
-        other: 'Page %d '
-    total_page:
-        other: 'sur %d'
+  current_page:
+    other: 'Page %d '
+  total_page:
+    other: 'sur %d'
 sidebar:
-    follow: 'suivre'
-    newer: '+ récent'
-    older: '- récent'
-    recents: 'récents'
-    sticky: 'Populaire'
-    archives: 'archives'
-    categories: 'catégories'
-    links: 'liens'
-    tags: 'tags'
-    tag_cloud: 'tag cloud'
-    catalogue: 'Catalogue'
+  follow: 'suivre'
+  newer: '+ récent'
+  older: '- récent'
+  recents: 'récents'
+  sticky: 'Populaire'
+  archives: 'archives'
+  categories: 'catégories'
+  links: 'liens'
+  tags: 'tags'
+  tag_cloud: 'tag cloud'
+  catalogue: 'Catalogue'
 article:
-    comments: 'Commentaires'
-    share: 'Partager'
+  comments: 'Commentaires'
+  share: 'Partager'
 insight:
-    hint: 'Écrivez quelque chose...'
-    posts: 'Articles'
-    pages: 'Pages'
-    categories: 'Catégories'
-    tags: 'Tags'
-    untitled: '(Sans titre)'
+  hint: 'Écrivez quelque chose...'
+  posts: 'Articles'
+  pages: 'Pages'
+  categories: 'Catégories'
+  tags: 'Tags'
+  untitled: '(Sans titre)'
 counter:
-    views: Vues
-    count: Symbols count in article
-    count_total: Symbols count total
-    time: Temps de lecture
-    time_total: Temps total de lecture
-    time_minutes: mins.
+  views: Vues
+  count: Symbols count in article
+  count_total: Symbols count total
+  time: Temps de lecture
+  time_total: Temps total de lecture
+  time_minutes: mins.
 adsense:
-    sponsored: Sponsored
+  sponsored: Sponsored
