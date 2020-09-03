@@ -1,6 +1,6 @@
 index:
     home: '홈'
-    about: 'About'
+    about: '내 정보'
     search: '검색'
     archive: '아카이브'
     category: '카테고리'
@@ -8,13 +8,13 @@ index:
     tag: '태그'
 nav:
     current_page:
-        other: 'Page %d '
+        other: '현재 %d 페이지 '
     total_page:
-        other: 'of %d'
+        other: '중 %d'
 sidebar:
     follow: '팔로우'
-    newer: '새로운'
-    older: '오래된'
+    newer: '신규'
+    older: '이전'
     recents: '최근 글'
     archives: '아카이브'
     categories: '카테고리'
@@ -25,18 +25,18 @@ article:
     comments: '댓글'
     share: '공유하기'
 insight:
-    hint: 'Type something...'
+    hint: '찾고자 하는 포스트를 검색하세요.'
     posts: '포스트'
-    pages: 'Pages'
+    pages: '페이지'
     categories: '카테고리'
     tags: '태그'
     untitled: '(Untitled)'
 counter:
-    views: Views
+    views: 조회수
     count: Symbols count in article
     count_total: Symbols count total
-    time: Reading time
-    time_total: Reading time total
-    time_minutes: mins.
+    time: 소요 시간
+    time_total: 전체 소요 시간
+    time_minutes: 분.
 adsense:
-    sponsored: Sponsored
+    sponsored: 후원자
