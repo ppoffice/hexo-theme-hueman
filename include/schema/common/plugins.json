@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "/common/plugins.json",
+  "description": "Plugin configurations\nhttps://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/",
+  "type": "object",
+  "properties": {
+    "baidu_analytics": {
+      "$ref": "/plugin/baidu_analytics.json"
+    },
+    "busuanzi": {
+      "$ref": "/plugin/busuanzi.json"
+    },
+    "cnzz": {
+      "$ref": "/plugin/cnzz.json"
+    },
+    "gallery": {
+      "$ref": "/plugin/gallery.json"
+    },
+    "google_analytics": {
+      "$ref": "/plugin/google_analytics.json"
+    },
+    "hotjar": {
+      "$ref": "/plugin/hotjar.json"
+    },
+    "katex": {
+      "$ref": "/plugin/katex.json"
+    },
+    "mathjax": {
+      "$ref": "/plugin/mathjax.json"
+    },
+    "outdated_browser": {
+      "$ref": "/plugin/outdated_browser.json"
+    },
+    "progressbar": {
+      "$ref": "/plugin/progressbar.json"
+    }
+  }
+}

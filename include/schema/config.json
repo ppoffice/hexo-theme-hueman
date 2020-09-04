@@ -8,6 +8,67 @@
       "type": "string",
       "description": "Version of the configuration file",
       "default": "1.0.0"
+    },
+    "logo": {
+      "type": ["string", "object"],
+      "description": "Path or URL to the website's logo",
+      "default": "/img/logo.svg",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Text to be shown in place of the logo image"
+        }
+      },
+      "required": ["text"]
+    },
+    "head": {
+      "$ref": "/common/head.json"
+    },
+    "navbar": {
+      "$ref": "/common/navbar.json"
+    },
+    "footer": {
+      "$ref": "/common/footer.json"
+    },
+    "article": {
+      "$ref": "/common/article.json"
+    },
+    "search": {
+      "$ref": "/common/search.json"
+    },
+    "comment": {
+      "$ref": "/common/comment.json"
+    },
+    "donates": {
+      "$ref": "/common/donates.json"
+    },
+    "share": {
+      "$ref": "/common/share.json"
+    },
+    "sidebar": {
+      "type": "object",
+      "description": "Sidebar configurations",
+      "properties": {
+        "position": {
+          "type": "string",
+          "description": "Where should the sidebar be placed, can be \"left\" or \"right\"",
+          "default": "left"
+        },
+        "sticky": {
+          "type": "boolean",
+          "description": "Whether content of the sidebar sticks to the top when page scrolls",
+          "default": false
+        }
+      }
+    },
+    "widgets": {
+      "$ref": "/common/widgets.json"
+    },
+    "plugins": {
+      "$ref": "/common/plugins.json"
+    },
+    "providers": {
+      "$ref": "/common/providers.json"
     }
   },
   "required": ["version"]

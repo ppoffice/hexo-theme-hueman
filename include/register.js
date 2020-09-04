@@ -10,19 +10,5 @@ module.exports = (hexo) => {
   require('hexo-component-inferno/lib/hexo/generator/tags')(hexo);
   require('hexo-component-inferno/lib/hexo/helper/cdn')(hexo);
   require('hexo-component-inferno/lib/hexo/helper/page')(hexo);
-  require('hexo-component-inferno/lib/hexo/helper/thumbnail')(hexo);
-  // require('./hexo/helper/excerpt')(hexo);
-  // require('./hexo/helper/md5')(hexo);
-  // require('./hexo/helper/meta')(hexo);
-  // require('./hexo/helper/thumbnail')(hexo);
   require('hexo-component-inferno/lib/core/view').init(hexo);
-
-  const hooks = ['after_render:html', 'after_post_render'];
-  const filters = ['hexoMetaGeneratorInject', 'externalLinkFilter'];
-  hooks.forEach((hook) => {
-    hexo.extend.filter
-      .list()
-      [hook].filter((filter) => filters.includes(filter.name))
-      .forEach((filter) => hexo.extend.filter.unregister(hook, filter));
-  });
 };
