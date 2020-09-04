@@ -11,8 +11,9 @@ module.exports = (hexo) => {
       const version = require(name + '/package.json').version;
       if (!semver.satisfies(version, reqVer)) {
         logger.error(
-          `Package ${yellow(name)}'s version (${yellow(version)}) ` +
-            `does not satisfy the required version (${red(reqVer)}).`,
+          `Package ${yellow(name)}'s version (${yellow(
+            version,
+          )}) does not satisfy the required version (${red(reqVer)}).`,
         );
         return false;
       }
@@ -24,17 +25,22 @@ module.exports = (hexo) => {
   }
 
   logger.info('=== Checking package dependencies ===');
-  const missingDeps = Object.keys(packageInfo.peerDependencies).filter(
-    (name) => !checkDependency(name, packageInfo.peerDependencies[name]),
+  const dependencies = Object.assign({}, packageInfo.peerDependencies, packageInfo.dependencies);
+  const missingDeps = Object.keys(dependencies).filter(
+    (name) => !checkDependency(name, dependencies[name]),
   );
   if (missingDeps && missingDeps.length) {
-    const packages = missingDeps
-      .map((name) => `${name}@${packageInfo.peerDependencies[name]}`)
-      .join(' ');
     logger.error('Please install the missing dependencies your Hexo site root directory:');
-    logger.error(green('npm install --save ' + packages));
+    logger.error(
+      green(
+        'npm install --save ' +
+          missingDeps.map((name) => `${name}@${dependencies[name]}`).join(' '),
+      ),
+    );
     logger.error('or:');
-    logger.error(green('yarn add ' + packages));
+    logger.error(
+      green('yarn add ' + missingDeps.map((name) => `${name}@${dependencies[name]}`).join(' ')),
+    );
     process.exit(-1);
   }
 };
