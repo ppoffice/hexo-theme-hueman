@@ -19,7 +19,7 @@
   },
   "scripts": {
     "lint": "eslint --ext .js --ext .jsx --ext .json .",
-    "_format": "prettier \"**/*.{js,jsx,json,babelrc,prettierrc,md,yml}\"",
+    "_format": "prettier \"**/*.{js,jsx,json,prettierrc,md,yml}\"",
     "format": "npm run _format -- --write",
     "format-check": "npm run _format -- --check"
   },
@@ -39,7 +39,7 @@
     "prettier": "^2.0.5"
   },
   "dependencies": {
-    "hexo-component-inferno": "^0.8.2",
+    "hexo-component-inferno": "^0.9.0",
     "inferno": "^7.3.3",
     "inferno-create-element": "^7.3.3",
     "moment": "^2.22.2",
