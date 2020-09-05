@@ -39,6 +39,12 @@
     },
     "progressbar": {
       "$ref": "/plugin/progressbar.json"
+    },
+    "statcounter": {
+      "$ref": "/plugin/statcounter.json"
+    },
+    "twitter_conversion_tracking": {
+      "$ref": "/plugin/twitter_conversion_tracking.json"
     }
   }
 }
