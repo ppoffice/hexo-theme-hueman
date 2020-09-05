@@ -1,0 +1,106 @@
+bulma-stylus-root = '../../../../node_modules/bulma-stylus/stylus'
+
+/* ---------------------------------
+ *   Override Bulma CSS Framework
+ * --------------------------------- */
+$body-size ?= 14px
+$body-background-color ?= #eaeaea
+
+$family-sans-serif ?= 'Titillium Web', 'Open Sans', 'Microsoft YaHei', sans-serif
+$family-code ?= 'Source Code Pro', monospace, 'Microsoft YaHei'
+
+$primary ?= $blue
+$custom-colors ?= {
+    grey-lightest: {
+        '1': $grey-lightest
+        '2': $grey-darker
+    }
+}
+
+$header-background ?= #26272b
+$header-text-color ?= rgba(255, 255, 255, .7)
+$header-text-shadow ?= 0 1px rgba(0, 0, 0, .2)
+
+$navbar-background-color ?= #33363b
+$navbar-item-color ?= $header-text-color
+$navbar-item-hover-color ?= #ffffff
+$navbar-item-hover-background-color ?= rgba(0, 0, 0, 0.1)
+$navbar-item-active-color ?= $navbar-item-hover-color
+$navbar-item-active-background-color ?= transparent
+$navbar-height ?= 50px
+
+$footer-background-color ?= $scheme-main
+
+$gap ?= 64px
+$tablet ?= 769px
+$desktop ?= 1088px
+$widescreen ?= 1280px
+$fullhd ?= 1472px
+
+$shadow ?= 0 4px 10px rgba(0, 0, 0, 0.05)
+
+$title-weight ?= $weight-normal
+
+$control-height ?= 2.25em
+$button-padding-vertical ?= calc(0.375em - 1px)
+
+$card-radius ?= $radius
+$card-media-margin ?= 0.75rem
+$card-shadow ?= $shadow, 0 0 1px rgba(0, 0, 0, 0.1)
+
+$menu-item-active-color ?= $link
+$menu-item-active-background-color ?= hsl(219, 70%, 96%)
+
+$content-heading-weight ?= $weight-normal
+
+$logo-height ?= 60px
+
+// FIXME: https://github.com/groenroos/bulma-stylus/issues/11
+@import bulma-stylus-root + '/utilities/initial-variables'
+@import bulma-stylus-root + '/utilities/functions'
+@import bulma-stylus-root + '/utilities/derived-variables'
+
+$colors = merge($colors, $custom-colors)
+
+@import bulma-stylus-root + '/utilities/animations'
+@import bulma-stylus-root + '/utilities/mixins'
+@import bulma-stylus-root + '/utilities/controls'
+@import bulma-stylus-root + '/base/_all'
+@import bulma-stylus-root + '/components/_all'
+@import bulma-stylus-root + '/elements/_all'
+@import bulma-stylus-root + '/form/_all'
+@import bulma-stylus-root + '/grid/_all'
+@import bulma-stylus-root + '/layout/_all'
+
+html
+    height: 100%
+    -webkit-text-size-adjust: 100%
+    -moz-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%
+    text-size-adjust: 100%
+
+body
+    min-height: 100%
+    display: flex
+    flex-direction: column
+
+body > .section
+    flex-grow: 1
+
++desktop()
+    ::-webkit-scrollbar
+        width: 8px
+        height: 8px
+
+    ::-webkit-scrollbar-track
+        border-radius: 3px
+        background: rgba(0,0,0,0.06)
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.1)
+
+    ::-webkit-scrollbar-thumb
+        border-radius: 3px
+        background: rgba(0,0,0,0.12)
+        box-shadow: inset 0 0 10px rgba(0,0,0,0.2)
+
+    ::-webkit-scrollbar-thumb:hover
+        background: rgba(0,0,0,0.24)

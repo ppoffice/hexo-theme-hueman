@@ -1,0 +1,119 @@
+@import "nib"
+@import "_variables"
+@import "_extend"
+
+global-reset()
+
+input, button
+    margin: 0
+    padding: 0
+    &::-moz-focus-inner
+        border: 0
+        padding: 0
+
+html, body, #container
+    height: 100%
+
+::selection
+    color: white
+    background: color-theme
+
+body
+    background: color-background
+    font: font-size font-sans
+    -webkit-text-size-adjust: 100%
+
+code
+    margin: 0 2px
+    color: #e96900
+    padding: 3px 5px
+    font-size: 0.8em
+    border-radius: 2px
+    font-family: font-mono
+    background-color: #f8f8f8
+
+.container
+    position: relative
+    padding: 0 container-padding
+
+.container-inner
+    clearfix()
+    max-width: container-inner-max-width
+    min-width: container-inner-min-width
+    width: 100%
+    margin: 0 auto
+
+.left, .alignleft
+    float: left
+
+.right, .alignright
+    float: right
+
+.clear
+    clear: both
+
+.logo
+    display: block
+    padding: 10px 0
+    width: logo-width
+    height: logo-height
+    background-image: url(logo-url)
+    background-position: 0px 10px
+    background-repeat: no-repeat
+    background-size: logo-width logo-height
+
+.main-body
+    margin-top: - nav-height
+    background-color: color-main-background
+
+.main-body-inner
+    clearfix()
+    position: relative
+    box-sizing: border-box
+    box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 1px 0px
+    if sidebar is right
+        padding-right: sidebar-width
+        background: url(images/s-left.png) repeat-y right 0
+    else
+        padding-left: sidebar-width
+        background: url(images/s-left.png) repeat-y left 0
+
+#main
+    if sidebar is right
+        float: left
+    else
+        float: right
+    width: 100%
+    box-sizing: border-box
+    min-height: 600px
+    .main-body-header
+        background: #fff
+        position: relative
+        padding: 18px 30px 17px
+        border-bottom: 1px solid color-border-light
+        color: color-default + #111
+        font-size: 16px
+        font-weight: 600
+        text-transform: uppercase
+        line-height: 24px
+        .page-title-link, i
+            margin-right: 8px
+        i
+            font-weight: 400
+        em, a
+            @extend $block-caption
+            color: color-grey
+    .main-body-content
+        clearfix()
+
+@import "_partial/header"
+@import "_partial/nav"
+@import "_partial/sidebar"
+@import "_partial/article"
+@import "_partial/comment"
+@import "_partial/archive"
+@import "_partial/footer"
+@import "_partial/assets"
+@import "_partial/insight"
+@import "_highlight/index"
+@import "_responsive"

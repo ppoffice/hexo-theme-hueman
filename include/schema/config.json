@@ -12,7 +12,7 @@
     "logo": {
       "type": ["string", "object"],
       "description": "Path or URL to the website's logo",
-      "default": "/img/logo.svg",
+      "default": "/img/logo.png",
       "properties": {
         "text": {
           "type": "string",
