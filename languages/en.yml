@@ -42,3 +42,11 @@ counter:
   time_minutes: mins.
 adsense:
   sponsored: Sponsored
+plugin:
+  cookie_consent:
+    message: This website uses cookies to improve your experience.
+    dismiss: Got it!
+    allow: Allow cookies
+    deny: Decline
+    link: Learn more
+    policy: Cookie Policy
