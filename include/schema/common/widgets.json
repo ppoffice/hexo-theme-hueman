@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "/common/widgets.json",
-  "description": "Sidebar widget configurations\nhttp://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/",
+  "description": "Sidebar widget configurations\nhttp://ppoffice.github.io/hexo-theme-hueman/categories/Widgets/",
   "type": "array",
   "items": {
     "type": "object",
