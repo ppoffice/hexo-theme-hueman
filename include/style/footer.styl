@@ -1,0 +1,48 @@
+/* ---------------------------------
+ *            Page Footer
+ * --------------------------------- */
+footer.footer
+    position: relative
+
+    a, a:hover
+        color: #ffffff
+
+    .level-start
+        +mobile()
+            text-align: center
+
+    .level
+        text-shadow: $footer-text-shadow
+
+    .level-end
+        .field
+            flex-wrap: wrap
+            align-items: center
+
+            +mobile()
+                justify-content: center
+                margin-top: 1rem
+
+    .logo
+        img
+            max-height: $logo-height-secondary
+
+    #back-to-top
+        display: block
+        position: absolute
+        top: 0
+        left: 50%
+        margin-left: -32px
+        width: 64px
+        color: $grey
+        text-align: center
+        line-height: 1.8em
+        background: $body-background-color
+        border-radius: 0 0 $radius $radius
+
+        &:hover
+            color: $grey-darker
+
+        i
+            font-size: 24px
+            line-height: 1em

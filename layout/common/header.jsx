@@ -34,7 +34,7 @@ class Header extends Component {
     } = this.props;
 
     return (
-      <section class="hero">
+      <header class="hero">
         <div class="hero-body">
           <div class="container">
             <h1 class="title">
@@ -57,7 +57,7 @@ class Header extends Component {
           showSearch={showSearch}
           searchTitle={searchTitle}
         />
-      </section>
+      </header>
     );
   }
 }

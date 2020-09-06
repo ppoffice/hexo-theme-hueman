@@ -1,7 +1,9 @@
 const { Component } = require('inferno');
 const Head = require('./common/head');
 const Header = require('./common/header');
+const Footer = require('./common/footer');
 const Scripts = require('./common/scripts');
+const Search = require('./common/search');
 
 module.exports = class extends Component {
   render() {
@@ -21,7 +23,9 @@ module.exports = class extends Component {
               </div>
             </div>
           </section>
+          <Footer config={config} helper={helper} />
           <Scripts site={site} config={config} helper={helper} page={page} />
+          <Search config={config} helper={helper} />
         </body>
       </html>
     );
