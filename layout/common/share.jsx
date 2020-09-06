@@ -15,7 +15,7 @@ module.exports = class extends Component {
       Share = Share.Cacheable ? Share.Cacheable : Share;
       return <Share config={config} page={page} helper={helper} share={share} />;
     } catch (e) {
-      logger.w(`Icarus cannot load share button "${share.type}"`);
+      logger.w(`Hueman cannot load share button "${share.type}"`);
       return null;
     }
   }

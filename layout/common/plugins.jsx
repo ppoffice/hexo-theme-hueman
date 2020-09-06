@@ -28,7 +28,7 @@ module.exports = class extends Component {
               />
             );
           } catch (e) {
-            logger.w(`Icarus cannot load plugin "${name}"`);
+            logger.w(`Hueman cannot load plugin "${name}"`);
             return null;
           }
         })}

@@ -15,7 +15,7 @@ module.exports = class extends Component {
       Search = Search.Cacheable ? Search.Cacheable : Search;
       return <Search config={config} helper={helper} search={search} />;
     } catch (e) {
-      logger.w(`Icarus cannot load search "${search.type}"`);
+      logger.w(`Hueman cannot load search "${search.type}"`);
       return null;
     }
   }

@@ -19,7 +19,7 @@ module.exports = class extends Component {
       }
     }
 
-    const embeddedConfig = `var IcarusThemeSettings = {
+    const embeddedConfig = `var HuemanThemeSettings = {
       article: {
         highlight: {
           clipboard: ${clipboard},
