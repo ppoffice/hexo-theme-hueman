@@ -1,29 +1,30 @@
-.hero
+/* ---------------------------------
+ *            Page Header
+ * --------------------------------- */
+header.hero
     background: $header-background
-    color: $header-text-color
+    color: $header-color
     text-shadow: $header-text-shadow
     padding-bottom: $navbar-height
 
-.hero-body
-    font-size: 16px
+    .hero-body
+        .container
+            display: flex
+            flex-direction: row
+            align-items: center
 
-    .container
-        display: flex
-        flex-direction: row
-        align-items: center
+        .title
+            margin: 0
 
-    .title
-        margin: 0
+        .subtitle
+            margin-left: 20px
+            color: inherit
+            font-size: 1em
+            font-style: italic
 
-    .subtitle
-        margin-left: 20px
-        font-size: 1em
-        font-style: italic
-        color: inherit
+        .title:not(.is-spaced) + .subtitle
+            margin-top: 0
 
-    .title:not(.is-spaced) + .subtitle
-        margin-top: 0
-
-    .logo
-        img
-            height: $logo-height
+        .logo
+            img
+                max-height: $logo-height

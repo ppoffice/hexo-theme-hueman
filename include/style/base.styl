@@ -3,7 +3,7 @@ bulma-stylus-root = '../../../../node_modules/bulma-stylus/stylus'
 /* ---------------------------------
  *   Override Bulma CSS Framework
  * --------------------------------- */
-$body-size ?= 14px
+$body-size ?= 16px
 $body-background-color ?= #eaeaea
 
 $family-sans-serif ?= 'Titillium Web', 'Open Sans', 'Microsoft YaHei', sans-serif
@@ -18,18 +18,21 @@ $custom-colors ?= {
 }
 
 $header-background ?= #26272b
-$header-text-color ?= rgba(255, 255, 255, .7)
+$header-color ?= rgba(255, 255, 255, .7)
 $header-text-shadow ?= 0 1px rgba(0, 0, 0, .2)
 
 $navbar-background-color ?= #33363b
-$navbar-item-color ?= $header-text-color
+$navbar-item-color ?= $header-color
 $navbar-item-hover-color ?= #ffffff
 $navbar-item-hover-background-color ?= rgba(0, 0, 0, 0.1)
 $navbar-item-active-color ?= $navbar-item-hover-color
 $navbar-item-active-background-color ?= transparent
 $navbar-height ?= 50px
 
-$footer-background-color ?= $scheme-main
+$footer-padding ?= 3rem 1.5rem
+$footer-background-color ?= $header-background
+$footer-color ?= $header-color
+$footer-text-shadow ?= 0 1px rgba(0, 0, 0, .2)
 
 $gap ?= 64px
 $tablet ?= 769px
@@ -54,6 +57,7 @@ $menu-item-active-background-color ?= hsl(219, 70%, 96%)
 $content-heading-weight ?= $weight-normal
 
 $logo-height ?= 60px
+$logo-height-secondary ?= 48px
 
 // FIXME: https://github.com/groenroos/bulma-stylus/issues/11
 @import bulma-stylus-root + '/utilities/initial-variables'
