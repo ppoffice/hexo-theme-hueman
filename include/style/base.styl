@@ -29,6 +29,9 @@ $navbar-item-active-color ?= $navbar-item-hover-color
 $navbar-item-active-background-color ?= transparent
 $navbar-height ?= 50px
 
+$heading-height ?= $navbar-height
+$heading-text-shadow ?= $header-text-shadow
+
 $footer-padding ?= 3rem 1.5rem
 $footer-background-color ?= $header-background
 $footer-color ?= $header-color
@@ -51,8 +54,7 @@ $card-radius ?= $radius
 $card-media-margin ?= 0.75rem
 $card-shadow ?= $shadow, 0 0 1px rgba(0, 0, 0, 0.1)
 
-$menu-item-active-color ?= $link
-$menu-item-active-background-color ?= hsl(219, 70%, 96%)
+$menu-item-hover-color ?= $primary
 
 $content-heading-weight ?= $weight-normal
 
@@ -90,6 +92,12 @@ body
 
 body > .section
     flex-grow: 1
+
+    .columns
+        margin-top: "calc(-3rem - %s)" % $heading-height
+        background: white
+        box-shadow: $card-shadow
+        border-radius: 0 0 $radius $radius
 
 +desktop()
     ::-webkit-scrollbar

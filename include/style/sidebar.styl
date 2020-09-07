@@ -1,0 +1,58 @@
+.sidebar
+    background: #f0f0f0
+
+    &.order-1
+        border-bottom-left-radius: $radius
+
+    &.order-2
+        border-bottom-right-radius: $radius
+
+    .sidebar-inner.is-sticky
+        top: 0
+        position: sticky
+
+    .card
+        box-shadow: none
+        background: transparent
+
+    .social-links
+        display: flex
+        align-items: center
+        overflow: auto
+        height: $heading-height
+        background: $primary
+        color: $primary-invert
+        text-shadow: $heading-text-shadow
+
+        .card-content
+            flex-grow: 1
+            padding-top: 0
+            padding-bottom: 0
+            padding-right: 1rem
+
+        .button
+            opacity: .8
+
+            &:hover
+                opacity: 1
+
+    .widget
+        .media
+            color: $text-light
+
+            .title
+                margin-bottom: .25em
+
+        .menu-list
+            .tag
+                background: $white
+                color: $white-invert
+
+        .tags
+            .tag:first-child
+                background: $primary
+                color: $primary-invert
+
+            .tag:last-child
+                background: $white
+                color: $white-invert

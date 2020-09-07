@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "/common/sidebar.json",
+  "description": "Sidebar configurations",
+  "type": "object",
+  "properties": {
+    "position": {
+      "type": "string",
+      "description": "Where should the sidebar be placed, can be \"left\" or \"right\"",
+      "default": "left"
+    },
+    "sticky": {
+      "type": "boolean",
+      "description": "Whether content of the sidebar sticks to the top when page scrolls",
+      "default": false
+    },
+    "social_links": {
+      "$ref": "/misc/poly_links.json",
+      "description": "Social links shown on top of the sidebar",
+      "examples": [
+        {
+          "Twitter": {
+            "icon": "fab fa-twitter",
+            "url": "https://twitter.com"
+          },
+          "Facebook": {
+            "icon": "fab fa-facebook",
+            "url": "https://facebook.com"
+          },
+          "Instagram": {
+            "icon": "fab fa-instagram",
+            "url": "https://instagram.com"
+          },
+          "Stack Overflow": {
+            "icon": "fab fa-stack-overflow",
+            "url": "https://stackoverflow.com"
+          },
+          "GitHub": {
+            "icon": "fab fa-github",
+            "url": "https://github.com/ppoffice/hexo-theme-hueman"
+          },
+          "RSS": {
+            "icon": "fas fa-rss",
+            "url": "/"
+          }
+        }
+      ]
+    }
+  }
+}

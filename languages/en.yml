@@ -1,3 +1,21 @@
+common:
+  archive:
+      one: 'Archive'
+      other: 'Archives'
+  category:
+      one: 'Category'
+      other: 'Categories'
+  tag:
+      one: 'Tag'
+      other: 'Tags'
+  post:
+      one: 'Post'
+      other: 'Posts'
+  page:
+      one: 'Page'
+      other: 'Pages'
+  prev: 'Previous'
+  next: 'Next'
 index:
   home: 'Home'
   about: 'About'
@@ -42,6 +60,14 @@ counter:
   time_minutes: mins.
 adsense:
   sponsored: Sponsored
+widget:
+  follow: 'Follow'
+  recents: 'Recents'
+  links: 'Links'
+  catalogue: 'Catalogue'
+  subscribe_email: 'Subscribe for updates'
+  subscribe: 'Subscribe'
+  adsense: 'Advertisement'
 plugin:
   cookie_consent:
     message: This website uses cookies to improve your experience.

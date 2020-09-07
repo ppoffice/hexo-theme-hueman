@@ -1,7 +1,7 @@
 (function ($) {
   // To top button
   $('#back-to-top').on('click', function () {
-    $('body, html').animate({ scrollTop: 0 }, 600);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
   // Nav bar toggle

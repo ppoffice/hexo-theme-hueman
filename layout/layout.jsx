@@ -1,6 +1,8 @@
 const { Component } = require('inferno');
+const classname = require('hexo-component-inferno/lib/util/classname');
 const Head = require('./common/head');
 const Header = require('./common/header');
+const Sidebar = require('./common/sidebar');
 const Footer = require('./common/footer');
 const Scripts = require('./common/scripts');
 const Search = require('./common/search');
@@ -8,6 +10,8 @@ const Search = require('./common/search');
 module.exports = class extends Component {
   render() {
     const { site, config, page, helper, body } = this.props;
+    const { sidebar = {} } = config;
+    const { position = 'left' } = sidebar;
 
     const language = page.lang || page.language || config.language;
 
@@ -18,8 +22,15 @@ module.exports = class extends Component {
           <Header config={config} helper={helper} page={page} />
           <section class="section">
             <div class="container">
-              <div class="columns">
-                <div dangerouslySetInnerHTML={{ __html: body }}></div>
+              <div class="columns is-gapless">
+                <div
+                  class={classname({
+                    'column column-main is-8-tablet is-8-desktop is-8-widescreen': true,
+                    'order-2': position === 'left',
+                    'order-1': position === 'right',
+                  })}
+                  dangerouslySetInnerHTML={{ __html: body }}></div>
+                <Sidebar site={site} config={config} page={page} helper={helper} />
               </div>
             </div>
           </section>
