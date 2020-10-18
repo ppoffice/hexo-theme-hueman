@@ -37,13 +37,20 @@
                 opacity: 1
 
     .widget
-        .media
-            color: $text-light
-
-            .title
-                margin-bottom: .25em
-
         .menu-list
+            li
+                ul
+                    margin-right: 0
+
+            .level
+                margin-bottom: 0
+
+                .level-left, .level-right, .level-item
+                    flex-shrink: 1
+
+                .level-left, .level-right
+                    align-items: flex-start
+
             .tag
                 background: $white
                 color: $white-invert

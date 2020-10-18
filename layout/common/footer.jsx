@@ -26,7 +26,7 @@ class Footer extends Component {
               <a class="logo is-block mb-3" href={siteUrl}>
                 {logo && logo.text ? logo.text : <img src={logoUrl} alt={siteTitle} height="28" />}
               </a>
-              <p class="size-small">
+              <p class="is-size-7">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: `&copy; ${siteYear} ${author || siteTitle}`,

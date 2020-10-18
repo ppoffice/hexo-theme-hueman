@@ -4,7 +4,7 @@
 $spacer ?= 1rem
 $spacers ?= 0, $spacer * .25, $spacer * .5, $spacer, $spacer * 1.5, $spacer * 3
 
-for n in (0 .. 5)
+for n in 0 .. 5
     .ml-{n}
         margin-left: $spacers[n] !important
 
@@ -116,56 +116,6 @@ for n in (0 .. 5)
 /* ---------------------------------
  *           Flex helpers
  * --------------------------------- */
-for n in (0 .. 5)
+for n in 0 .. 5
     .order-{n}
         order: n !important
-
-.justify-content-start
-    justify-content: start !important
-
-.justify-content-center
-    justify-content: center !important
-
-.flex-shrink-1
-    flex-shrink: 1 !important
-
-/* ---------------------------------
- *           Color helpers
- * --------------------------------- */
-.link-muted
-    color: inherit
-
-    &:hover
-        color: $primary !important
-
-/* ---------------------------------
- *           Font helpers
- * --------------------------------- */
-.size-small
-    font-size: .85rem !important
-
-.line-height-inherit
-    line-height: inherit !important
-
-/* ---------------------------------
- *          Image helpers
- * --------------------------------- */
-.image
-    &.is-7by3
-        padding-top: 42.8%
-
-        img
-            bottom: 0
-            left: 0
-            position: absolute
-            right: 0
-            top: 0
-
-    .avatar
-        height: 100%
-        object-fit: cover
-
-    .fill
-        object-fit: cover
-        width: 100% !important
-        height: 100% !important

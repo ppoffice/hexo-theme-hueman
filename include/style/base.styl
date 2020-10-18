@@ -12,10 +12,18 @@ $family-code ?= 'Source Code Pro', monospace, 'Microsoft YaHei'
 $primary ?= $blue
 $custom-colors ?= {
     grey-lightest: {
-        '1': $grey-lightest
+        '1': $grey-lightest,
         '2': $grey-darker
     }
 }
+
+$gap ?= 64px
+$tablet ?= 769px
+$desktop ?= 1088px
+$widescreen ?= 1280px
+$fullhd ?= 1472px
+
+$shadow ?= 0 4px 10px rgba(0, 0, 0, .05)
 
 $header-background ?= #26272b
 $header-color ?= rgba(255, 255, 255, .7)
@@ -24,7 +32,7 @@ $header-text-shadow ?= 0 1px rgba(0, 0, 0, .2)
 $navbar-background-color ?= #33363b
 $navbar-item-color ?= $header-color
 $navbar-item-hover-color ?= #ffffff
-$navbar-item-hover-background-color ?= rgba(0, 0, 0, 0.1)
+$navbar-item-hover-background-color ?= rgba(0, 0, 0, .1)
 $navbar-item-active-color ?= $navbar-item-hover-color
 $navbar-item-active-background-color ?= transparent
 $navbar-height ?= 50px
@@ -37,23 +45,13 @@ $footer-background-color ?= $header-background
 $footer-color ?= $header-color
 $footer-text-shadow ?= 0 1px rgba(0, 0, 0, .2)
 
-$gap ?= 64px
-$tablet ?= 769px
-$desktop ?= 1088px
-$widescreen ?= 1280px
-$fullhd ?= 1472px
-
-$shadow ?= 0 4px 10px rgba(0, 0, 0, 0.05)
-
 $title-weight ?= $weight-normal
 
 $control-height ?= 2.25em
-$button-padding-vertical ?= calc(0.375em - 1px)
-
+$button-padding-vertical ?= calc(.375em - 1px)
 $card-radius ?= $radius
-$card-media-margin ?= 0.75rem
-$card-shadow ?= $shadow, 0 0 1px rgba(0, 0, 0, 0.1)
-
+$card-media-margin ?= .75rem
+$card-shadow ?= $shadow, 0 0 1px rgba(0, 0, 0, .1)
 $menu-item-hover-color ?= $primary
 
 $content-heading-weight ?= $weight-normal
@@ -62,21 +60,21 @@ $logo-height ?= 60px
 $logo-height-secondary ?= 48px
 
 // FIXME: https://github.com/groenroos/bulma-stylus/issues/11
-@import bulma-stylus-root + '/utilities/initial-variables'
-@import bulma-stylus-root + '/utilities/functions'
-@import bulma-stylus-root + '/utilities/derived-variables'
+@import (bulma-stylus-root + '/utilities/initial-variables')
+@import (bulma-stylus-root + '/utilities/functions')
+@import (bulma-stylus-root + '/utilities/derived-variables')
 
 $colors = merge($colors, $custom-colors)
 
-@import bulma-stylus-root + '/utilities/animations'
-@import bulma-stylus-root + '/utilities/mixins'
-@import bulma-stylus-root + '/utilities/controls'
-@import bulma-stylus-root + '/base/_all'
-@import bulma-stylus-root + '/components/_all'
-@import bulma-stylus-root + '/elements/_all'
-@import bulma-stylus-root + '/form/_all'
-@import bulma-stylus-root + '/grid/_all'
-@import bulma-stylus-root + '/layout/_all'
+@import (bulma-stylus-root + '/utilities/animations')
+@import (bulma-stylus-root + '/utilities/mixins')
+@import (bulma-stylus-root + '/utilities/controls')
+@import (bulma-stylus-root + '/base/_all')
+@import (bulma-stylus-root + '/components/_all')
+@import (bulma-stylus-root + '/elements/_all')
+@import (bulma-stylus-root + '/form/_all')
+@import (bulma-stylus-root + '/grid/_all')
+@import (bulma-stylus-root + '/layout/_all')
 
 html
     height: 100%
@@ -94,7 +92,7 @@ body > .section
     flex-grow: 1
 
     .columns
-        margin-top: "calc(-3rem - %s)" % $heading-height
+        margin-top: 'calc(-3rem - %s)' % $heading-height
         background: white
         box-shadow: $card-shadow
         border-radius: 0 0 $radius $radius
@@ -106,13 +104,13 @@ body > .section
 
     ::-webkit-scrollbar-track
         border-radius: 3px
-        background: rgba(0,0,0,0.06)
-        box-shadow: inset 0 0 5px rgba(0,0,0,0.1)
+        background: rgba(0, 0, 0, .06)
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, .1)
 
     ::-webkit-scrollbar-thumb
         border-radius: 3px
-        background: rgba(0,0,0,0.12)
-        box-shadow: inset 0 0 10px rgba(0,0,0,0.2)
+        background: rgba(0, 0, 0, .12)
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, .2)
 
     ::-webkit-scrollbar-thumb:hover
-        background: rgba(0,0,0,0.24)
+        background: rgba(0, 0, 0, .24)
