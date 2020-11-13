@@ -3,14 +3,7 @@ const classname = require('hexo-component-inferno/lib/util/classname');
 
 class Navbar extends Component {
   render() {
-    const {
-      menu,
-      links,
-      showToc,
-      tocTitle,
-      showSearch,
-      searchTitle,
-    } = this.props;
+    const { menu, links, showToc, tocTitle, showSearch, searchTitle } = this.props;
 
     return (
       <nav class="navbar navbar-main">

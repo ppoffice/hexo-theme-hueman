@@ -1,0 +1,68 @@
+/* ---------------------------------
+ *  Pagination and Post Navigation
+ * --------------------------------- */
+$pagination-box-shadow ?= $card-shadow
+$pagination-background-color ?= $button-background-color
+$post-navigation-fg ?= $text
+$post-navigation-bg ?= #f0f0f0
+
+.pagination
+    @extend .pagination.is-centered
+    margin-top: 1.5rem
+
+    .pagination-link, .pagination-ellipsis, .pagination-previous, .pagination-next
+        a
+            color: $pagination-color
+
+    .pagination-link, .pagination-previous, .pagination-next
+        border: none
+        background: $pagination-background-color
+        box-shadow: $pagination-box-shadow
+
+    .pagination-link.is-current
+        background: $pagination-current-background-color
+
+.post-navigation
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    background-color: $post-navigation-bg
+
+    &, & a
+        color: $post-navigation-fg
+
+    a:hover
+        color: $link
+
+    .level, .level-item
+        margin-bottom: 0
+
+    .article-nav-prev, .article-nav-next
+        display: flex
+        flex-grow: 1
+        flex-direction: column
+        align-items: center
+        position: relative
+        padding: 1rem 42px
+
+        span:first-child
+            font-size: .75rem
+            text-transform: uppercase
+            color: $text-light
+    
+    .article-nav-prev::before
+    .article-nav-next::after
+        position: absolute
+        top: 50%
+        margin-top: -8px
+        font: normal 900 16px 'Font Awesome 5 Free'
+        color: $text-light
+
+    .article-nav-prev::before
+        left: 16px
+        content: '\f053'
+
+    .article-nav-next::after
+        right: 16px
+        content: '\f054'
+

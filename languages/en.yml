@@ -1,19 +1,19 @@
 common:
   archive:
-      one: 'Archive'
-      other: 'Archives'
+    one: 'Archive'
+    other: 'Archives'
   category:
-      one: 'Category'
-      other: 'Categories'
+    one: 'Category'
+    other: 'Categories'
   tag:
-      one: 'Tag'
-      other: 'Tags'
+    one: 'Tag'
+    other: 'Tags'
   post:
-      one: 'Post'
-      other: 'Posts'
+    one: 'Post'
+    other: 'Posts'
   page:
-      one: 'Page'
-      other: 'Pages'
+    one: 'Page'
+    other: 'Pages'
   prev: 'Previous'
   next: 'Next'
 index:
@@ -29,21 +29,21 @@ nav:
     other: 'Page %d '
   total_page:
     other: 'of %d'
-sidebar:
-  follow: 'follow'
-  newer: 'newer'
-  older: 'older'
-  recents: 'recents'
-  sticky: 'Popular'
-  archives: 'archives'
-  categories: 'categories'
-  links: 'links'
-  tags: 'tags'
-  tag_cloud: 'tag cloud'
-  catalogue: 'Catalog'
 article:
+  newer: 'Newer'
+  older: 'Older'
+  created_at: 'Posted at %s'
+  updated_at: 'Updated at %s'
   comments: 'Comments'
-  share: 'Share'
+  read_time: '%s read'
+  word_count:
+    one: 'About %d word'
+    other: 'About %d words'
+  licensing:
+    author: 'Author'
+    created_at: 'Posted on'
+    updated_at: 'Updated on'
+    licensed_under: 'Licensed under'
 insight:
   hint: 'Type something...'
   posts: 'Posts'
@@ -68,7 +68,17 @@ widget:
   subscribe_email: 'Subscribe for updates'
   subscribe: 'Subscribe'
   adsense: 'Advertisement'
+donate:
+  title: 'Like this article? Support the author with'
+  afdian: 'Afdian.net'
+  alipay: 'Alipay'
+  wechat: 'Wechat'
+  paypal: 'Paypal'
+  patreon: 'Patreon'
+  buymeacoffee: 'Buy me a coffee'
 plugin:
+  visit_count: '%s&nbsp;visits'
+  visitor_count: 'Visited by %s users'
   cookie_consent:
     message: This website uses cookies to improve your experience.
     dismiss: Got it!
@@ -76,3 +86,9 @@ plugin:
     deny: Decline
     link: Learn more
     policy: Cookie Policy
+search:
+  search: 'Search'
+  hint: 'Type something...'
+  no_result: 'No results for'
+  untitled: '(Untitled)'
+  empty_preview: '(No preview)'

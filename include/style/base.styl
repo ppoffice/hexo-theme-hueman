@@ -9,6 +9,8 @@ $body-background-color ?= #eaeaea
 $family-sans-serif ?= 'Titillium Web', 'Open Sans', 'Microsoft YaHei', sans-serif
 $family-code ?= 'Source Code Pro', monospace, 'Microsoft YaHei'
 
+$size-7 ?= .85rem
+
 $primary ?= $blue
 $custom-colors ?= {
     grey-lightest: {
@@ -24,6 +26,9 @@ $widescreen ?= 1280px
 $fullhd ?= 1472px
 
 $shadow ?= 0 4px 10px rgba(0, 0, 0, .05)
+
+$code-radius ?= 2px
+$code-padding ?= .1em .25em
 
 $header-background ?= #26272b
 $header-color ?= rgba(255, 255, 255, .7)
@@ -48,13 +53,17 @@ $footer-text-shadow ?= 0 1px rgba(0, 0, 0, .2)
 $title-weight ?= $weight-normal
 
 $control-height ?= 2.25em
+
 $button-padding-vertical ?= calc(.375em - 1px)
+
 $card-radius ?= $radius
 $card-media-margin ?= .75rem
 $card-shadow ?= $shadow, 0 0 1px rgba(0, 0, 0, .1)
+
 $menu-item-hover-color ?= $primary
 
 $content-heading-weight ?= $weight-normal
+$content-blockquote-padding ?= 0
 
 $logo-height ?= 60px
 $logo-height-secondary ?= 48px
@@ -88,6 +97,9 @@ body
     display: flex
     flex-direction: column
 
+code
+    border-radius: $code-radius
+
 body > .section
     flex-grow: 1
 
@@ -96,6 +108,10 @@ body > .section
         background: white
         box-shadow: $card-shadow
         border-radius: 0 0 $radius $radius
+
+.column-main > .card
+    box-shadow: none
+    background: transparent
 
 +desktop()
     ::-webkit-scrollbar
